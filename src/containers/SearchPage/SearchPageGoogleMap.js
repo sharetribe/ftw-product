@@ -56,7 +56,7 @@ export class SearchPageComponent extends Component {
     const { viewportBounds, viewportCenter } = data;
 
     const routes = routeConfiguration();
-    const searchPagePath = pathByRouteName('SearchPage', routes);
+    const searchPagePath = pathByRouteName('SearchPageGoogleMaps', routes);
     const currentPath =
       typeof window !== 'undefined' && window.location && window.location.pathname;
 
@@ -87,7 +87,7 @@ export class SearchPageComponent extends Component {
         ...validFilterParams(rest, filterConfig),
       };
 
-      history.push(createResourceLocatorString('SearchPage', routes, {}, searchParams));
+      history.push(createResourceLocatorString('SearchPageGoogleMaps', routes, {}, searchParams));
     }
   }
 
@@ -170,7 +170,7 @@ export class SearchPageComponent extends Component {
       >
         <TopbarContainer
           className={topbarClasses}
-          currentPage="SearchPage"
+          currentPage="SearchPageGoogleMaps"
           currentSearchParams={urlQueryParams}
         />
         <div className={css.container}>
@@ -192,7 +192,7 @@ export class SearchPageComponent extends Component {
           />
           <ModalInMobile
             className={css.mapPanel}
-            id="SearchPage.map"
+            id="SearchPageGoogleMaps.map"
             isModalOpenOnMobile={this.state.isSearchMapOpenOnMobile}
             onClose={() => this.setState({ isSearchMapOpenOnMobile: false })}
             showAsModalMaxWidth={MODAL_BREAKPOINT}
@@ -210,7 +210,7 @@ export class SearchPageComponent extends Component {
                   listings={mapListings || []}
                   onMapMoveEnd={this.onMapMoveEnd}
                   onCloseAsModal={() => {
-                    onManageDisableScrolling('SearchPage.map', false);
+                    onManageDisableScrolling('SearchPageGoogleMaps.map', false);
                   }}
                   messages={intl.messages}
                 />
