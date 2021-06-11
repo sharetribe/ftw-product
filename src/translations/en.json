@@ -333,6 +333,7 @@
   "Footer.privacy": "Privacy",
   "Footer.privacyPolicy": "Privacy policy",
   "Footer.searchBrand1": "Adidas",
+<<<<<<< HEAD
   "Footer.searchBrand2": "Air Jordan",
   "Footer.searchBrand3": "Converse",
   "Footer.searchBrand4": "New Balance",
@@ -341,6 +342,16 @@
   "Footer.searchBrand7": "Ultraboost",
   "Footer.searchBrand8": "Vans",
   "Footer.searchBrand9": "Yeezy",
+=======
+  "Footer.searchBrand2": "Nike",
+  "Footer.searchBrand3": "Puma",
+  "Footer.searchBrand4": "Vans",
+  "Footer.searchBrand5": "Converse",
+  "Footer.searchBrand6": "Yeezy",
+  "Footer.searchBrand7": "New Balance",
+  "Footer.searchBrand8": "Air Jordan",
+  "Footer.searchBrand9": "Ultraboost",
+>>>>>>> 5e31ca477e935d8113043ceb9067cac57135f0cd
   "Footer.searchBrand10": "Other",
   "Footer.terms": "Terms",
   "Footer.termsOfUse": "Terms of Service",
