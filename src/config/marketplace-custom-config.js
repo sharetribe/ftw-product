@@ -178,11 +178,11 @@ export const filters = [
     },
   },
   {
-    id: 'size',
-    label: 'Size (US)',
+    id: 'disc_speed',
+    label: 'Disc SPeed',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_size'],
+    queryParamNames: ['pub_speed'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.
@@ -195,15 +195,20 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: '4', label: '4' },
-        { key: '5', label: '5' },
-        { key: '6', label: '6' },
-        { key: '7', label: '7' },
-        { key: '8', label: '8' },
-        { key: '9', label: '9' },
-        { key: '10', label: '10' },
-        { key: '11', label: '11' },
-        { key: '12', label: '12' },
+        { key: '14', label: '14'},
+        { key: '13', label: '13'},
+        { key: '12', label: '12'},
+        { key: '11', label: '11'},
+        { key: '10', label: '10'},
+        { key: '9', label: '9'},
+        { key: '8', label: '8'},
+        { key: '7', label: '7'},
+        { key: '6', label: '6'},
+        { key: '5', label: '5'},
+        { key: '4', label: '4'},
+        { key: '3', label: '3'},
+        { key: '2', label: '2'},
+        { key: '1', label: '1'},
       ],
     },
   },
@@ -307,5 +312,5 @@ export const sortConfig = {
 export const listing = {
   // These should be listing details from public data with schema type: enum
   // SectionDetailsMaybe component shows these on listing page.
-  enumFieldDetails: ['size', 'brand', 'category'],
+  enumFieldDetails: ['category', 'manufacturer', 'category'],
 };
