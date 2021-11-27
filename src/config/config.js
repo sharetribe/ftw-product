@@ -118,10 +118,10 @@ const listing = {
 };
 
 // Address information is used in SEO schema for Organization (http://schema.org/PostalAddress)
-const addressCountry = 'FI';
-const addressRegion = 'Helsinki';
-const postalCode = '00130';
-const streetAddress = 'Erottajankatu 19 B';
+const addressCountry = 'US';
+const addressRegion = 'Utah';
+const postalCode = '84096';
+const streetAddress = '12376 Andreas St';
 
 // Canonical root url is needed in social media sharing and SEO optimization purposes.
 const canonicalRootURL = process.env.REACT_APP_CANONICAL_ROOT_URL;

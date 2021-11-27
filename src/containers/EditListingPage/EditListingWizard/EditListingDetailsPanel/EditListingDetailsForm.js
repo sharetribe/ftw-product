@@ -121,19 +121,19 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
-      const brandConfig = findConfigForSelectFilter('brand', filterConfig);
-      const brandSchemaType = brandConfig ? brandConfig.schemaType : null;
-      const brands = brandConfig && brandConfig.options ? brandConfig.options : [];
-      const brandLabel = intl.formatMessage({
-        id: 'EditListingDetailsForm.brandLabel',
+      const manufacturerConfig = findConfigForSelectFilter('manufacturer', filterConfig);
+      const manufacturerSchemaType = manufacturerConfig ? manufacturerConfig.schemaType : null;
+      const manufacturers = manufacturerConfig && manufacturerConfig.options ? manufacturerConfig.options : [];
+      const manufacturerLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.manufacturerLabel',
       });
-      const brandPlaceholder = intl.formatMessage({
-        id: 'EditListingDetailsForm.brandPlaceholder',
+      const manufacturerPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.manufacturerPlaceholder',
       });
 
-      const brandRequired = required(
+      const manufacturerRequired = required(
         intl.formatMessage({
-          id: 'EditListingDetailsForm.brandRequired',
+          id: 'EditListingDetailsForm.manufacturerRequired',
         })
       );
 
@@ -183,13 +183,13 @@ const EditListingDetailsFormComponent = props => (
           />
 
           <CustomFieldEnum
-            id="brand"
-            name="brand"
-            options={brands}
-            label={brandLabel}
-            placeholder={brandPlaceholder}
-            validate={brandRequired}
-            schemaType={brandSchemaType}
+            id="manufacturer"
+            name="manufacturer"
+            options={manufacturers}
+            label={manufacturerLabel}
+            placeholder={manufacturerPlaceholder}
+            validate={manufacturerRequired}
+            schemaType={manufacturerSchemaType}
           />
 
           <Button
