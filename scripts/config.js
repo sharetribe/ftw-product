@@ -1,4 +1,4 @@
-const inquirer = require('inquirer');
+const inquirer = require('prompts');
 const fs = require('fs');
 const readline = require('readline');
 const chalk = require('chalk');
