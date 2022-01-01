@@ -193,6 +193,7 @@
   "EditListingDetailsForm.updateFailed": "Failed to update listing. Please try again.",
   "EditListingDetailsPanel.createListingTitle": "Sell your Sneaker",
   "EditListingDetailsPanel.title": "Edit details of {listingTitle}",
+  "EditListingDetailsPanel.capture": "Capture Car Info By AI",
   "EditListingFeaturesForm.showListingFailed": "Fetching listing data failed",
   "EditListingFeaturesForm.updateFailed": "Failed to update listing. Please try again.",
   "EditListingFeaturesPanel.createListingTitle": "What features does your item have?",

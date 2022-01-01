@@ -46,7 +46,7 @@ const EditListingDetailsPanel = props => {
   return (
     <div className={classes}>
       <SecondaryButton inProgess={true} className={css.aiButton}>
-        Capture Car Info by AI
+        <FormattedMessage id="EditListingDetailsPanel.capture"/>
       </SecondaryButton>
       <h1 className={css.title}>{panelTitle}</h1>
       <EditListingDetailsForm
