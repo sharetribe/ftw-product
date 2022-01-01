@@ -8,7 +8,7 @@ import { ensureOwnListing } from '../../../../util/data';
 import { LISTING_STATE_DRAFT } from '../../../../util/types';
 
 // Import shared components
-import { ListingLink } from '../../../../components';
+import { ListingLink, SecondaryButton } from '../../../../components';
 
 // Import modules from this directory
 import EditListingDetailsForm from './EditListingDetailsForm';
@@ -45,6 +45,9 @@ const EditListingDetailsPanel = props => {
 
   return (
     <div className={classes}>
+      <SecondaryButton inProgess={true} className={css.aiButton}>
+        <FormattedMessage id="EditListingDetailsPanel.capture"/>
+      </SecondaryButton>
       <h1 className={css.title}>{panelTitle}</h1>
       <EditListingDetailsForm
         className={css.form}
