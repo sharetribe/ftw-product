@@ -79,6 +79,11 @@ export const transactionLineItems = body => {
   return post('/api/transaction-line-items', body);
 };
 
+// use for create pave session
+export const createSession = () => {
+  return post('/api/create-session', {});
+};
+
 // Initiate a privileged transaction.
 //
 // With privileged transitions, the transactions need to be created

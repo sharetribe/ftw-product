@@ -10,6 +10,8 @@ import { LISTING_STATE_DRAFT } from '../../../../util/types';
 // Import shared components
 import { ListingLink, SecondaryButton } from '../../../../components';
 
+import { createSession } from '../../../../util/api';
+
 // Import modules from this directory
 import EditListingDetailsForm from './EditListingDetailsForm';
 import css from './EditListingDetailsPanel.module.css';
@@ -42,11 +44,15 @@ const EditListingDetailsPanel = props => {
   ) : (
     <FormattedMessage id="EditListingDetailsPanel.createListingTitle" />
   );
-
+  let redirect = () => {
+    createSession().then(apiResponse => {
+      window.open(`https://api.paveapi.com/v1/launch/${apiResponse.session_key}`, "_blank")
+    })
+  }
   return (
     <div className={classes}>
-      <SecondaryButton inProgess={true} className={css.aiButton}>
-        <FormattedMessage id="EditListingDetailsPanel.capture"/>
+      <SecondaryButton inProgess={true} className={css.aiButton} onClick={redirect}>
+        <FormattedMessage id="EditListingDetailsPanel.capture" />
       </SecondaryButton>
       <h1 className={css.title}>{panelTitle}</h1>
       <EditListingDetailsForm
