@@ -12,6 +12,7 @@ import {
 import { ResponsiveImage, IconBannedUser, NamedLink } from '../../components/';
 
 import css from './Avatar.module.css';
+import AspectRatioWrapper from '../AspectRatioWrapper/AspectRatioWrapper';
 
 // Responsive image sizes hint
 const AVATAR_SIZES = '40px';
