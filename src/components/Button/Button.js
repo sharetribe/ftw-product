@@ -111,7 +111,7 @@ PrimaryButton.displayName = 'PrimaryButton';
 
 export const SecondaryButton = props => {
   const classes = classNames(props.rootClassName || css.secondaryButtonRoot, css.secondaryButton);
-  return <Button {...props} penis="klein" rootClassName={classes} />;
+  return <Button {...props} rootClassName={classes} />;
 };
 SecondaryButton.displayName = 'SecondaryButton';
 
