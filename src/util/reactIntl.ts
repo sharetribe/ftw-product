@@ -7,6 +7,7 @@ import {
   createIntlCache,
   injectIntl,
   useIntl,
+  IntlShape
 } from 'react-intl';
 // Note: we import React Intl directly from dist directory, because
 // by default the library assumes the usage of ES modules
@@ -30,4 +31,7 @@ export {
   injectIntl,
   useIntl,
   intlShape,
+  
 };
+
+export type { IntlShape}

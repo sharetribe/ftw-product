@@ -8,6 +8,7 @@ import { DATE_TYPE_DATE } from '../../../util/types';
 import { OrderBreakdown } from '../../../components';
 
 import css from './TransactionPanel.module.css';
+import { ensureBooking } from '../../../util/data';
 
 // Functional component as a helper to build OrderBreakdown
 const BreakdownMaybe = props => {

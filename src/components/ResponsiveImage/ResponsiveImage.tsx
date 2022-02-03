@@ -33,26 +33,26 @@
  * sizes, see the API documentation.
  */
 
-import React from 'react';
-import { arrayOf, string } from 'prop-types';
+import React, { FC } from 'react';
 import classNames from 'classnames';
 import { FormattedMessage } from '../../util/reactIntl';
-import { propTypes } from '../../util/types';
 
 import NoImageIcon from './NoImageIcon';
 import css from './ResponsiveImage.module.css';
+import { IImage } from '../../util/types-dev';
 
-const ResponsiveImage = props => {
-  const {
-    className,
-    rootClassName,
-    alt,
-    noImageMessage,
-    image,
-    variants,
-    dimensions,
-    ...rest
-  } = props;
+interface IProps {
+  className?: string | null;
+  rootClassName?: string | null;
+  alt: string;
+  image?: IImage | null;
+  noImageMessage?: string | null;
+  variants: string[];
+  sizes?: string;
+}
+
+const ResponsiveImage: FC<IProps> = props => {
+  const { className, rootClassName, alt, noImageMessage, image, variants, ...rest } = props;
   const classes = classNames(rootClassName || css.root, className);
 
   if (image == null || variants.length === 0) {
@@ -73,7 +73,7 @@ const ResponsiveImage = props => {
 
   const srcSet = variants
     .map(variantName => {
-      const variant = imageVariants[variantName];
+      const variant = imageVariants && imageVariants[variantName];
 
       if (!variant) {
         // Variant not available (most like just not loaded yet)
@@ -91,22 +91,6 @@ const ResponsiveImage = props => {
   };
 
   return <img alt={alt} {...imgProps} />;
-};
-
-ResponsiveImage.defaultProps = {
-  className: null,
-  rootClassName: null,
-  image: null,
-  noImageMessage: null,
-};
-
-ResponsiveImage.propTypes = {
-  className: string,
-  rootClassName: string,
-  alt: string.isRequired,
-  image: propTypes.image,
-  variants: arrayOf(string).isRequired,
-  noImageMessage: string,
 };
 
 export default ResponsiveImage;

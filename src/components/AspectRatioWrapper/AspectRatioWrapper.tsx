@@ -1,10 +1,16 @@
-import React from 'react';
-import { node, number, string } from 'prop-types';
+import React, { FC } from 'react';
 import classNames from 'classnames';
 
 import css from './AspectRatioWrapper.module.css';
 
-const AspectRatioWrapper = props => {
+interface IProps {
+  className?: string;
+  rootClassName?: string;
+  width: number;
+  height: number;
+}
+
+const AspectRatioWrapper: FC<IProps> = props => {
   const { children, className, rootClassName, width, height, ...rest } = props;
   const classes = classNames(rootClassName || css.root, className);
 
@@ -18,20 +24,6 @@ const AspectRatioWrapper = props => {
       </div>
     </div>
   );
-};
-
-AspectRatioWrapper.defaultProps = {
-  className: null,
-  rootClassName: null,
-  children: null,
-};
-
-AspectRatioWrapper.propTypes = {
-  className: string,
-  rootClassName: string,
-  width: number.isRequired,
-  height: number.isRequired,
-  children: node,
 };
 
 export default AspectRatioWrapper;

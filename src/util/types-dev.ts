@@ -22,15 +22,11 @@ import { ReactNode } from 'react';
 import { types as sdkTypes } from './sdkLoader-dev';
 import { Transitions, TxTransitionActors } from './transaction-dev';
 
-const { UUID, LatLng, LatLngBounds, Money } = sdkTypes;
-
-export type Value<T extends string | boolean> = T;
-
 // SDK type instances
-export type UUID = typeof UUID;
-export type LatLng = typeof LatLng;
-export type LatlngBounds = typeof LatLngBounds;
-export type Money = typeof Money;
+export type UUID = typeof sdkTypes.UUID;
+export type LatLng = typeof sdkTypes.LatLng;
+export type LatlngBounds = typeof sdkTypes.LatLngBounds;
+export type Money = typeof sdkTypes.Money;
 
 // Configuration for currency formatting
 export interface ICurrencyConfig {
@@ -62,12 +58,14 @@ export interface IPlace {
 // Denormalised image object
 export interface IImage {
   id: UUID;
-  type: Value<'image'>;
+  type: 'image';
   attributes: {
     variants?: {
-      width: number;
-      height: number;
-      url: string;
+      [variantName: string]: {
+        width: number;
+        height: number;
+        url: string;
+      };
     };
   };
 }
@@ -75,7 +73,7 @@ export interface IImage {
 // Denormalised user object
 export interface ICurrentUser {
   id: UUID;
-  type: Value<'currentUser'>;
+  type: 'currentUser';
   attributes: {
     banned: boolean;
     email: string;
@@ -93,8 +91,8 @@ export interface ICurrentUser {
 }
 
 export interface IUserAttributes {
-  banned: Value<false>;
-  deleted: Value<false>;
+  banned: false;
+  deleted: false;
   profile: {
     displayName: string;
     abbreviatedName: string;
@@ -114,17 +112,17 @@ export interface IAuthorAttributes {
 }
 
 export interface IDeletedUserAttributes {
-  deleted: Value<'true'>;
+  deleted: 'true';
 }
 
 export interface IBannedUserAttributes {
-  banned: Value<'true'>;
+  banned: 'true';
 }
 
 // Denormalised user object
 export interface IUser {
   id: UUID;
-  type: Value<'user'>;
+  type: 'user';
   attributes: IUserAttributes | IAuthorAttributes | IDeletedUserAttributes | IBannedUserAttributes;
   profileImage?: IImage;
 }
@@ -144,7 +142,7 @@ export interface IListingAttributes {
   title: string;
   description?: string;
   geolocation?: LatLng;
-  deleted: Value<false>;
+  deleted: false;
   state?: ListingStates;
   price?: Money;
   publicData?: object;
@@ -172,7 +170,7 @@ export interface IOwnListingAttributes {
   title: string;
   description?: string;
   geolocation?: LatLng;
-  deleted: Value<false>;
+  deleted: false;
   state: ListingStates;
   price?: Money;
   availabilityPlan?: IAvailabilityPlan;
@@ -180,13 +178,13 @@ export interface IOwnListingAttributes {
 }
 
 export interface IDeletedListingAttributes {
-  deleted: Value<true>;
+  deleted: true;
 }
 
 // Denormalised listing object
 export interface IListing {
   id: UUID;
-  type: Value<'listing'>;
+  type: 'listing';
   attribute: IListingAttributes | IDeletedListingAttributes;
   author?: IUser;
   images?: Array<IImage>;
@@ -195,7 +193,7 @@ export interface IListing {
 // Denormalised ownListing object
 export interface IOwnListing {
   id: UUID;
-  type: Value<'ownListing'>;
+  type: 'ownListing';
   attributes: IOwnListingAttributes | IDeletedListingAttributes;
   author: ICurrentUser;
   images: Array<IImage>;
@@ -215,7 +213,7 @@ export type BookingState =
 // Denormalised booking object
 export interface IBooking {
   id: UUID;
-  type: Value<'booking'>;
+  type: 'booking';
   attributes?: {
     end: Date;
     start: Date;
@@ -232,7 +230,7 @@ export type TimeSlots = typeof TIME_SLOT_DAY;
 // Denormalised time slot object
 export interface ITimeSlot {
   id: UUID;
-  type: Value<'timeSlot'>;
+  type: 'timeSlot';
   attributes?: {
     type: TimeSlots;
     end: Date;
@@ -243,7 +241,7 @@ export interface ITimeSlot {
 // Denormalised availability exception object
 export interface IAvailabilityException {
   id: UUID;
-  type: Value<'availabilityException'>;
+  type: 'availabilityException';
   attributes?: {
     end: Date;
     start: Date;
@@ -283,7 +281,7 @@ export interface IReview {
 // A Stripe account entity
 export interface IStripeAccount {
   id: UUID;
-  type: Value<'stripeAccount'>;
+  type: 'stripeAccount';
   attributes?: {
     stripeAccountId: string;
     stripeAccountData?: string;
@@ -292,9 +290,9 @@ export interface IStripeAccount {
 
 export interface IDefaultPaymentMethod {
   id: UUID;
-  type: Value<'stripePaymentMethod'>;
+  type: 'stripePaymentMethod';
   attributes: {
-    type: Value<'stripe-payment-method/card'>;
+    type: 'stripe-payment-method/card';
     stripePaymentMethodId: string;
     card: {
       brand: string;
@@ -357,7 +355,7 @@ export type LineItems = ILineItem[];
 // Denormalised transaction object
 export interface ITransaction {
   id: UUID;
-  type: Value<'transaction'>;
+  type: 'transaction';
   attributes?: {
     createdAt?: Date;
     lastTransitionedAt: Date;
@@ -381,7 +379,7 @@ export interface ITransaction {
 // Denormalised transaction message
 export interface IMessage {
   id: UUID;
-  type: Value<'Message'>;
+  type: 'Message';
   attributes: {
     createdAt: Date;
     content: string;
@@ -476,7 +474,7 @@ export interface IApiError {
 
 // Storable error prop type. (Error object should not be stored as it is.)
 export interface IError {
-  type: Value<'error'>;
+  type: 'error';
   name: string;
   message?: string;
   status?: number;

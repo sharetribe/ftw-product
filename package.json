@@ -16,6 +16,7 @@
     "@types/prop-types": "^15.7.4",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/react-intl": "^3.0.0",
     "@types/react-router-dom": "^5.3.3",
     "array-includes": "^3.1.4",
     "array.prototype.find": "^2.1.2",
@@ -65,6 +66,7 @@
     "react-router-dom": "^5.2.0",
     "react-with-direction": "^1.4.0",
     "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
     "seedrandom": "^3.0.5",
     "sharetribe-flex-sdk": "^1.15.0",
@@ -83,7 +85,8 @@
     "enzyme-to-json": "^3.6.2",
     "inquirer": "^8.2.0",
     "nodemon": "^2.0.15",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript-plugin-css-modules": "^3.4.0"
   },
   "resolutions": {
     "react-dates/lodash": "^4.17.21",
@@ -136,5 +139,10 @@
     "singleQuote": true,
     "trailingComma": "es5",
     "proseWrap": "always"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
   }
 }

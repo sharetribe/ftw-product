@@ -13,7 +13,7 @@ import * as pageReducers from './containers/reducers';
 const appReducer = combineReducers({ ...globalReducers, ...pageReducers });
 
 const createReducer = () => {
-  return (state, action) => {
+  return (state: FixMeLater, action: FixMeLater) => {
     const appState = action.type === USER_LOGOUT ? undefined : state;
 
     // Clear sessionStorage when logging out.

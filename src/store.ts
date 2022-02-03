@@ -14,8 +14,8 @@ export default function configureStore(initialState = {}, sdk = null, analyticsH
 
   // Enable Redux Devtools in client side dev mode.
   const composeEnhancers =
-    config.dev && typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-      ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    config.dev && typeof window === 'object' && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+      ? (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
       : compose;
 
   const enhancer = composeEnhancers(applyMiddleware(...middlewares));

@@ -1,6 +1,3 @@
-import { any } from 'prop-types';
-import { ensureTransaction } from './data';
-
 /**
  * Transitions
  *

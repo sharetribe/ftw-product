@@ -63,6 +63,8 @@ export const EditListingDeliveryFormComponent = props => (
       // if this fix causes trouble in future dependency updates.
       const { pauseValidation, resumeValidation } = form;
       pauseValidation(false);
+
+      // eslint-disable-next-line
       useEffect(() => resumeValidation(), [values]);
 
       const shippingEnabled = values.deliveryOptions?.includes('shipping');
