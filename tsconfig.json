@@ -1,34 +1,31 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "esnext",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
     "isolatedModules": true,
+    "resolveJsonModule": true,
     "noEmit": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "plugins": [
       {
         "name": "typescript-plugin-css-modules"
       }
     ],
-    "strict": true
+    "sourceMap": true,
+    "declaration": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "incremental": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "src",
-    "decs.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "include": ["src", "decs.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "build"]
 }
