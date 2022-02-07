@@ -34,6 +34,7 @@ import * as log from './util/log';
 import { LoggingAnalyticsHandler, GoogleAnalyticsHandler } from './analytics/handlers';
 
 import './styles/marketplaceDefaults.css';
+import './styles/faveStyles.css';
 
 const render = (store, shouldHydrate) => {
   // If the server already loaded the auth information, render the app

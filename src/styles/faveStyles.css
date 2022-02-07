@@ -1,0 +1,130 @@
+/* @font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/Proxima-Nova-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/Proxima-Nova-Bold.otf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: url('/assets/fonts/Greycliff-ExtraBold.otf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+} */
+
+:root {
+  /* Fonts */
+  /* --font-default: 'Proxima Nova';
+  --font-headline: 'Greycliff'; */
+  /* --- */
+
+  /* Colors */
+  --fave-color-primary-default: #632dff;
+  --fave-color-primary-s900: #3f00ee;
+  --fave-color-primary-s800: #4909ff;
+  --fave-color-primary-s700: #551aff;
+  --fave-color-primary-s600: #5b23fe;
+  --fave-color-primary-s500: #632dff;
+  --fave-color-primary-s400: #8052ff;
+  --fave-color-primary-s300: #9b73ff;
+  --fave-color-primary-s200: #ba9eff;
+  --fave-color-primary-s100: #d6c5fe;
+  --fave-color-primary-a200: #f9f8ff;
+
+  --fave-color-secondary-default: #f7d65f;
+  --fave-color-secondary-s900: #ed752f;
+  --fave-color-secondary-s800: #ef9236;
+  --fave-color-secondary-s700: #f3a339;
+  --fave-color-secondary-s600: #f3b640;
+  --fave-color-secondary-s500: #f4c343;
+  --fave-color-secondary-s400: #f4cb45;
+  --fave-color-secondary-s300: #f7d65f;
+  --fave-color-secondary-s200: #fae189;
+  --fave-color-secondary-s100: #fae189;
+
+  --fave-color-error-s900: #d32819;
+  --fave-color-error-s800: #ce2214;
+  --fave-color-error-s700: #d32819;
+  --fave-color-error-s600: #d8301e;
+  --fave-color-error-s500: #dc3522;
+  --fave-color-error-s400: #e15343;
+  --fave-color-error-s300: #e77264;
+  --fave-color-error-s200: #ee9a91;
+  --fave-color-error-s100: #f5c2bd;
+
+  --fave-fave-color-success-s900: #004716;
+  --fave-color-success-s800: #005a23;
+  --fave-color-success-s700: #00642a;
+  --fave-color-success-s600: #006f31;
+  --fave-color-success-s500: #007737;
+  --fave-color-success-s400: #268b55;
+  --fave-color-success-s300: #4da073;
+  --fave-color-success-s200: #80bb9b;
+  --fave-color-success-s100: #e0efe7;
+
+  --fave-color-black-s900: #101010;
+  --fave-color-black-s400: #343434;
+  --fave-color-black-s300: #585858;
+  --fave-color-black-s200: #888888;
+  --fave-color-black-s100: #b7b7b7;
+  --fave-color-black-s50: #e1e1e1;
+
+  --fave-color-white: #faf9f6;
+  --color-white-pure: #ffffff;
+
+  --fave-color-input: #f0eef3;
+  --fave-color-border: #e1e1e1;
+
+  --fave-color-blue-s900: #05a6ca;
+  --fave-color-blue-s500: #00a2c7;
+  --fave-color-blue-s200: #77cde1;
+
+  --fave-color-pink-s900: #d62ae4;
+  --fave-color-pink-s500: #d62ae4;
+  --fave-color-pink-s200: #eb95f2;
+  /* --- */
+
+  /* Gradients */
+  --gradient-purple: linear-gradient(
+    90deg,
+    var(--color-primary-s400) 0%,
+    var(--color-primary-s500) 100%
+  );
+
+  --gradient-lightpurple: linear-gradient(
+    90deg,
+    var(--color-primary-a200) 0%,
+    var(--color-primary-white-pure) 100%
+  );
+
+  --gradient-success: linear-gradient(
+    90deg,
+    var(--color-success-s600) 0%,
+    var(--color-success-s300) 100%
+  );
+
+  --gradient-error: linear-gradient(
+    90deg,
+    var(--color-error-s600) 0%,
+    var(--color-error-s200) 100%
+  );
+
+  --gradient-blue: linear-gradient(90deg, var(--color-blue-s500) 0%, var(--color-blue-s200) 100%);
+  /* --- */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

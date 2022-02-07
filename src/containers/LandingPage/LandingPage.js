@@ -25,6 +25,7 @@ import SectionHero from './SectionHero/SectionHero';
 import SectionHowItWorks from './SectionHowItWorks/SectionHowItWorks';
 import SectionFilteredSearches from './SectionFilteredSearches/SectionFilteredSearches';
 import css from './LandingPage.module.css';
+import HeroImageSlider from './HeroImageSlider/HeroImageSlider';
 
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
@@ -62,12 +63,13 @@ export const LandingPageComponent = props => {
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
           <div className={css.heroContainer}>
-            <SectionHero
+            {/* <SectionHero
               rootClassName={css.heroRoot}
               className={css.hero}
               history={history}
               location={location}
-            />
+            /> */}
+            <HeroImageSlider />
           </div>
           <ul className={css.sections}>
             <li className={css.section}>
@@ -115,10 +117,6 @@ const mapStateToProps = state => {
 // lifecycle hook.
 //
 // See: https://github.com/ReactTraining/react-router/issues/4671
-const LandingPage = compose(
-  withRouter,
-  connect(mapStateToProps),
-  injectIntl
-)(LandingPageComponent);
+const LandingPage = compose(withRouter, connect(mapStateToProps), injectIntl)(LandingPageComponent);
 
 export default LandingPage;

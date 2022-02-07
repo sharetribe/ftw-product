@@ -1,0 +1,142 @@
+.root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-x;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.controlItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.controlLinks {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.controlLinks > span {
+  height: 6px;
+  width: 18px;
+  margin: 0 6px;
+  border-radius: 6px;
+  background: var(--fave-color-secondary-default);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.imagesContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transition: left 0.6s ease-in;
+}
+
+.sliderItem {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.sliderItemContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 4rem);
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+
+  @media only screen and (min-width: 768px) {
+    width: max-content;
+    width: 512px;
+    bottom: 2rem;
+    left: 4rem;
+    transform: translateX(0%);
+  }
+}
+
+.sliderItemContent > h3 {
+  color: var(--fave-color-white);
+  margin: 0;
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sliderItemContent > p {
+  color: var(--fave-color-white);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.sliderItemContent > a {
+  text-decoration: none;
+  max-width: max-content;
+  color: var(--fave-color-white);
+  font-size: 1.2rem;
+  background-color: var(--fave-color-primary-default);
+  padding: 0.5em 1em;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .controlItem:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .controlLinks > span:hover {
+    background: var(--fave-color-secondary-s900);
+  }
+
+  .sliderItemContent > a:hover {
+    background-color: var(--fave-color-secondary-default);
+    color: var(--fave-color-black);
+  }
+}
