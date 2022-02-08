@@ -19,9 +19,10 @@ interface Props {
   sliderData: SliderElement[];
   /** In seconds */
   slideInterval?: number;
+  infinite?: boolean;
 }
 
-const HeroImageSlider: FC<Props> = ({ sliderData, slideInterval }) => {
+const HeroImageSlider: FC<Props> = ({ sliderData, slideInterval, infinite = false }) => {
   const imageRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [rootWidth, setRootWidth] = useState(0);
@@ -29,21 +30,21 @@ const HeroImageSlider: FC<Props> = ({ sliderData, slideInterval }) => {
   const slide = (direction: -1 | 1): void => {
     if (direction > 0) {
       if (currentIndex >= sliderData.length - 1) {
-        setCurrentIndex(0);
+        infinite && setCurrentIndex(0);
         return;
       }
       setCurrentIndex(currentIndex + 1);
     }
     if (direction < 0) {
       if (currentIndex < 1) {
-        setCurrentIndex(sliderData.length - 1);
+        infinite && setCurrentIndex(sliderData.length - 1);
         return;
       }
       setCurrentIndex(currentIndex - 1);
     }
   };
 
-  const slideCallback = useCallback(slide, [currentIndex, sliderData.length]);
+  const slideCallback = useCallback(slide, [currentIndex, sliderData.length, infinite]);
 
   useEffect(() => {
     const imageRefCurrent = imageRef.current;

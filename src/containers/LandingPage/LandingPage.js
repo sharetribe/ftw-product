@@ -70,7 +70,7 @@ export const LandingPageComponent = props => {
               history={history}
               location={location}
             /> */}
-            <HeroImageSlider sliderData={sliderDataFromSource['sliderData']} />
+            <HeroImageSlider sliderData={sliderDataFromSource['sliderData']} infinite />
           </div>
           <ul className={css.sections}>
             <li className={css.section}>
