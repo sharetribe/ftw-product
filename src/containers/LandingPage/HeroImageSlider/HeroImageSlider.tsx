@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion/dist/framer-motion';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-import css from './HeroImageSlider.module.css';
+import css from './HeroImageSlider.module.scss';
 
 interface SliderElement {
   id: string;

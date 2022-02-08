@@ -26,7 +26,7 @@
   height: 100%;
   width: 2rem;
   font-size: 2rem;
-  color: #fff;
+  color: var(--fave-color-white);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   cursor: pointer;
@@ -52,7 +52,7 @@
   border-radius: 6px;
   background: var(--fave-color-secondary-default);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in;
   margin: 4px 6px;
 }
 
