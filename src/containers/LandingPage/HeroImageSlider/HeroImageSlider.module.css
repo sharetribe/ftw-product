@@ -35,22 +35,25 @@
 
 .controlLinks {
   position: absolute;
+  max-width: 198px;
   left: 50%;
   transform: translateX(-50%);
-  top: 2rem;
+  top: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .controlLinks > span {
   height: 6px;
   width: 18px;
-  margin: 0 6px;
   border-radius: 6px;
   background: var(--fave-color-secondary-default);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  margin: 4px 6px;
 }
 
 .imagesContainer {

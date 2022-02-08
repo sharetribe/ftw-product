@@ -26,6 +26,7 @@ import SectionHowItWorks from './SectionHowItWorks/SectionHowItWorks';
 import SectionFilteredSearches from './SectionFilteredSearches/SectionFilteredSearches';
 import css from './LandingPage.module.css';
 import HeroImageSlider from './HeroImageSlider/HeroImageSlider';
+import sliderDataFromSource from './HeroImageSlider/data.json';
 
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
@@ -69,7 +70,7 @@ export const LandingPageComponent = props => {
               history={history}
               location={location}
             /> */}
-            <HeroImageSlider />
+            <HeroImageSlider sliderData={sliderDataFromSource['sliderData']} />
           </div>
           <ul className={css.sections}>
             <li className={css.section}>

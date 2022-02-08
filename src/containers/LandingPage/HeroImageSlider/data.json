@@ -1,32 +1,58 @@
 {
   "sliderData": [
     {
-      "id": 1,
+      "id": "1",
       "imageURL": "https://images.unsplash.com/photo-1548778052-311f4bc2b502?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "alt": "Something related to music",
       "title": "The title of something",
       "text": "This is a discription of something",
-      "cta": "Learn More"
+      "cta": "Browse Products",
+      "link": "/s"
     },
     {
-      "id": 2,
+      "id": "2",
       "imageURL": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "alt": "Something related to music",
       "title": "The title of something else",
       "text": "This is a discription of something else",
-      "cta": "Learn More"
+      "cta": "Learn More",
+      "link": "/"
     },
     {
-      "id": 3,
+      "id": "3",
       "imageURL": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "alt": "Something related to music",
       "title": "The title of something else",
       "text": "This is a discription of something else",
-      "cta": "Learn More"
+      "cta": "Learn More",
+      "link": "/"
     },
     {
-      "id": 4,
+      "id": "4",
       "imageURL": "https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+      "alt": "Something related to music",
       "title": "The title of something else",
       "text": "This is a discription of something else",
-      "cta": "Learn More"
+      "cta": "Learn More",
+      "link": "/"
+    },
+    {
+      "id": "5",
+      "imageURL": "https://images.pexels.com/photos/374703/pexels-photo-374703.jpeg?cs=srgb&dl=pexels-burst-374703.jpg&fm=jpg",
+      "alt": "Something related to music",
+      "title": "The title of something else",
+      "text": "This is a discription of something else",
+      "cta": "Learn More",
+      "link": "/"
+    },
+    {
+      "id": "6",
+      "alt": "Something related to music",
+      "imageURL": "https://images.unsplash.com/photo-1595971294624-80bcf0d7eb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+      "title": "The title of something else",
+      "text": "This is a discription of something else",
+      "cta": "Learn More",
+      "link": "/"
     }
   ]
 }

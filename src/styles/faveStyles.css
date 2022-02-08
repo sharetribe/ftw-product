@@ -1,6 +1,6 @@
-/* @font-face {
+@font-face {
   font-family: 'Proxima Nova';
-  src: url('/assets/fonts/Proxima-Nova-Regular.otf');
+  src: url('/src/assets/fonts/Proxima-Nova-Regular.otf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/assets/fonts/Proxima-Nova-Bold.otf');
+  src: url('/src/assets/fonts/Proxima-Nova-Bold.otf');
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -16,16 +16,16 @@
 
 @font-face {
   font-family: 'Greycliff';
-  src: url('/assets/fonts/Greycliff-ExtraBold.otf');
+  src: url('/src/assets/fonts/Greycliff-ExtraBold.otf');
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-} */
+}
 
 :root {
   /* Fonts */
-  /* --font-default: 'Proxima Nova';
-  --font-headline: 'Greycliff'; */
+  --fave-font-default: 'Proxima Nova';
+  --fave-font-headline: 'Greycliff';
   /* --- */
 
   /* Colors */
