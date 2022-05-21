@@ -176,7 +176,7 @@
   "EditListingDetailsForm.descriptionRequired": "A description is required.",
   "EditListingDetailsForm.maxLength": "Must be {maxLength} characters or less",
   "EditListingDetailsForm.showListingFailed": "Fetching listing data failed",
-  "EditListingDetailsForm.sizeLabel": "Sorority",
+  "EditListingDetailsForm.sizeLabel": "Size",
   "EditListingDetailsForm.sizePlaceholder": "Choose…",
   "EditListingDetailsForm.sizeRequired": "You need to select a size.",
 

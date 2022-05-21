@@ -37,7 +37,7 @@ export const filters = [
   {
     id: 'category',
     label: 'Category',
-    type: 'SelectSingleFilter',
+    type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_category'],
     config: {
@@ -49,15 +49,18 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'men', label: 'Men' },
-        { key: 'women', label: 'Women' },
-        { key: 'kids', label: 'Kids' },
+        { key: 'hatsAndHeadwear', label: 'Hats & Headwear' },
+        { key: 'jacketsAndSportswear', label: 'Jackets & Sportswear' },
+        { key: 'shirts', label: 'Shirts' },
+        { key: 'sweatsAndCasual', label: 'Sweats & Casual' },
+        { key: 'sweatshirts', label: 'Sweatshirts' },
+        { key: 'accessories', label: 'Accessories' },
       ],
     },
   },
   {
     id: 'size',
-    label: 'Size (US)',
+    label: 'Size',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_size'],
@@ -73,15 +76,10 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: '4', label: '4' },
-        { key: '5', label: '5' },
-        { key: '6', label: '6' },
-        { key: '7', label: '7' },
-        { key: '8', label: '8' },
-        { key: '9', label: '9' },
-        { key: '10', label: '10' },
-        { key: '11', label: '11' },
-        { key: '12', label: '12' },
+        { key: 'small', label: 'S' },
+        { key: 'medium', label: 'M' },
+        { key: 'large', label: 'L' },
+        { key: 'extraLarge', label: 'XL' },
       ],
     },
   },

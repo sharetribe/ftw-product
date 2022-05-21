@@ -38,16 +38,28 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
-                    "key": "men",
-                    "label": "Men",
+                    "key": "hatsAndHeadwear",
+                    "label": "Hats & Headwear",
                   },
                   Object {
-                    "key": "women",
-                    "label": "Women",
+                    "key": "jacketsAndSportswear",
+                    "label": "Jackets & Sportswear",
                   },
                   Object {
-                    "key": "kids",
-                    "label": "Kids",
+                    "key": "shirts",
+                    "label": "Shirts",
+                  },
+                  Object {
+                    "key": "sweatsAndCasual",
+                    "label": "Sweats & Casual",
+                  },
+                  Object {
+                    "key": "sweatshirts",
+                    "label": "Sweatshirts",
+                  },
+                  Object {
+                    "key": "accessories",
+                    "label": "Accessories",
                   },
                 ],
                 "schemaType": "enum",
@@ -58,7 +70,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "queryParamNames": Array [
                 "pub_category",
               ],
-              "type": "SelectSingleFilter",
+              "type": "SelectMultipleFilter",
             }
           }
           getHandleChangedValueFn={[Function]}
@@ -77,47 +89,27 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
-                    "key": "4",
-                    "label": "4",
+                    "key": "small",
+                    "label": "S",
                   },
                   Object {
-                    "key": "5",
-                    "label": "5",
+                    "key": "medium",
+                    "label": "M",
                   },
                   Object {
-                    "key": "6",
-                    "label": "6",
+                    "key": "large",
+                    "label": "L",
                   },
                   Object {
-                    "key": "7",
-                    "label": "7",
-                  },
-                  Object {
-                    "key": "8",
-                    "label": "8",
-                  },
-                  Object {
-                    "key": "9",
-                    "label": "9",
-                  },
-                  Object {
-                    "key": "10",
-                    "label": "10",
-                  },
-                  Object {
-                    "key": "11",
-                    "label": "11",
-                  },
-                  Object {
-                    "key": "12",
-                    "label": "12",
+                    "key": "extraLarge",
+                    "label": "XL",
                   },
                 ],
                 "schemaType": "enum",
               },
               "group": "primary",
               "id": "size",
-              "label": "Size (US)",
+              "label": "Size",
               "queryParamNames": Array [
                 "pub_size",
               ],
@@ -316,47 +308,27 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "config": Object {
                   "options": Array [
                     Object {
-                      "key": "4",
-                      "label": "4",
+                      "key": "small",
+                      "label": "S",
                     },
                     Object {
-                      "key": "5",
-                      "label": "5",
+                      "key": "medium",
+                      "label": "M",
                     },
                     Object {
-                      "key": "6",
-                      "label": "6",
+                      "key": "large",
+                      "label": "L",
                     },
                     Object {
-                      "key": "7",
-                      "label": "7",
-                    },
-                    Object {
-                      "key": "8",
-                      "label": "8",
-                    },
-                    Object {
-                      "key": "9",
-                      "label": "9",
-                    },
-                    Object {
-                      "key": "10",
-                      "label": "10",
-                    },
-                    Object {
-                      "key": "11",
-                      "label": "11",
-                    },
-                    Object {
-                      "key": "12",
-                      "label": "12",
+                      "key": "extraLarge",
+                      "label": "XL",
                     },
                   ],
                   "schemaType": "enum",
                 },
                 "group": "primary",
                 "id": "size",
-                "label": "Size (US)",
+                "label": "Size",
                 "queryParamNames": Array [
                   "pub_size",
                 ],
