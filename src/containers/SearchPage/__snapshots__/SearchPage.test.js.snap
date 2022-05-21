@@ -143,6 +143,98 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                     "key": "alphaEpsilonPhi",
                     "label": "Alpha Epsilon Phi",
                   },
+                  Object {
+                    "key": "alphaGammaDelta",
+                    "label": "Alpha Gamma Delta",
+                  },
+                  Object {
+                    "key": "alphaOmicronPi",
+                    "label": "Alpha Omicron Pi",
+                  },
+                  Object {
+                    "key": "alphaPhi",
+                    "label": "Alpha Phi",
+                  },
+                  Object {
+                    "key": "alphaSigmaAlpha",
+                    "label": "Alpha Sigma Alpha",
+                  },
+                  Object {
+                    "key": "alphaSigmaTau",
+                    "label": "Alpha Sigma Tau",
+                  },
+                  Object {
+                    "key": "alphaXiDelta",
+                    "label": "Alpha Xi Delta",
+                  },
+                  Object {
+                    "key": "chiOmega",
+                    "label": "Chi Omega",
+                  },
+                  Object {
+                    "key": "deltaDeltaDelta",
+                    "label": "Delta Delta Delta",
+                  },
+                  Object {
+                    "key": "deltaGamma",
+                    "label": "Delta Gamma",
+                  },
+                  Object {
+                    "key": "deltaPhiEpsilon",
+                    "label": "Delta Phi Epsilon",
+                  },
+                  Object {
+                    "key": "deltaZeta",
+                    "label": "Delta Zeta",
+                  },
+                  Object {
+                    "key": "gammaPhiBeta",
+                    "label": "Gamma Phi Beta",
+                  },
+                  Object {
+                    "key": "kappaAlphaTheta",
+                    "label": "Kappa Alpha Theta",
+                  },
+                  Object {
+                    "key": "kappaDelta",
+                    "label": "Kappa Delta",
+                  },
+                  Object {
+                    "key": "kappaKappaGamma",
+                    "label": "Kappa Kappa Gamma",
+                  },
+                  Object {
+                    "key": "phiMu",
+                    "label": "Phi Mu",
+                  },
+                  Object {
+                    "key": "phiSigmaSigma",
+                    "label": "Phi Sigma Sigma",
+                  },
+                  Object {
+                    "key": "piBetaPhi",
+                    "label": "Pi Beta Phi",
+                  },
+                  Object {
+                    "key": "sigmaDeltaTau",
+                    "label": "Sigma Delta Tau",
+                  },
+                  Object {
+                    "key": "sigmaKappa",
+                    "label": "Sigma Kappa",
+                  },
+                  Object {
+                    "key": "sigmaSigmaSigma",
+                    "label": "Sigma Sigma Sigma",
+                  },
+                  Object {
+                    "key": "thetaPhiAlpha",
+                    "label": "Theta Phi Alpha",
+                  },
+                  Object {
+                    "key": "zetaTauAlpha",
+                    "label": "Zeta Tau Alpha",
+                  },
                 ],
                 "schemaType": "enum",
               },
@@ -159,7 +251,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
           idPrefix="SearchFiltersMobile"
           initialValues={[Function]}
           isDesktop={true}
-          key="SearchFiltersMobile.brand"
+          key="SearchFiltersMobile.sorority"
           liveEdit={true}
           showAsPopup={false}
           urlQueryParams={Object {}}
@@ -242,19 +334,31 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               Object {
                 "config": Object {
                   "options": Array [
-                    Object {
-                      "key": "men",
-                      "label": "Men",
-                    },
-                    Object {
-                      "key": "women",
-                      "label": "Women",
-                    },
-                    Object {
-                      "key": "kids",
-                      "label": "Kids",
-                    },
-                  ],
+                  Object {
+                    "key": "hatsAndHeadwear",
+                    "label": "Hats & Headwear",
+                  },
+                  Object {
+                    "key": "jacketsAndSportswear",
+                    "label": "Jackets & Sportswear",
+                  },
+                  Object {
+                    "key": "shirts",
+                    "label": "Shirts",
+                  },
+                  Object {
+                    "key": "sweatsAndCasual",
+                    "label": "Sweats & Casual",
+                  },
+                  Object {
+                    "key": "sweatshirts",
+                    "label": "Sweatshirts",
+                  },
+                  Object {
+                    "key": "accessories",
+                    "label": "Accessories",
+                  },
+                ],
                   "schemaType": "enum",
                 },
                 "group": "primary",
@@ -263,7 +367,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "queryParamNames": Array [
                   "pub_category",
                 ],
-                "type": "SelectSingleFilter",
+                "type": "SelectMultipleFilter",
               }
             }
             getHandleChangedValueFn={[Function]}
@@ -332,7 +436,99 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                     "key": "alphaEpsilonPhi",
                     "label": "Alpha Epsilon Phi",
                   },
-                  ],
+                  Object {
+                    "key": "alphaGammaDelta",
+                    "label": "Alpha Gamma Delta",
+                  },
+                  Object {
+                    "key": "alphaOmicronPi",
+                    "label": "Alpha Omicron Pi",
+                  },
+                  Object {
+                    "key": "alphaPhi",
+                    "label": "Alpha Phi",
+                  },
+                  Object {
+                    "key": "alphaSigmaAlpha",
+                    "label": "Alpha Sigma Alpha",
+                  },
+                  Object {
+                    "key": "alphaSigmaTau",
+                    "label": "Alpha Sigma Tau",
+                  },
+                  Object {
+                    "key": "alphaXiDelta",
+                    "label": "Alpha Xi Delta",
+                  },
+                  Object {
+                    "key": "chiOmega",
+                    "label": "Chi Omega",
+                  },
+                  Object {
+                    "key": "deltaDeltaDelta",
+                    "label": "Delta Delta Delta",
+                  },
+                  Object {
+                    "key": "deltaGamma",
+                    "label": "Delta Gamma",
+                  },
+                  Object {
+                    "key": "deltaPhiEpsilon",
+                    "label": "Delta Phi Epsilon",
+                  },
+                  Object {
+                    "key": "deltaZeta",
+                    "label": "Delta Zeta",
+                  },
+                  Object {
+                    "key": "gammaPhiBeta",
+                    "label": "Gamma Phi Beta",
+                  },
+                  Object {
+                    "key": "kappaAlphaTheta",
+                    "label": "Kappa Alpha Theta",
+                  },
+                  Object {
+                    "key": "kappaDelta",
+                    "label": "Kappa Delta",
+                  },
+                  Object {
+                    "key": "kappaKappaGamma",
+                    "label": "Kappa Kappa Gamma",
+                  },
+                  Object {
+                    "key": "phiMu",
+                    "label": "Phi Mu",
+                  },
+                  Object {
+                    "key": "phiSigmaSigma",
+                    "label": "Phi Sigma Sigma",
+                  },
+                  Object {
+                    "key": "piBetaPhi",
+                    "label": "Pi Beta Phi",
+                  },
+                  Object {
+                    "key": "sigmaDeltaTau",
+                    "label": "Sigma Delta Tau",
+                  },
+                  Object {
+                    "key": "sigmaKappa",
+                    "label": "Sigma Kappa",
+                  },
+                  Object {
+                    "key": "sigmaSigmaSigma",
+                    "label": "Sigma Sigma Sigma",
+                  },
+                  Object {
+                    "key": "thetaPhiAlpha",
+                    "label": "Theta Phi Alpha",
+                  },
+                  Object {
+                    "key": "zetaTauAlpha",
+                    "label": "Zeta Tau Alpha",
+                  },
+                ],
                   "schemaType": "enum",
                 },
                 "group": "primary",
@@ -347,7 +543,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
             getHandleChangedValueFn={[Function]}
             idPrefix="SearchFiltersMobile"
             initialValues={[Function]}
-            key="SearchFiltersMobile.brand"
+            key="SearchFiltersMobile.sorority"
             liveEdit={true}
             showAsPopup={false}
             urlQueryParams={Object {}}

@@ -200,6 +200,144 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
       >
         Alpha Epsilon Phi
       </option>
+      <option
+        key="alphaGammaDelta"
+        value="Alpha Gamma Delta"
+      >
+        Alpha Gamma Delta
+      </option>
+      <option
+        key="alphaOmicronPi"
+        value="Alpha Omicron Pi"
+      >
+        Alpha Omicron Pi
+      </option>
+      <option
+        key="alphaPhi"
+        value="Alpha Phi"
+      >
+        Alpha Phi
+      </option>
+      <option
+        key="alphaSigmaAlpha"
+        value="Alpha Sigma Alpha"
+      >
+        Alpha Sigma Alpha
+      </option>
+      <option
+        key="alphaSigmaTau"
+        value="Alpha Sigma Tau"
+      >
+        Alpha Sigma Tau
+      </option>
+      <option
+        key="alphaXiDelta"
+        value="Alpha Xi Delta"
+      >
+        Alpha Xi Delta
+      </option>
+      <option
+        key="chiOmega"
+        value="Chi Omega"
+      >
+        Chi Omega
+      </option>
+      <option
+        key="deltaDeltaDelta"
+        value="Delta Delta Delta"
+      >
+        Delta Delta Delta
+      </option>
+      <option
+        key="deltaGamma"
+        value="Delta Gamma"
+      >
+        Delta Gamma
+      </option>
+      <option
+        key="deltaPhiEpsilon"
+        value="Delta Phi Epsilon"
+      >
+        Delta Phi Epsilon
+      </option>
+      <option
+        key="deltaZeta"
+        value="Delta Zeta"
+      >
+        Delta Zeta
+      </option>
+      <option
+        key="gammaPhiBeta"
+        value="Gamma Phi Beta"
+      >
+        Gamma Phi Beta
+      </option>
+      <option
+        key="kappaAlphaTheta"
+        value="Kappa Alpha Theta"
+      >
+        Kappa Alpha Theta
+      </option>
+      <option
+        key="kappaDelta"
+        value="Kappa Delta"
+      >
+        Kappa Delta
+      </option>
+      <option
+        key="kappaKappaGamma"
+        value="Kappa Kappa Gamma"
+      >
+        Kappa Kappa Gamma
+      </option>
+      <option
+        key="phiMu"
+        value="Phi Mu"
+      >
+        Phi Mu
+      </option>
+      <option
+        key="phiSigmaSigma"
+        value="Phi Sigma Sigma"
+      >
+        Phi Sigma Sigma
+      </option>
+      <option
+        key="piBetaPhi"
+        value="Pi Beta Phi"
+      >
+        Pi Beta Phi
+      </option>
+      <option
+        key="sigmaDeltaTau"
+        value="Sigma Delta Tau"
+      >
+        Sigma Delta Tau
+      </option>
+      <option
+        key="sigmaKappa"
+        value="Sigma Kappa"
+      >
+        Sigma Kappa
+      </option>
+      <option
+        key="sigmaSigmaSigma"
+        value="Sigma Sigma Sigma"
+      >
+        Sigma Sigma Sigma
+      </option>
+      <option
+        key="thetaPhiAlpha"
+        value="Theta Phi Alpha"
+      >
+        Theta Phi Alpha
+      </option>
+      <option
+        key="zetaTauAlpha"
+        value="Zeta Tau Alpha"
+      >
+        Zeta Tau Alpha
+      </option>
     </select>
   </div>
   <button
