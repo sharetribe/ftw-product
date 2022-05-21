@@ -73,22 +73,40 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         EditListingDetailsForm.categoryPlaceholder
       </option>
       <option
-        key="men"
-        value="men"
+        key="hatsAndHeadwear"
+        value="Hats & Headwear"
       >
-        Men
+        Hats & Headwear
       </option>
       <option
-        key="women"
-        value="women"
+        key="jacketsAndSportswear"
+        value="Jackets & Sportswear"
       >
-        Women
+        Jackets & Sportswear
       </option>
       <option
-        key="kids"
-        value="kids"
+        key="shirts"
+        value="Shirts"
       >
-        Kids
+        Shirts
+      </option>
+      <option
+        key="sweatsAndCasual"
+        value="Sweats & Casual"
+      >
+        Sweats & Casual
+      </option>
+      <option
+        key="sweatshirts"
+        value="Sweatshirts"
+      >
+        Sweatshirts
+      </option>
+      <option
+        key="accessories"
+        value="Accessories"
+      >
+        Accessories
       </option>
     </select>
   </div>
@@ -116,58 +134,28 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         EditListingDetailsForm.sizePlaceholder
       </option>
       <option
-        key="4"
-        value="4"
+        key="small"
+        value="S"
       >
-        4
+        S
       </option>
       <option
-        key="5"
-        value="5"
+        key="medium"
+        value="M"
       >
-        5
+        M
       </option>
       <option
-        key="6"
-        value="6"
+        key="large"
+        value="L"
       >
-        6
+        L
       </option>
       <option
-        key="7"
-        value="7"
+        key="extraLarge"
+        value="XL"
       >
-        7
-      </option>
-      <option
-        key="8"
-        value="8"
-      >
-        8
-      </option>
-      <option
-        key="9"
-        value="9"
-      >
-        9
-      </option>
-      <option
-        key="10"
-        value="10"
-      >
-        10
-      </option>
-      <option
-        key="11"
-        value="11"
-      >
-        11
-      </option>
-      <option
-        key="12"
-        value="12"
-      >
-        12
+        XL
       </option>
     </select>
   </div>
@@ -175,14 +163,14 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
     className="root detailsSelect"
   >
     <label
-      htmlFor="brand"
+      htmlFor="sorority"
     >
-      EditListingDetailsForm.brandLabel
+      EditListingDetailsForm.sororityLabel
     </label>
     <select
       className="select"
-      id="brand"
-      name="brand"
+      id="sorority"
+      name="Sorority"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -192,67 +180,25 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         disabled={true}
         value=""
       >
-        EditListingDetailsForm.brandPlaceholder
+        EditListingDetailsForm.sororityPlaceholder
       </option>
       <option
-        key="adidas"
-        value="adidas"
+        key="alphaChiOmega"
+        value="Alpha Chi Omega"
       >
-        Adidas
+        Alpha Chi Omega
       </option>
       <option
-        key="air_jordan"
-        value="air_jordan"
+        key="alphaDeltaChi"
+        value="Alpha Delta Chi"
       >
-        Air Jordan
+        Alpha Delta Chi
       </option>
       <option
-        key="converse"
-        value="converse"
+        key="alphaEpsilonPhi"
+        value="Alpha Epsilon Phi"
       >
-        Converse
-      </option>
-      <option
-        key="new_balance"
-        value="new_balance"
-      >
-        New Balance
-      </option>
-      <option
-        key="nike"
-        value="nike"
-      >
-        Nike
-      </option>
-      <option
-        key="puma"
-        value="puma"
-      >
-        Puma
-      </option>
-      <option
-        key="ultraboost"
-        value="ultraboost"
-      >
-        Ultraboost
-      </option>
-      <option
-        key="vans"
-        value="vans"
-      >
-        Vans
-      </option>
-      <option
-        key="yeezy"
-        value="yeezy"
-      >
-        Yeezy
-      </option>
-      <option
-        key="other"
-        value="other"
-      >
-        Other
+        Alpha Epsilon Phi
       </option>
     </select>
   </div>

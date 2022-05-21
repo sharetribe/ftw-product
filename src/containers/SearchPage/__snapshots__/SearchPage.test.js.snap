@@ -132,55 +132,27 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
-                    "key": "adidas",
-                    "label": "Adidas",
+                    "key": "alphaChiOmega",
+                    "label": "Alpha Chi Omega",
                   },
                   Object {
-                    "key": "air_jordan",
-                    "label": "Air Jordan",
+                    "key": "alphaDeltaChi",
+                    "label": "Alpha Delta Chi",
                   },
                   Object {
-                    "key": "converse",
-                    "label": "Converse",
-                  },
-                  Object {
-                    "key": "new_balance",
-                    "label": "New Balance",
-                  },
-                  Object {
-                    "key": "nike",
-                    "label": "Nike",
-                  },
-                  Object {
-                    "key": "puma",
-                    "label": "Puma",
-                  },
-                  Object {
-                    "key": "ultraboost",
-                    "label": "Ultraboost",
-                  },
-                  Object {
-                    "key": "vans",
-                    "label": "Vans",
-                  },
-                  Object {
-                    "key": "yeezy",
-                    "label": "Yeezy",
-                  },
-                  Object {
-                    "key": "other",
-                    "label": "Other",
+                    "key": "alphaEpsilonPhi",
+                    "label": "Alpha Epsilon Phi",
                   },
                 ],
                 "schemaType": "enum",
               },
               "group": "primary",
-              "id": "brand",
-              "label": "Brand",
+              "id": "sorority",
+              "label": "Sorority",
               "queryParamNames": Array [
-                "pub_brand",
+                "pub_sorority",
               ],
-              "type": "SelectMultipleFilter",
+              "type": "SelectSingleFilter",
             }
           }
           getHandleChangedValueFn={[Function]}
@@ -348,56 +320,28 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               Object {
                 "config": Object {
                   "options": Array [
-                    Object {
-                      "key": "adidas",
-                      "label": "Adidas",
-                    },
-                    Object {
-                      "key": "air_jordan",
-                      "label": "Air Jordan",
-                    },
-                    Object {
-                      "key": "converse",
-                      "label": "Converse",
-                    },
-                    Object {
-                      "key": "new_balance",
-                      "label": "New Balance",
-                    },
-                    Object {
-                      "key": "nike",
-                      "label": "Nike",
-                    },
-                    Object {
-                      "key": "puma",
-                      "label": "Puma",
-                    },
-                    Object {
-                      "key": "ultraboost",
-                      "label": "Ultraboost",
-                    },
-                    Object {
-                      "key": "vans",
-                      "label": "Vans",
-                    },
-                    Object {
-                      "key": "yeezy",
-                      "label": "Yeezy",
-                    },
-                    Object {
-                      "key": "other",
-                      "label": "Other",
-                    },
+                  Object {
+                    "key": "alphaChiOmega",
+                    "label": "Alpha Chi Omega",
+                  },
+                  Object {
+                    "key": "alphaDeltaChi",
+                    "label": "Alpha Delta Chi",
+                  },
+                  Object {
+                    "key": "alphaEpsilonPhi",
+                    "label": "Alpha Epsilon Phi",
+                  },
                   ],
                   "schemaType": "enum",
                 },
                 "group": "primary",
-                "id": "brand",
-                "label": "Brand",
+                "id": "sorority",
+                "label": "Sorority",
                 "queryParamNames": Array [
-                  "pub_brand",
+                  "pub_sorority",
                 ],
-                "type": "SelectMultipleFilter",
+                "type": "SelectSingleFilter",
               }
             }
             getHandleChangedValueFn={[Function]}

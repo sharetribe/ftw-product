@@ -179,6 +179,11 @@
   "EditListingDetailsForm.sizeLabel": "Size",
   "EditListingDetailsForm.sizePlaceholder": "Choose…",
   "EditListingDetailsForm.sizeRequired": "You need to select a size.",
+  
+  "EditListingDetailsForm.sororityLabel": "Sorority",
+  "EditListingDetailsForm.sororityPlaceholder": "Choose…",
+  "EditListingDetailsForm.sororityRequired": "You need to select a sorority.",
+
   "EditListingDetailsForm.title": "Title",
   "EditListingDetailsForm.titlePlaceholder": "Which sneakers are you selling?",
   "EditListingDetailsForm.titleRequired": "You need to add a name.",

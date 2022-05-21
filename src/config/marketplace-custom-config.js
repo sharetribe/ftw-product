@@ -84,11 +84,11 @@ export const filters = [
     },
   },
   {
-    id: 'brand',
-    label: 'Brand',
-    type: 'SelectMultipleFilter',
+    id: 'sorority',
+    label: 'Sorority',
+    type: 'SelectSingleFilter',
     group: 'primary',
-    queryParamNames: ['pub_brand'],
+    queryParamNames: ['pub_sorority'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.
@@ -101,16 +101,9 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'adidas', label: 'Adidas' },
-        { key: 'air_jordan', label: 'Air Jordan' },
-        { key: 'converse', label: 'Converse' },
-        { key: 'new_balance', label: 'New Balance' },
-        { key: 'nike', label: 'Nike' },
-        { key: 'puma', label: 'Puma' },
-        { key: 'ultraboost', label: 'Ultraboost' },
-        { key: 'vans', label: 'Vans' },
-        { key: 'yeezy', label: 'Yeezy' },
-        { key: 'other', label: 'Other' },
+        { key: 'alphaChiOmega', label: 'Alpha Chi Omega' },
+        { key: 'alphaDeltaChi', label: 'Alpha Delta Chi' },
+        { key: 'alphaEpsilonPhi', label: 'Alpha Epsilon Phi' },
       ],
     },
   },
@@ -214,5 +207,5 @@ export const sortConfig = {
 export const listing = {
   // These should be listing details from public data with schema type: enum
   // SectionDetailsMaybe component shows these on listing page.
-  enumFieldDetails: ['size', 'brand', 'category'],
+  enumFieldDetails: ['size', 'sorority', 'category'],
 };

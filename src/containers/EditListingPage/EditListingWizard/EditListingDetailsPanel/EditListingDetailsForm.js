@@ -121,19 +121,19 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
-      const brandConfig = findConfigForSelectFilter('brand', filterConfig);
-      const brandSchemaType = brandConfig ? brandConfig.schemaType : null;
-      const brands = brandConfig && brandConfig.options ? brandConfig.options : [];
-      const brandLabel = intl.formatMessage({
-        id: 'EditListingDetailsForm.brandLabel',
+      const sororityConfig = findConfigForSelectFilter('sorority', filterConfig);
+      const sororitySchemaType = sororityConfig ? sororityConfig.schemaType : null;
+      const sororities = sororityConfig && sororityConfig.options ? sororityConfig.options : [];
+      const sororityLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.sororityLabel',
       });
-      const brandPlaceholder = intl.formatMessage({
-        id: 'EditListingDetailsForm.brandPlaceholder',
+      const sororityPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.sororityPlaceholder',
       });
 
-      const brandRequired = required(
+      const sororityRequired = required(
         intl.formatMessage({
-          id: 'EditListingDetailsForm.brandRequired',
+          id: 'EditListingDetailsForm.sororityRequired',
         })
       );
 
@@ -183,13 +183,13 @@ const EditListingDetailsFormComponent = props => (
           />
 
           <CustomFieldEnum
-            id="brand"
-            name="brand"
-            options={brands}
-            label={brandLabel}
-            placeholder={brandPlaceholder}
-            validate={brandRequired}
-            schemaType={brandSchemaType}
+            id="sorority"
+            name="sorority"
+            options={sororities}
+            label={sororityLabel}
+            placeholder={sororityPlaceholder}
+            validate={sororityRequired}
+            schemaType={sororitySchemaType}
           />
 
           <Button

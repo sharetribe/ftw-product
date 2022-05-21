@@ -384,8 +384,8 @@ export class ListingPageComponent extends Component {
     // Read more about product schema
     // https://developers.google.com/search/docs/advanced/structured-data/product
     const productURL = `${config.canonicalRootURL}${location.pathname}${location.search}${location.hash}`;
-    const brand = currentListing?.attributes?.publicData?.brand;
-    const brandMaybe = brand ? { brand: { '@type': 'Brand', name: brand } } : {};
+    const sorority = currentListing?.attributes?.publicData?.sorority;
+    const sororityMaybe = sorority ? { sorority: { '@type': 'Sorority', name: sorority } } : {};
     const schemaPriceNumber = intl.formatNumber(convertMoneyToNumber(price), {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
@@ -430,7 +430,7 @@ export class ListingPageComponent extends Component {
           description: description,
           name: schemaTitle,
           image: schemaImages,
-          ...brandMaybe,
+          ...sororityMaybe,
           offers: {
             '@type': 'Offer',
             url: productURL,

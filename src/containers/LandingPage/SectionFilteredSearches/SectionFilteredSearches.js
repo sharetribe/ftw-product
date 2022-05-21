@@ -58,7 +58,7 @@ const SectionFilteredSearches = props => {
   // - "name" is a string that defines what kind of search the link is going to make
   // - "image" is imported from images directory and you can update it by changing the file
   // - "link" should be copy-pasted URL from search page.
-  //    The domain doesn't matter, but search query does. (I.e. "?pub_brand=nike")
+  //    The domain doesn't matter, but search query does. (I.e. "?pub_category=shirts")
   return (
     <div className={classes}>
       <div className={css.title}>
@@ -66,19 +66,19 @@ const SectionFilteredSearches = props => {
       </div>
       <div className={css.filteredSearches}>
         <FilterLink
-          name="Nikes"
+          name="Hats & Headwear"
           image={imageForFilter1}
-          link="http://localhost:3000/s?pub_brand=nike"
+          link="http://localhost:3000/s?pub_category=hatsAndHeadwear"
         />
         <FilterLink
-          name="Yeezys"
+          name="Shirts"
           image={imageForFilter2}
-          link="http://localhost:3000/s?pub_brand=yeezy"
+          link="http://localhost:3000/s?pub_category=shirts"
         />
         <FilterLink
-          name="Converses"
+          name="Sweats & Casual"
           image={imageForFilter3}
-          link="http://localhost:3000/s?pub_brand=converse"
+          link="http://localhost:3000/s?pub_category=sweatsAndCasual"
         />
       </div>
     </div>
