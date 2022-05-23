@@ -142,7 +142,7 @@ export const filters = [
     // Note: unlike most prices this is not handled in subunits
     config: {
       min: 0,
-      max: 100,
+      max: 1000,
       step: 5,
     },
   },
