@@ -84,7 +84,6 @@ const tabCompleted = (tab, listing) => {
       return false;
   }
 };
-
 /**
  * Check which wizard tabs are active and which are not yet available. Tab is active if previous
  * tab is completed. In edit mode all tabs are active.
