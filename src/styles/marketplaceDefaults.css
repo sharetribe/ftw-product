@@ -18,7 +18,7 @@
   /* ================ Colors ================ */
   --marketplaceColor: #fd84e1; /* hsl(260, 63%, 46%) */
   --marketplaceColorLight: #ffb8ed; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
-  --marketplaceColorDark: #55fcb6; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
+  --marketplaceColorDark: #38da96; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %23a02cbf;
