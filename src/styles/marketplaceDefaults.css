@@ -16,9 +16,13 @@
 
 :root {
   /* ================ Colors ================ */
-  --marketplaceColor: #fd84e1; /* hsl(260, 63%, 46%) */
-  --marketplaceColorLight: #ffb8ed; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
-  --marketplaceColorDark: #fd4ad3; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
+  --marketplaceColor: #00cc95; /* hsl(260, 63%, 46%) */
+  --marketplaceColorLight: #76c9b3; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
+  --marketplaceColorDark: #00a59d; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
+
+  --secondaryMarketplaceColor: #ff59c1; /* hsl(260, 63%, 46%) */
+  --secondaryMarketplaceColorLight: #fd7fcf; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
+  --secondaryMarketplaceColorDark: #f320a6; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %23a02cbf;
