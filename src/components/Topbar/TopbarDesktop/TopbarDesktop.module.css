@@ -85,12 +85,12 @@
   flex-shrink: 0;
   height: 100%;
   padding: 0 12px 0 12px;
-  color: var(--marketplaceColor);
+  color: var(--secondaryMarketplaceColor);
   margin-top: 0;
   margin-bottom: 0;
 
   &:hover {
-    color: var(--marketplaceColorDark);
+    color: var(--secondaryMarketplaceColorDark);
   }
 
   @media (--viewportMedium) {
@@ -258,7 +258,7 @@
 
     & .menuItemBorder {
       width: 6px;
-      background-color: var(--marketplaceColor);
+      background-color: var(--secondaryMarketplaceColor);
     }
   }
 
@@ -297,7 +297,7 @@
       height: 100%;
       width: 6px;
       top: 0;
-      background-color: var(--marketplaceColor);
+      background-color: var(--secondaryMarketplaceColor);
     }
   }
 
