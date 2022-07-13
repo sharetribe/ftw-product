@@ -35,7 +35,7 @@
 }
 
 .labelSelected {
-  color: var(--marketplaceColor);
+  color: var(--secondaryMarketplaceColor);
 }
 
 .openSign {
@@ -54,10 +54,10 @@
   color: var(--matterColor);
 
   &:hover {
-    color: var(--marketplaceColor);
+    color: var(--secondaryMarketplaceColor);
 
     & * {
-      stroke: var(--marketplaceColor);
+      stroke: var(--secondaryMarketplaceColor);
     }
   }
 }
@@ -151,11 +151,11 @@
 }
 
 .optionHighlight {
-  color: var(--marketplaceColor);
+  color: var(--secondaryMarketplaceColor);
 
   &:focus,
   &:hover {
-    color: var(--marketplaceColorLight);
+    color: var(--secondaryMarketplaceColorLight);
   }
 }
 
