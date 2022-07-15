@@ -27,7 +27,7 @@ const AboutPage = () => {
       schema={{
         '@context': 'http://schema.org',
         '@type': 'AboutPage',
-        description: 'About Sneakertime',
+        description: 'About The Sorority Swap',
         name: 'About page',
       }}
     >
@@ -37,39 +37,27 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>There's no such thing as too many sneakers.</h1>
+          <h1 className={css.pageTitle}>Sorority Swap is here for you.</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>"We've built Sneakertime because we didn't trust anonymous sellers online without recommendations."</p>
+              <p>"Sorority Swap is an online marketplace to buy and sell your sorority apparel!"</p>
             </div>
 
             <div className={css.contentMain}>
               <h2>
-                The world of Sneakers couldn't be more exciting! Whether you are a casual buyer or an experienced collector, you can find the right pair on Sneakertime and trust sellers that your new favorite item will be swiftly and safely sent to you or ready for pickup.
+                Sellers create a profile and upload sorority merchandise into their closet. Buyers browse their feed and expect to see things like custom pieces, sets for big little, and everything in between.
               </h2>
 
               <p>
-                Buying sneakers can be stressful: you can find many online websites where to buy them but most don't deliver the trust you can legitimately expect. With Sneakertime, we want to make sure you're transaction will go smoothly: from browsing and checking the stock, to making the order and payment, to the review of the sellers. And we hope you'll be so convinced that you'll soon start selling your least favorite pairs to make new buyers happy!
+              The marketplace is designed with sorority members in mind, including features that make the shopping process pain free. Our goal is to strengthen sororities nationwide by connecting sisters through clothing! Made by sorority members, for sorority members, we donate a percentage of all revenue towards Panhellenic organizations.
               </p>
 
-              <h3 className={css.subtitle}>Do you have sneakers to sell?</h3>
+              <h3 className={css.subtitle}>Do you have clothing to sell?</h3>
 
               <p>
-                Sneakertime offers you a good way to earn some extra cash! If you're not using your
-                sneakers anymore, why not sell them to other sneakers fans? And if you already have laid your eyes on the pair you want next, selling something from your collection is a great way to get money for your next buy and make room in your closets!
-              </p>
-
-              <h3 id="contact" className={css.subtitle}>
-                Create your own marketplace like Sneakertime
-              </h3>
-              <p>
-                Sneakertime is brought to you by the good folks at{' '}
-                <ExternalLink href="https://www.sharetribe.com">Sharetribe</ExternalLink>. Would you like
-                to create your own marketplace platform a bit like Sneakertime? Or perhaps a mobile
-                app? With Sharetribe it's really easy. If you have a marketplace idea in mind, do
-                get in touch!
+                Create a listing and let us do the work!
               </p>
               <p>
                 You can also checkout our{' '}
