@@ -59,6 +59,7 @@ const AboutPage = () => {
               <p>
                 Create a listing and let us do the work!
               </p>
+              
               <p>
                 You can also checkout our{' '}
                 <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
