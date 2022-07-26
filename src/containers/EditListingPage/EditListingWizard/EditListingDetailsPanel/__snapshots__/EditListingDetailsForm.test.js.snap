@@ -189,10 +189,10 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         Alpha Chi Omega
       </option>
       <option
-        key="alphaDeltaChi"
-        value="Alpha Delta Chi"
+        key="alphaDeltaPi"
+        value="Alpha Delta Pi"
       >
-        Alpha Delta Chi
+        Alpha Delta Pi
       </option>
       <option
         key="alphaEpsilonPhi"

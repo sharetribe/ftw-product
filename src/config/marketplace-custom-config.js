@@ -102,7 +102,7 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         { key: 'alphaChiOmega', label: 'Alpha Chi Omega' },
-        { key: 'alphaDeltaChi', label: 'Alpha Delta Chi' },
+        { key: 'alphaDeltaPi', label: 'Alpha Delta Pi' },
         { key: 'alphaEpsilonPhi', label: 'Alpha Epsilon Phi' },
         { key: 'alphaGammaDelta', label: 'Alpha Gamma Delta' },
         { key: 'alphaOmicronPi', label: 'Alpha Omicron Pi' },

@@ -136,8 +136,8 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                     "label": "Alpha Chi Omega",
                   },
                   Object {
-                    "key": "alphaDeltaChi",
-                    "label": "Alpha Delta Chi",
+                    "key": "alphaDeltaPi",
+                    "label": "Alpha Delta Pi",
                   },
                   Object {
                     "key": "alphaEpsilonPhi",
@@ -429,8 +429,8 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                     "label": "Alpha Chi Omega",
                   },
                   Object {
-                    "key": "alphaDeltaChi",
-                    "label": "Alpha Delta Chi",
+                    "key": "alphaDeltaPi",
+                    "label": "Alpha Delta Pi",
                   },
                   Object {
                     "key": "alphaEpsilonPhi",
