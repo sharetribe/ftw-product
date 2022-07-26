@@ -11,7 +11,7 @@ describe('TopbarDesktop', () => {
     const topbarProps = {
       isAuthenticated: true,
       currentUserHasListings: true,
-      name: 'John Doe',
+      name: 'Jane Doe',
       onSearchSubmit: noop,
       intl: fakeIntl,
       onLogout: noop,
@@ -27,7 +27,7 @@ describe('TopbarDesktop', () => {
     const topbarProps = {
       isAuthenticated: true,
       currentUserHasListings: true,
-      name: 'John Doe',
+      name: 'Jane Doe',
       onSearchSubmit: noop,
       intl: fakeIntl,
       onLogout: noop,

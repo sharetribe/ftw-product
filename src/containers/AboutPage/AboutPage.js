@@ -17,7 +17,7 @@ import css from './AboutPage.module.css';
 import image from './about-us-1056.jpg';
 
 const AboutPage = () => {
-  const { siteTwitterHandle, siteFacebookPage } = config;
+  const { siteInstagramPage, siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
 
   // prettier-ignore
@@ -37,21 +37,21 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Sorority Swap is here for you.</h1>
+          <h1 className={css.pageTitle}>The Sorority Swap is here for you.</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>"Sorority Swap is an online marketplace to buy and sell your sorority apparel!"</p>
+              <p>The Sorority Swap is an online marketplace to buy and sell your sorority apparel!</p>
             </div>
 
             <div className={css.contentMain}>
               <h2>
-                Sellers create a profile and upload sorority merchandise into their closet. Buyers browse their feed and expect to see things like custom pieces, sets for big little, and everything in between.
+                Sellers create a profile and upload sorority merchandise into their closet. Buyers browse their feed to find custom pieces, sets for big little, and everything in between.
               </h2>
 
               <p>
-              The marketplace is designed with sorority members in mind, including features that make the shopping process pain free. Our goal is to strengthen sororities nationwide by connecting sisters through clothing! Made by sorority members, for sorority members, we donate a percentage of all revenue towards Panhellenic organizations.
+              The marketplace is designed with sorority members in mind. Our goal is to strengthen sororities nationwide by connecting sisters through clothing! Made by sorority members for sorority members, we donate a percentage of all revenue to Panhellenic organizations.
               </p>
 
               <h3 className={css.subtitle}>Do you have clothing to sell?</h3>
@@ -59,11 +59,11 @@ const AboutPage = () => {
               <p>
                 Create a listing and let us do the work!
               </p>
-              
+
               <p>
-                You can also checkout our{' '}
+                You can also check out our{' '}
                 <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink>.
+                <ExternalLink href={siteInstagramPage}>Instagram</ExternalLink>.
               </p>
             </div>
           </div>

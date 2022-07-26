@@ -711,7 +711,7 @@
   "ShippingDetails.postalCodePlaceholder": "00100",
   "ShippingDetails.postalCodeRequired": "Postal code is required",
   "ShippingDetails.recipientNameLabel": "Name",
-  "ShippingDetails.recipientNamePlaceholder": "John Doe",
+  "ShippingDetails.recipientNamePlaceholder": "Jane Doe",
   "ShippingDetails.recipientNameRequired": "Recipient name is required.",
   "ShippingDetails.recipientPhoneNumberLabel": "Phone number {optionalText}",
   "ShippingDetails.recipientPhoneNumberPlaceholder": "+358 123456789",
