@@ -407,6 +407,10 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                       "key": "extraLarge",
                       "label": "XL",
                     },
+                    Object {
+                      "key": "oneSizeFitsAll",
+                      "label": "One size fits all",
+                    },
                   ],
                   "schemaType": "enum",
                 },

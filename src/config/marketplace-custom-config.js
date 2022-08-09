@@ -80,6 +80,7 @@ export const filters = [
         { key: 'medium', label: 'M' },
         { key: 'large', label: 'L' },
         { key: 'extraLarge', label: 'XL' },
+        { key: 'oneSizeFitsAll', label: 'One size fits all' },
       ],
     },
   },

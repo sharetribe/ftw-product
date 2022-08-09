@@ -157,6 +157,12 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
       >
         XL
       </option>
+      <option
+        key="oneSizeFitsAll"
+        value="One size fits all"
+      >
+        One size fits all
+      </option>
     </select>
   </div>
   <div
