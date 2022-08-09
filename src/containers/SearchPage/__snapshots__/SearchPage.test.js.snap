@@ -216,6 +216,10 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                     "label": "Pi Beta Phi",
                   },
                   Object {
+                    "key": "rhoGamma",
+                    "label": "Rho Gamma",
+                  },
+                  Object {
                     "key": "sigmaDeltaTau",
                     "label": "Sigma Delta Tau",
                   },
@@ -234,6 +238,10 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                   Object {
                     "key": "zetaTauAlpha",
                     "label": "Zeta Tau Alpha",
+                  },
+                  Object {
+                    "key": "notAssociated",
+                    "label": "Not Associated",
                   },
                 ],
                 "schemaType": "enum",

@@ -309,6 +309,12 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         Pi Beta Phi
       </option>
       <option
+        key="rhoGamma"
+        value="Rho Gamma"
+      >
+        Rho Gamma
+      </option>
+      <option
         key="sigmaDeltaTau"
         value="Sigma Delta Tau"
       >
@@ -337,6 +343,12 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         value="Zeta Tau Alpha"
       >
         Zeta Tau Alpha
+      </option>
+      <option
+        key="notAssociated"
+        value="Not Associated"
+      >
+        Not Associated
       </option>
     </select>
   </div>
