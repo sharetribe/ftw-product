@@ -86,7 +86,7 @@
   "ConfirmSignupForm.emailPlaceholder": "jane.doe@example.com",
   "ConfirmSignupForm.emailRequired": "You need to add an email.",
   "ConfirmSignupForm.firstNameLabel": "First name",
-  "ConfirmSignupForm.firstNamePlaceholder": "John",
+  "ConfirmSignupForm.firstNamePlaceholder": "Jane",
   "ConfirmSignupForm.firstNameRequired": "You need to add a first name.",
   "ConfirmSignupForm.lastNameLabel": "Last name",
   "ConfirmSignupForm.lastNamePlaceholder": "Doe",

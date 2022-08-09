@@ -25,11 +25,11 @@ const tx = lastTransition =>
     id: 'order-1',
     lastTransition,
     lastTransitionedAt: new Date(Date.UTC(2017, 0, 15)),
-    customer: createUser('John Customer', {
+    customer: createUser('Jane Customer', {
       banned: false,
       deleted: false,
       profile: {
-        displayName: 'John C',
+        displayName: 'Jane C',
         abbreviatedName: 'JC',
       },
     }),
