@@ -890,7 +890,7 @@
   "StripePaymentForm.replaceAfterOnetimePayment": "Reemplazar la tarjeta …{last4Digits} con la nueva tarjeta para próximas transacciones",
   "StripePaymentForm.sameBillingAndShippingAddress": "My billing and shipping address are the same",
   "StripePaymentForm.saveAfterOnetimePayment": "Guardar tarjeta para próximas reservaciones",
-  "StripePaymentForm.saveforLaterUseLegalInfo": "I authorise Sorority Swap to send instructions to the financial institution that issued my card to take payments from my card account in accordance with the terms of my agreement with you.",
+  "StripePaymentForm.saveforLaterUseLegalInfo": "I authorize The Sorority Swap to send instructions to the financial institution that issued my card to take payments from my card account in accordance with the terms of my agreement with you.",
   "StripePaymentForm.stripe.api_connection_error": "No se consigue conectar con API de Stripe.",
   "StripePaymentForm.stripe.api_error": "Error de conexión con Stripe.",
   "StripePaymentForm.stripe.authentication_error": "La autenticación con Stripe ha fallado.",
