@@ -76,11 +76,13 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
+        { key: 'extraSmall', label: 'XS' },
         { key: 'small', label: 'S' },
         { key: 'medium', label: 'M' },
         { key: 'large', label: 'L' },
         { key: 'extraLarge', label: 'XL' },
-        { key: 'oneSizeFitsAll', label: 'One size fits all' },
+        { key: 'doubleExtraLarge', label: 'XXL' },
+        { key: 'oneSize', label: 'One size' },
       ],
     },
   },

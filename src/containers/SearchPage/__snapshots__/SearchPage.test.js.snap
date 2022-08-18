@@ -89,6 +89,10 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
+                    "key": "extraSmall",
+                    "label": "XS",
+                  },
+                  Object {
                     "key": "small",
                     "label": "S",
                   },
@@ -103,6 +107,14 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                   Object {
                     "key": "extraLarge",
                     "label": "XL",
+                  },
+                  Object {
+                    "key": "doubleExtraLarge",
+                    "label": "XXL",
+                  },
+                  Object {
+                    "key": "oneSize",
+                    "label": "One size",
                   },
                 ],
                 "schemaType": "enum",
@@ -392,6 +404,10 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "config": Object {
                   "options": Array [
                     Object {
+                      "key": "extraSmall",
+                      "label": "XS",
+                    },
+                    Object {
                       "key": "small",
                       "label": "S",
                     },
@@ -408,8 +424,12 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                       "label": "XL",
                     },
                     Object {
-                      "key": "oneSizeFitsAll",
-                      "label": "One size fits all",
+                      "key": "doubleExtraLarge",
+                      "label": "XXL",
+                    },
+                    Object {
+                      "key": "oneSize",
+                      "label": "One size",
                     },
                   ],
                   "schemaType": "enum",

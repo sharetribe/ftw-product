@@ -134,6 +134,11 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         EditListingDetailsForm.sizePlaceholder
       </option>
       <option
+        key="extraSmall"
+        value="XS"
+      >
+        XS
+      <option
         key="small"
         value="S"
       >
@@ -156,12 +161,17 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         value="XL"
       >
         XL
+      <option
+        key="doubleExtraLarge"
+        value="XXL"
+      >
+        XXL
       </option>
       <option
-        key="oneSizeFitsAll"
-        value="One size fits all"
+        key="oneSize"
+        value="One size"
       >
-        One size fits all
+        One size
       </option>
     </select>
   </div>
