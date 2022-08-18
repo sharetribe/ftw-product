@@ -54,7 +54,7 @@
 .inbox {
   /* Font */
   @apply --marketplaceH2FontStyles;
-  color: var(--marketplaceColor);
+  color: var(--secondaryMarketplaceColor);
   position: relative;
 
   margin-top: auto;
@@ -64,7 +64,7 @@
 .navigationLink {
   /* Font */
   @apply --marketplaceH2FontStyles;
-  color: var(--marketplaceColor);
+  color: var(--secondaryMarketplaceColor);
 
   /* Layout */
   margin-top: 0;
