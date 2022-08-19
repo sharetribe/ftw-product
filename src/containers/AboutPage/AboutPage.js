@@ -42,16 +42,16 @@ const AboutPage = () => {
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>The Sorority Swap is an online marketplace to buy and sell your sorority apparel!</p>
+              <p>Strengthen sisterhood. Make new connections. Find your unique style.</p>
             </div>
 
             <div className={css.contentMain}>
               <h2>
-                Sellers create a profile and upload sorority merchandise into their closet. Buyers browse their feed to find custom pieces, sets for big little, and everything in between.
+              The Sorority Swap is a clothing swap for sororities, hosted across the country to strengthen sisterhood, make new connections and help each other find their unique style. A sorority is more than a group of college girls; it’s a family of women who have your back and are there to support you through anything. Get a one-of-a-kind outfit for your next event with The Sorority Swap!
               </h2>
 
               <p>
-              The marketplace is designed with sorority members in mind. Our goal is to strengthen sororities nationwide by connecting sisters through clothing! Made by sorority members for sorority members, we donate a percentage of all revenue to Panhellenic organizations.
+              We donate a percentage of revenue to all Panhellenic organizations. The Sorority Swap was born out of our own experiences as Greek, and knowing how hard it can be to find the perfect memento to commemorate such an important milestone. We believe all women deserve the chance to celebrate their accomplishments.
               </p>
 
               <h3 className={css.subtitle}>Do you have clothing to sell?</h3>
