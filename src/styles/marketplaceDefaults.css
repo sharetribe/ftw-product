@@ -16,7 +16,7 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #5d2bc0; /* hsl(260, 63%, 46%) */
+  --marketplaceColor: rebeccapurple; /* hsl(260, 63%, 46%) */
   --marketplaceColorLight: #7748d5; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
   --marketplaceColorDark: #34196c; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
 
@@ -674,7 +674,7 @@ textarea {
  * For actual buttons, use components: <Button>, <PrimaryButton>, <SecondaryButton>
  *
  * To create button look-and-feel for links, etc. combine button classes in CSS Modules:
- * 
+ *
  * default button:
  *   composes: button buttonFont buttonText buttonBorders buttonColors from global;
  * primary button:
