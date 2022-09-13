@@ -184,6 +184,10 @@
   "EditListingDetailsForm.sororityPlaceholder": "Choose…",
   "EditListingDetailsForm.sororityRequired": "You need to select a sorority.",
 
+  "EditListingDetailsForm.colorLabel": "Color",
+  "EditListingDetailsForm.colorPlaceholder": "Choose…",
+  "EditListingDetailsForm.colorRequired": "You need to select a color.",
+
   "EditListingDetailsForm.title": "Title",
   "EditListingDetailsForm.titlePlaceholder": "What apparel are you selling?",
   "EditListingDetailsForm.titleRequired": "You need to add a name.",

@@ -121,7 +121,7 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
     <select
       className="select"
       id="size"
-      name="size"
+      name="Size"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -172,6 +172,125 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         value="One size"
       >
         One size
+      </option>
+    </select>
+  </div>
+  <div
+    className="root detailsSelect"
+  >
+    <label
+      htmlFor="color"
+    >
+      EditListingDetailsForm.colorLabel
+    </label>
+    <select
+      className="select"
+      id="color"
+      name="Color"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        value=""
+      >
+        EditListingDetailsForm.colorPlaceholder
+      </option>
+      <option
+        key="black"
+        value="Black"
+      >
+        Black
+      <option
+        key="blue"
+        value="Blue"
+      >
+        Blue
+      </option>
+      <option
+        key="brown"
+        value="Brown"
+      >
+        Brown
+      </option>
+      <option
+        key="clear"
+        value="Clear"
+      >
+        Clear
+      </option>
+      <option
+        key="gold"
+        value="Gold"
+      >
+        Gold
+      <option
+        key="gray"
+        value="Gray"
+      >
+        Gray
+      </option>
+      <option
+        key="green"
+        value="Green"
+      >
+        Green
+      </option>
+      <option
+        key="orange"
+        value="Orange"
+      >
+        Orange
+      </option>
+      <option
+        key="pink"
+        value="Pink"
+      >
+        Pink
+      </option>
+      <option
+        key="purple"
+        value="Purple"
+      >
+        Purple
+      </option>
+      <option
+        key="rainbow"
+        value="Rainbow"
+      >
+        Rainbow
+      </option>
+      <option
+        key="red"
+        value="Red"
+      >
+        Red
+      </option>
+      <option
+        key="silver"
+        value="Silver"
+      >
+        Silver
+      </option>
+      <option
+        key="tan"
+        value="Tan"
+      >
+        Tan
+      </option>
+      <option
+        key="white"
+        value="White"
+      >
+        White
+      </option>
+      <option
+        key="yellow"
+        value="Yellow"
+      >
+        Yellow
       </option>
     </select>
   </div>

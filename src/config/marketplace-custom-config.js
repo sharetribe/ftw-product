@@ -87,6 +87,44 @@ export const filters = [
     },
   },
   {
+    id: 'color',
+    label: 'Color',
+    type: 'SelectMultipleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_color'],
+    config: {
+      // Schema type options: 'enum', 'multi-enum'
+      // Both types can work so that user selects multiple values when filtering search results.
+      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
+      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
+      schemaType: 'enum',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'black', label: 'Black' },
+        { key: 'blue', label: 'Blue' },
+        { key: 'brown', label: 'Brown' },
+        { key: 'clear', label: 'Clear' },
+        { key: 'gold', label: 'Gold' },
+        { key: 'gray', label: 'Gray' },
+        { key: 'green', label: 'Green' },
+        { key: 'orange', label: 'Orange' },
+        { key: 'pink', label: 'Pink' },
+        { key: 'purple', label: 'Purple' },
+        { key: 'rainbow', label: 'Rainbow' },
+        { key: 'red', label: 'Red' },
+        { key: 'silver', label: 'Silver' },
+        { key: 'tan', label: 'Tan' },
+        { key: 'white', label: 'White' },
+        { key: 'yellow', label: 'Yellow' },
+      ],
+    },
+  },
+
+  {
     id: 'sorority',
     label: 'Sorority',
     type: 'SelectSingleFilter',

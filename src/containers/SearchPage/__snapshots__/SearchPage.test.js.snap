@@ -144,6 +144,97 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
+                    "key": "black",
+                    "label": "Black",
+                  },
+                  Object {
+                    "key": "blue",
+                    "label": "Blue",
+                  },
+                  Object {
+                    "key": "brown",
+                    "label": "Brown",
+                  },
+                  Object {
+                    "key": "clear",
+                    "label": "Clear",
+                  },
+                  Object {
+                    "key": "gold",
+                    "label": "Gold",
+                  },
+                  Object {
+                    "key": "gray",
+                    "label": "Gray",
+                  },
+                  Object {
+                    "key": "green",
+                    "label": "Green",
+                  },
+                  Object {
+                    "key": "orange",
+                    "label": "Orange",
+                  },
+                  Object {
+                    "key": "pink",
+                    "label": "Pink",
+                  },
+                  Object {
+                    "key": "purple",
+                    "label": "Purple",
+                  },
+                  Object {
+                    "key": "rainbow",
+                    "label": "Rainbow",
+                  },
+                  Object {
+                    "key": "red",
+                    "label": "Red",
+                  },
+                  Object {
+                    "key": "silver",
+                    "label": "Silver",
+                  },
+                  Object {
+                    "key": "tan",
+                    "label": "Tan",
+                  },
+                  Object {
+                    "key": "white",
+                    "label": "White",
+                  },
+                  Object {
+                    "key": "yellow",
+                    "label": "Yellow",
+                  },
+                ],
+                "schemaType": "enum",
+              },
+              "group": "primary",
+              "id": "color",
+              "label": "Color",
+              "queryParamNames": Array [
+                "pub_color",
+              ],
+              "type": "SelectMultipleFilter",
+            }
+          }
+          getHandleChangedValueFn={[Function]}
+          idPrefix="SearchFiltersMobile"
+          initialValues={[Function]}
+          isDesktop={true}
+          key="SearchFiltersMobile.color"
+          liveEdit={true}
+          showAsPopup={false}
+          urlQueryParams={Object {}}
+        />
+        <FilterComponent
+          className="filter"
+          filterConfig={
+            Object {
+              "config": Object {
+                "options": Array [
+                  Object {
                     "key": "alphaChiOmega",
                     "label": "Alpha Chi Omega",
                   },
@@ -447,6 +538,95 @@ exports[`SearchPageWithList matches snapshot 1`] = `
             idPrefix="SearchFiltersMobile"
             initialValues={[Function]}
             key="SearchFiltersMobile.size"
+            liveEdit={true}
+            showAsPopup={false}
+            urlQueryParams={Object {}}
+          />
+          <FilterComponent
+            filterConfig={
+              Object {
+                "config": Object {
+                  "options": Array [
+                  Object {
+                    "key": "black",
+                    "label": "Black",
+                  },
+                  Object {
+                    "key": "blue",
+                    "label": "Blue",
+                  },
+                  Object {
+                    "key": "brown",
+                    "label": "Brown",
+                  },
+                  Object {
+                    "key": "clear",
+                    "label": "Clear",
+                  },
+                  Object {
+                    "key": "gold",
+                    "label": "Gold",
+                  },
+                  Object {
+                    "key": "gray",
+                    "label": "Gray",
+                  },
+                  Object {
+                    "key": "green",
+                    "label": "Green",
+                  },
+                  Object {
+                    "key": "orange",
+                    "label": "Orange",
+                  },
+                  Object {
+                    "key": "pink",
+                    "label": "Pink",
+                  },
+                  Object {
+                    "key": "purple",
+                    "label": "Purple",
+                  },
+                  Object {
+                    "key": "rainbow",
+                    "label": "Rainbow",
+                  },
+                  Object {
+                    "key": "red",
+                    "label": "Red",
+                  },
+                  Object {
+                    "key": "silver",
+                    "label": "Silver",
+                  },
+                  Object {
+                    "key": "tan",
+                    "label": "Tan",
+                  },
+                  Object {
+                    "key": "white",
+                    "label": "White",
+                  },
+                  Object {
+                    "key": "yellow",
+                    "label": "Yellow",
+                  },
+                ],
+                  "schemaType": "enum",
+                },
+                "group": "primary",
+                "id": "color",
+                "label": "Color",
+                "queryParamNames": Array [
+                  "pub_color",
+                ],
+                "type": "SelectMultipleFilter",
+              }
+            }
+            getHandleChangedValueFn={[Function]}
+            idPrefix="SearchFiltersMobile"
+            initialValues={[Function]}
+            key="SearchFiltersMobile.color"
             liveEdit={true}
             showAsPopup={false}
             urlQueryParams={Object {}}
