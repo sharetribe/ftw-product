@@ -121,6 +121,22 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
+      const colorConfig = findConfigForSelectFilter('color', filterConfig);
+      const colorSchemaType = colorConfig ? colorConfig.schemaType : null;
+      const colors = colorConfig && colorConfig.options ? colorConfig.options : [];
+      const colorLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.colorLabel',
+      });
+      const colorPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.colorPlaceholder',
+      });
+
+      const colorRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.colorRequired',
+        })
+      );
+
       const sororityConfig = findConfigForSelectFilter('sorority', filterConfig);
       const sororitySchemaType = sororityConfig ? sororityConfig.schemaType : null;
       const sororities = sororityConfig && sororityConfig.options ? sororityConfig.options : [];
@@ -180,6 +196,16 @@ const EditListingDetailsFormComponent = props => (
             placeholder={sizePlaceholder}
             validate={sizeRequired}
             schemaType={sizeSchemaType}
+          />
+
+          <CustomFieldEnum
+            id="color"
+            name="color"
+            options={colors}
+            label={colorLabel}
+            placeholder={colorPlaceholder}
+            validate={colorRequired}
+            schemaType={colorSchemaType}
           />
 
           <CustomFieldEnum
