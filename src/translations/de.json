@@ -188,6 +188,10 @@
   "EditListingDetailsForm.colorPlaceholder": "Choose…",
   "EditListingDetailsForm.colorRequired": "You need to select a color.",
 
+  "EditListingDetailsForm.conditionLabel": "Condition",
+  "EditListingDetailsForm.conditionPlaceholder": "Choose…",
+  "EditListingDetailsForm.conditionRequired": "You need to select a condition.",
+
   "EditListingDetailsForm.title": "Title",
   "EditListingDetailsForm.titlePlaceholder": "What clothing are you selling?",
   "EditListingDetailsForm.titleRequired": "You need to add a name.",

@@ -235,6 +235,45 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
+                    "key": "new",
+                    "label": "New",
+                  },
+                  Object {
+                    "key": "good",
+                    "label": "Good",
+                  },
+                  Object {
+                    "key": "fair",
+                    "label": "Fair",
+                  },
+                ],
+                "schemaType": "enum",
+              },
+              "group": "primary",
+              "id": "condition",
+              "label": "Condition",
+              "queryParamNames": Array [
+                "pub_condition",
+              ],
+              "type": "SelectMultipleFilter",
+            }
+          }
+          getHandleChangedValueFn={[Function]}
+          idPrefix="SearchFiltersMobile"
+          initialValues={[Function]}
+          isDesktop={true}
+          key="SearchFiltersMobile.condition"
+          liveEdit={true}
+          showAsPopup={false}
+          urlQueryParams={Object {}}
+        />
+        <FilterComponent
+          className="filter"
+          filterConfig={
+            Object {
+              "config": Object {
+                "options": Array [
+                  Object {
                     "key": "alphaChiOmega",
                     "label": "Alpha Chi Omega",
                   },
@@ -631,6 +670,46 @@ exports[`SearchPageWithList matches snapshot 1`] = `
             showAsPopup={false}
             urlQueryParams={Object {}}
           />
+        <FilterComponent
+          className="filter"
+          filterConfig={
+            Object {
+              "config": Object {
+                "options": Array [
+                  Object {
+                    "key": "new",
+                    "label": "New",
+                  },
+                  Object {
+                    "key": "good",
+                    "label": "Good",
+                  },
+                  Object {
+                    "key": "fair",
+                    "label": "Fair",
+                  },
+                ],
+                "schemaType": "enum",
+              },
+              "group": "primary",
+              "id": "condition",
+              "label": "Condition",
+              "queryParamNames": Array [
+                "pub_condition",
+              ],
+              "type": "SelectMultipleFilter",
+            }
+          }
+          getHandleChangedValueFn={[Function]}
+          idPrefix="SearchFiltersMobile"
+          initialValues={[Function]}
+          isDesktop={true}
+          key="SearchFiltersMobile.condition"
+          liveEdit={true}
+          showAsPopup={false}
+          urlQueryParams={Object {}}
+        />
+
           <FilterComponent
             filterConfig={
               Object {

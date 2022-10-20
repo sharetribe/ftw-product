@@ -298,6 +298,49 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
     className="root detailsSelect"
   >
     <label
+      htmlFor="condition"
+    >
+      EditListingDetailsForm.conditionLabel
+    </label>
+    <select
+      className="select"
+      id="condition"
+      name="Condition"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        value=""
+      >
+        EditListingDetailsForm.conditionPlaceholder
+      </option>
+      <option
+        key="new"
+        value="New"
+      >
+        New
+      </option>
+      <option
+        key="good"
+        value="Good"
+      >
+        Good
+      </option>
+      <option
+        key="fair"
+        value="Fair"
+      >
+        Fair
+      </option>
+    </select>
+  </div>
+  <div
+    className="root detailsSelect"
+  >
+    <label
       htmlFor="sorority"
     >
       EditListingDetailsForm.sororityLabel

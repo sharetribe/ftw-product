@@ -137,6 +137,22 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
+      const conditionConfig = findConfigForSelectFilter('condition', filterConfig);
+      const conditionSchemaType = conditionConfig ? conditionConfig.schemaType : null;
+      const conditions = conditionConfig && conditionConfig.options ? conditionConfig.options : [];
+      const conditionLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.conditionLabel',
+      });
+      const conditionPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.conditionPlaceholder',
+      });
+
+      const conditionRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.conditionRequired',
+        })
+      );
+
       const sororityConfig = findConfigForSelectFilter('sorority', filterConfig);
       const sororitySchemaType = sororityConfig ? sororityConfig.schemaType : null;
       const sororities = sororityConfig && sororityConfig.options ? sororityConfig.options : [];
@@ -206,6 +222,16 @@ const EditListingDetailsFormComponent = props => (
             placeholder={colorPlaceholder}
             validate={colorRequired}
             schemaType={colorSchemaType}
+          />
+
+          <CustomFieldEnum
+            id="condition"
+            name="condition"
+            options={conditions}
+            label={conditionLabel}
+            placeholder={conditionPlaceholder}
+            validate={conditionRequired}
+            schemaType={conditionSchemaType}
           />
 
           <CustomFieldEnum
