@@ -1,11 +1,22 @@
 import React from "react";
 import "./Posts.css";
 import Post from "../Post/Post";
+import {
+    LayoutSingleColumn,
+    LayoutWrapperTopbar,
+    LayoutWrapperMain,
+    LayoutWrapperFooter,
+    Footer,
+    ExternalLink,
+  } from '../../../components';
+  import StaticPage from '../../../containers/StaticPage/StaticPage';
+  import TopbarContainer from '../../../containers/TopbarContainer/TopbarContainer';
+  
 
 const Posts = () => {
     const blogPosts = [
       {
-        title: "JAVASCRIPT",
+        title: "testCondition",
         body: `JavaScript is the world most popular 
         lightweight, interpreted compiled programming 
         language. It is also known as scripting 
@@ -64,11 +75,30 @@ const Posts = () => {
     ];
     
     return (
-      <div className="posts-container">
+        <StaticPage
+        title="About Us"
+        schema={{
+          '@context': 'http://schema.org',
+          '@type': 'AboutPage',
+          description: 'About The Sorority Swap',
+          name: 'About page',
+        }}
+      >
+        <LayoutSingleColumn>
+          <LayoutWrapperTopbar>
+            <TopbarContainer />
+          </LayoutWrapperTopbar>
+  
+      <LayoutWrapperMain className="posts-container">
         {blogPosts.map((post, index) => (
           <Post key={index} index={index} post={post} />
         ))}
-      </div>
+      </LayoutWrapperMain>
+      <LayoutWrapperFooter>
+          <Footer />
+        </LayoutWrapperFooter>
+      </LayoutSingleColumn>
+    </StaticPage>
     );
   };
     
