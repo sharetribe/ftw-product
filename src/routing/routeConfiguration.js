@@ -147,7 +147,7 @@ const routeConfiguration = () => {
     // Following are custom
 
     {
-      path: '/blog/:slug',
+      path: '/blog/:id/:slug',
       name: 'BlogPostPage',
       component: BlogPostPage,
     },

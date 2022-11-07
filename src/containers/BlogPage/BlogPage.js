@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {useParams} from "react-router-dom";
+
 import config from '../../config';
 import { twitterPageURL } from '../../util/urlHelpers';
 import {
@@ -19,7 +21,7 @@ import image from './blog-1056.jpg';
 const BlogPage = () => {
   const { siteInstagramPage, siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
-
+  const {id} = useParams();
   // prettier-ignore
   return (
     <StaticPage
@@ -37,7 +39,7 @@ const BlogPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>The Sorority Swap is here for you.</h1>
+          <h1 className={css.pageTitle}>The Sorority Swap is here for you {id}.</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
