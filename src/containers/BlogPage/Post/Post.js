@@ -9,7 +9,6 @@ import "./Post.css";
 const Post = ({ post: { title, body,
     imgUrl, author }, index }) => {
       const slug = createSlug(title);
-        const id = "6351ac74-462c-4f7b-9e93-14ad3809740c";
       return (  
         <NamedLink className="post-container" name="BlogPostPage" params={{ slug }}> 
           <h1 className="heading">{title}</h1>
