@@ -14,6 +14,7 @@ import {
 } from '../../components';
 import StaticPage from '../StaticPage/StaticPage';
 import TopbarContainer from '../TopbarContainer/TopbarContainer';
+import {blogPosts} from './Posts/BlogPosts';
 
 import css from './BlogPage.module.css';
 import image from './blog-1056.jpg';
@@ -22,6 +23,7 @@ const BlogPage = () => {
   const { siteInstagramPage, siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
   const {id} = useParams();
+  const index = parseInt(id);
   // prettier-ignore
   return (
     <StaticPage
@@ -39,7 +41,7 @@ const BlogPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>The Sorority Swap is here for you {id}.</h1>
+          <h1 className={css.pageTitle}>{blogPosts[index]["title"]}</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
