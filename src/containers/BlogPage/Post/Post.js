@@ -15,7 +15,7 @@ class BlogImage extends Component {
 const LazyImage = lazyLoadWithDimensions(BlogImage, { loadAfterInitialRendering: 3000 });
 
 // First param should be title in named link
-const Post = ({ post: { title, body,
+const Post = ({ post: { title, summary,
     imgUrl, author }, index }) => {
       const slug = createSlug(title);
       const id = index;
@@ -25,7 +25,7 @@ const Post = ({ post: { title, body,
           <div className="post-container" name="BlogPostPage" >
             <h1 className="heading">{title}</h1>
             <img className="image" src={imgUrl} alt="post" />
-            <p>{body}</p>
+            <p>{summary}</p>
             <div className="info">      
               <h4>Written by: {author}</h4>
             </div>
