@@ -1,3 +1,5 @@
+@import '../../../../src/styles/propertySets';
+
 body {
     background-color: #ffffff;
 }
@@ -6,3 +8,11 @@ body {
     flex-wrap: wrap;
     margin: 0 0 0 2%
 }
+
+.title {
+    @apply --marketplaceH1FontStyles;
+  
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-left: 6%
+  }

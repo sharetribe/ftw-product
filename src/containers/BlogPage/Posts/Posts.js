@@ -12,6 +12,7 @@ import {
 
   import {blogPosts} from './BlogPosts';
 
+  import { FormattedMessage } from '../../../util/reactIntl';
   import StaticPage from '../../../containers/StaticPage/StaticPage';
   import TopbarContainer from '../../../containers/TopbarContainer/TopbarContainer';
   
@@ -28,11 +29,15 @@ const Posts = () => {
           name: 'Blog page',
         }}
       >
-        <LayoutSingleColumn>
+
+        <div>
           <LayoutWrapperTopbar>
             <TopbarContainer />
           </LayoutWrapperTopbar>
   
+      <div className="title">
+        <FormattedMessage id="The Sorority Swap Thoughts" />
+      </div>
       <LayoutWrapperMain className="posts-container">
       <div className="posts-container">
       {blogPosts.map((post, index) => (
@@ -47,7 +52,7 @@ const Posts = () => {
       <LayoutWrapperFooter>
           <Footer />
         </LayoutWrapperFooter>
-      </LayoutSingleColumn>
+      </div>
     </StaticPage>
     );
   };
