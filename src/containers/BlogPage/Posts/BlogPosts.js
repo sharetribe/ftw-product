@@ -1,5 +1,6 @@
 import image1 from './images/howPresidencyChangedMyLife.jpg';
 import image2 from './images/top5BestThriftStores.png';
+import image3 from './images/gammaPhiBeta.jpeg';
 
 export const blogPosts = [
     {
@@ -47,6 +48,21 @@ export const blogPosts = [
         "Online only thrift store - The Vintage Twin is based in New York City. They offer a smaller but curated selection of clothing. With nationwide shipping, anyone can access their selection."
       ],
       imgCredit: "Via dressember.org.",
+      datePublished: "December 6, 2022",
+    },
+    {
+      title: "Gamma Phi Beta",
+      summary: `Sorority Spotlight: No. 1`,
+      author: "Matthew Boccia",
+      imgUrl: image3,
+      body: [
+        "To start off our new series, Sorority Spotlight, we will be taking a look at the first chapter to coin the term “sorority”; Gamma Phi Beta. The sorority was founded on November 11th, 1874, by Frances E. Haven, Helen Dodge, Adeline Curtis, and Mary Bingham. Expanding nationally over the following decades, Gamma Phi Beta became one of the seven founding members of the National Panhellenic Conference’s (NPC) in 1891. The NPC stands today as one of the oldest and largest women’s membership organizations, including 26 sororities and representing over 4 million members.",
+        "Gamma Phi Beta’s colors are pink (blush) and brown (a-la-mode), the official flower is a pink carnation, and the symbol is the crescent moon. Their Gamma Phi Beta badge was designed by Tiffany & Co in 1874, and is known around the panhellenic community for its beautiful design.",
+        "The sorority currently has over 224,00 members, with an international headquarters based in Centennial, Colorado. At this headquarters, there is a Gamma Phi Beta museum that holds important artifacts to the chapter’s history.",
+        "The impact of Gamma Phi Beta reaches far beyond the bounds of its members, continuing to serve as an industry leader in philanthropy. The sorority has recently partnered with Girls on the Run, a non profit organization that strives for a physical activity-based positive youth development (PA-PYD) program designed to enhance girls’ social, emotional and physical skills and behaviors to successfully navigate life experiences.",
+        "The members of Gamma Phi Beta have continued to pioneer female excellence in numerous industries over the years, with notable members of the sorority including: Alex Flanagan(sports reporter for ESPN), Jennifer Dunn (Former US Congresswoman), Laurel Clark(NASA Astronaut), and Marguerite Higgins(Pulitzer Prize Winner). If you are interested in learning more about Gamma Phi Beta, check out their official website at https://www.gammaphibeta.org/.",
+      ],
+      imgCredit: "Via gammaphibeta.org",
       datePublished: "December 6, 2022",
     },
   ];
