@@ -16,7 +16,7 @@ const LazyImage = lazyLoadWithDimensions(BlogImage, { loadAfterInitialRendering:
 
 // First param should be title in named link
 const Post = ({ post: { title, summary,
-    imgUrl, author }, index }) => {
+    imgUrl, author }, index, datePublished }) => {
       const slug = createSlug(title);
       const id = index;
       return (  
