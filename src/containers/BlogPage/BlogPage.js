@@ -27,7 +27,7 @@ const BlogPage = () => {
   // prettier-ignore
   return (
     <StaticPage
-      title="The Sorority Swap: let's chat!"
+      title="The Sorority Swap Thoughts"
       schema={{
         '@context': 'http://schema.org',
         '@type': 'BlogPage',
