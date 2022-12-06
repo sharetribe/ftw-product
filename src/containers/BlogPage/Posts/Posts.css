@@ -1,0 +1,18 @@
+@import '../../../../src/styles/propertySets';
+
+body {
+    background-color: #ffffff;
+}
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 0 0 2%
+}
+
+.title {
+    @apply --marketplaceH1FontStyles;
+  
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-left: 6%
+  }

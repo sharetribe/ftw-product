@@ -14,6 +14,10 @@ import { NamedRedirect } from '../components';
 const pageDataLoadingAPI = getPageDataLoadingAPI();
 
 const AboutPage = loadable(() => import(/* webpackChunkName: "AboutPage" */ '../containers/AboutPage/AboutPage'));
+
+const BlogPage = loadable(() => import(/* webpackChunkName: "BlogPage" */ '../containers/BlogPage/Posts/Posts'));
+const BlogPostPage = loadable(() => import(/* webpackChunkName: "BlogPost Page" */ '../containers/BlogPage/BlogPage'));
+
 const AuthenticationPage = loadable(() => import(/* webpackChunkName: "AuthenticationPage" */ '../containers/AuthenticationPage/AuthenticationPage'));
 const CheckoutPage = loadable(() => import(/* webpackChunkName: "CheckoutPage" */ '../containers/CheckoutPage/CheckoutPage'));
 const ContactDetailsPage = loadable(() => import(/* webpackChunkName: "ContactDetailsPage" */ '../containers/ContactDetailsPage/ContactDetailsPage'));
@@ -78,6 +82,11 @@ const routeConfiguration = () => {
       component: AboutPage,
     },
     {
+      path: '/blog',
+      name: 'BlogPage',
+      component: BlogPage,
+    },
+    {
       path: '/s',
       name: 'SearchPage',
       component: SearchPage,
@@ -133,6 +142,14 @@ const routeConfiguration = () => {
       auth: true,
       component: EditListingPage,
       loadData: pageDataLoadingAPI.EditListingPage.loadData,
+    },
+
+    // Following are custom
+
+    {
+      path: '/blog/:id/:slug',
+      name: 'BlogPostPage',
+      component: BlogPostPage,
     },
 
     // Canonical path should be after the `/l/new` path since they
