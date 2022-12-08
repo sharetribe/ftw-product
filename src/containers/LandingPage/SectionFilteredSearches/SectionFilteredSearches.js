@@ -60,7 +60,7 @@ const SectionFilteredSearches = props => {
   // - "link" should be copy-pasted URL from search page.
   //    The domain doesn't matter, but search query does. (I.e. "?pub_category=shirts")
   return (
-    <div className={classes}>
+    <div>
       <div className={css.title}>
         <FormattedMessage id="SectionFilteredSearches.title" />
       </div>

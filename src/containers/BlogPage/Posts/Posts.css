@@ -5,14 +5,39 @@ body {
 }
 .posts-container {
     display: flex;
-    flex-wrap: wrap;
-    margin: 2% 0 0 2%
+    flex-direction: column;
+    /* margin: 2% 0 0 2% */
+    margin-top: 0px;
+    @media (--viewportMedium) {
+        flex-direction: row;
+        margin-top: 33px;
+      }
 }
 
 .title {
     @apply --marketplaceH1FontStyles;
-  
-    margin-top: 2em;
+
+    margin-top: 0;
     margin-bottom: 0;
-    margin-left: 6%
+  }
+
+
+  .sectionContent {
+    margin: var(--LandingPage_sectionMarginTop) 24px 51px 24px;
+  
+    @media (--viewportMedium) {
+      max-width: 100%;
+      margin: var(--LandingPage_sectionMarginTopMedium) 24px 60px 24px;
+    }
+  
+    @media (--viewportLarge) {
+      max-width: 1128px;
+      padding: 0 36px 0 36px;
+      margin: var(--LandingPage_sectionMarginTopLarge) auto 93px auto;
+    }
+  
+    @media (--viewportXLarge) {
+      max-width: 1056px;
+      padding: 0;
+    }
   }
