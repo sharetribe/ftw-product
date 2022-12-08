@@ -11,22 +11,8 @@
 }
 .heading {
     height: 30%;
-
-    /* text-align: center; */
     display: flex;
-    top: 0;
-    /* align-items: center; */
 }
-/* .image {
-    width: 100%;
-    height: 210px;
-    @media (--viewportMedium) {
-        &:hover {
-          transform: scale(1.02);
-          box-shadow: var(--boxShadowListingCard);
-        }
-      }
-} */
 
 .overallWrapper {
     overflow: auto;
