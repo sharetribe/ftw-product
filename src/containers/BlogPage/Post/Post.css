@@ -14,10 +14,6 @@
     display: flex;
 }
 
-.overallWrapper {
-    overflow: auto;
-}
-
 .searchLink {
     width: 300px;
     margin-top: 25px;
@@ -91,7 +87,7 @@ a:active { text-decoration: none; }
     @apply --marketplaceH2FontStyles;
     color: var(--matterColor);
     margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
   
     @media (--viewportMedium) {
       margin-top: 21px;
