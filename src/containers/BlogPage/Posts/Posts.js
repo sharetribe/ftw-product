@@ -21,7 +21,7 @@ const Posts = () => {
 
     return (
         <StaticPage
-        title="About Us"
+        title="The Sorority Swap Thoughts"
         schema={{
           '@context': 'http://schema.org',
           '@type': 'BlogPage',
