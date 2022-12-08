@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-flow: row wrap;
     flex-direction: column;
-    /* margin: 2% 0 0 2% */
     margin-top: 0px;
     @media (--viewportMedium) {
         flex-direction: row;
