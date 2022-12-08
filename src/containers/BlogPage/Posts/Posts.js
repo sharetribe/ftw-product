@@ -34,7 +34,8 @@ const Posts = () => {
           <LayoutWrapperTopbar>
             <TopbarContainer />
           </LayoutWrapperTopbar>
-  
+
+      <div className="sectionContent">
       <div className="title">
         <FormattedMessage id="The Sorority Swap Thoughts" />
       </div>
@@ -44,11 +45,13 @@ const Posts = () => {
         <Post 
           key={index} 
           index={index} 
-          post={post} 
+          post={post}
           />
       ))}
     </div>
       </LayoutWrapperMain>
+      </div>
+
       <LayoutWrapperFooter>
           <Footer />
         </LayoutWrapperFooter>
