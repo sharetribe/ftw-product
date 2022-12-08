@@ -1,5 +1,7 @@
 import image1 from './images/howPresidencyChangedMyLife.jpg';
 import image2 from './images/top5BestThriftStores.png';
+import image3 from './images/gammaPhiBeta.jpeg';
+
 
 export const blogPosts = [
     {
