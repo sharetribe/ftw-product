@@ -5,6 +5,7 @@ body {
 }
 .posts-container {
     display: flex;
+    flex-flow: row wrap;
     flex-direction: column;
     /* margin: 2% 0 0 2% */
     margin-top: 0px;

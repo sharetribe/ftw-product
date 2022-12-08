@@ -20,11 +20,15 @@ const Post = ({ post: { title, summary,
       const slug = createSlug(title);
       const id = index;
       return (  
-        <NamedLink className="searchLink" name="BlogPostPage" params={{ id, slug }}> 
+        <NamedLink className="searchLink overallWrapper" name="BlogPostPage" params={{ id, slug }}> 
 
           {/* <div className="post-container" name="BlogPostPage" > */}
             <h1 className="heading">{title}</h1>
-            <img className="image" src={imgUrl} className="imageWrapper"/>
+            <div className="imageWrapper">
+              <div className="aspectWrapper">
+                <img className="image" src={imgUrl} className="searchImage"/>
+              </div>
+            </div>
             <p>{summary}</p>
             <div className="linkText">      
               <h4>Written by: {author}</h4>
