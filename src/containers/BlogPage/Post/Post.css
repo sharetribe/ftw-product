@@ -11,9 +11,9 @@
 }
 .heading {
     height: 126px;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 /* .image {
     width: 100%;
@@ -71,5 +71,16 @@ a:active { text-decoration: none; }
     &:hover {
       transform: scale(1.02);
       box-shadow: var(--boxShadowSectionLocationHover);
+    }
+  }
+
+  .linkText {
+    @apply --marketplaceH2FontStyles;
+    color: var(--matterColor);
+    margin-top: 15px;
+    margin-bottom: 0;
+  
+    @media (--viewportMedium) {
+      margin-top: 21px;
     }
   }

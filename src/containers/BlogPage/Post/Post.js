@@ -26,7 +26,7 @@ const Post = ({ post: { title, summary,
             <h1 className="heading">{title}</h1>
             <img className="image" src={imgUrl} className="imageWrapper"/>
             <p>{summary}</p>
-            <div className="info">      
+            <div className="linkText">      
               <h4>Written by: {author}</h4>
             </div>
           {/* </div> */}
