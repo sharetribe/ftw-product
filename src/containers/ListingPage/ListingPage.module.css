@@ -518,6 +518,13 @@
   }
 }
 
+.detailsRowSelect {
+  /* display: inline-flex; */
+  /* padding: 10px 10px 10px 10px; */
+  align-items: right;
+  width: 30%;
+}
+
 .detailLabel {
   font-weight: var(--fontWeightSemiBold);
   letter-spacing: -0.09px;

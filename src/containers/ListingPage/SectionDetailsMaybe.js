@@ -34,9 +34,13 @@ const SectionDetailsMaybe = props => {
       </h2>
       <ul className={css.details}>
         {existingExtendedData.map(detail => (
-          <li key={detail.key} className={css.detailsRow}>
+          <li key={detail.key} className={css.detailsRow} id="detailsRow">
             <span className={css.detailLabel}>{detail.label}</span>
-            <span>{detail.value}</span>
+            {/* <span>{detail.value}</span> */}
+            <select className={css.detailsRowSelect}>
+              <option disabled selected value> Select an option! </option>
+              <option>Hello</option>
+            </select>
           </li>
         ))}
       </ul>
