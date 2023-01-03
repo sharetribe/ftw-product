@@ -175,6 +175,44 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
       </option>
     </select>
   </div>
+
+  <div
+    className="root detailsSelect"
+  >
+    <label
+      htmlFor="madeToOrder"
+    >
+      EditListingDetailsForm.madeToOrderLabel
+    </label>
+    <select
+      className="select"
+      id="madeToOrder"
+      name="Made to Order"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        value=""
+      >
+        EditListingDetailsForm.madeToOrderPlaceholder
+      </option>
+      <option
+        key="true"
+        value="True"
+      >
+        True
+      <option
+        key="false"
+        value="False"
+      >
+        False
+      </option>
+    </select>
+  </div>
+
   <div
     className="root detailsSelect"
   >

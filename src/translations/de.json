@@ -192,6 +192,10 @@
   "EditListingDetailsForm.conditionPlaceholder": "Choose…",
   "EditListingDetailsForm.conditionRequired": "You need to select a condition.",
 
+  "EditListingDetailsForm.madeToOrderLabel": "Made to Order",
+  "EditListingDetailsForm.madeToOrderPlaceholder": "Choose…",
+  "EditListingDetailsForm.madeToOrderRequired": "Is your product made to order?",
+
   "EditListingDetailsForm.title": "Title",
   "EditListingDetailsForm.titlePlaceholder": "What clothing are you selling?",
   "EditListingDetailsForm.titleRequired": "You need to add a name.",

@@ -105,6 +105,22 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
+      const madeToOrderConfig = findConfigForSelectFilter('madeToOrder', filterConfig);
+      const madeToOrderSchemaType = madeToOrderConfig ? madeToOrderConfig.schemaType : null;
+      const madeToOrderOptions = madeToOrderConfig && madeToOrderConfig.options ? madeToOrderConfig.options : [];
+      const madeToOrderLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.madeToOrderLabel',
+      });
+      const madeToOrderPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.madeToOrderPlaceholder',
+      });
+
+      const madeToOrderRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.madeToOrderRequired',
+        })
+      );
+
       const sizeConfig = findConfigForSelectFilter('size', filterConfig);
       const sizeSchemaType = sizeConfig ? sizeConfig.schemaType : null;
       const sizes = sizeConfig && sizeConfig.options ? sizeConfig.options : [];
@@ -194,6 +210,17 @@ const EditListingDetailsFormComponent = props => (
             placeholder={descriptionPlaceholderMessage}
             validate={composeValidators(required(descriptionRequiredMessage))}
           />
+
+          <CustomFieldEnum
+            id="madeToOrder"
+            name="Made to Order"
+            options={madeToOrderOptions}
+            label={madeToOrderLabel}
+            placeholder={madeToOrderPlaceholder}
+            validate={madeToOrderRequired}
+            schemaType={madeToOrderSchemaType}
+          />
+
           <CustomFieldEnum
             id="category"
             name="category"
