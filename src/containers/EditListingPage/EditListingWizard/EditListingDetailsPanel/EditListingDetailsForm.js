@@ -185,6 +185,22 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
+      const blahConfig = findConfigForSelectFilter('blah', filterConfig);
+      const blahSchemaType = blahConfig ? blahConfig.schemaType : null;
+      const blahs = blahConfig && blahConfig.options ? blahConfig.options : [];
+      const blahLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.blahLabel',
+      });
+      const blahPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.blahPlaceholder',
+      });
+
+      const blahRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.blahRequired',
+        })
+      );
+
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           {errorMessageCreateListingDraft}
@@ -213,7 +229,7 @@ const EditListingDetailsFormComponent = props => (
 
           <CustomFieldEnum
             id="madeToOrder"
-            name="Made to Order"
+            name="madeToOrder"
             options={madeToOrderOptions}
             label={madeToOrderLabel}
             placeholder={madeToOrderPlaceholder}
@@ -269,6 +285,17 @@ const EditListingDetailsFormComponent = props => (
             placeholder={sororityPlaceholder}
             validate={sororityRequired}
             schemaType={sororitySchemaType}
+          />
+
+
+          <CustomFieldEnum
+            id="blah"
+            name="Blah"
+            options={blahs}
+            label={blahLabel}
+            placeholder={blahPlaceholder}
+            validate={blahRequired}
+            schemaType={blahSchemaType}
           />
 
           <Button

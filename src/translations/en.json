@@ -196,6 +196,10 @@
   "EditListingDetailsForm.madeToOrderPlaceholder": "Choose…",
   "EditListingDetailsForm.madeToOrderRequired": "Is your product made to order?",
 
+  "EditListingDetailsForm.blahLabel": "Blah",
+  "EditListingDetailsForm.blahPlaceholder": "Choose…",
+  "EditListingDetailsForm.blahRequired": "Blah?",
+
   "EditListingDetailsForm.title": "Title",
   "EditListingDetailsForm.titlePlaceholder": "What apparel are you selling?",
   "EditListingDetailsForm.titleRequired": "You need to add a name.",
