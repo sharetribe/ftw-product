@@ -105,19 +105,19 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
-      const madeToOrderConfig = findConfigForSelectFilter('madeToOrder', filterConfig);
-      const madeToOrderSchemaType = madeToOrderConfig ? madeToOrderConfig.schemaType : null;
-      const madeToOrderOptions = madeToOrderConfig && madeToOrderConfig.options ? madeToOrderConfig.options : [];
-      const madeToOrderLabel = intl.formatMessage({
-        id: 'EditListingDetailsForm.madeToOrderLabel',
+      const madetoorderConfig = findConfigForSelectFilter('madetoorder', filterConfig);
+      const madetoorderSchemaType = madetoorderConfig ? madetoorderConfig.schemaType : null;
+      const madetoorderOptions = madetoorderConfig && madetoorderConfig.options ? madetoorderConfig.options : [];
+      const madetoorderLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.madetoorderLabel',
       });
-      const madeToOrderPlaceholder = intl.formatMessage({
-        id: 'EditListingDetailsForm.madeToOrderPlaceholder',
+      const madetoorderPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.madetoorderPlaceholder',
       });
 
-      const madeToOrderRequired = required(
+      const madetoorderRequired = required(
         intl.formatMessage({
-          id: 'EditListingDetailsForm.madeToOrderRequired',
+          id: 'EditListingDetailsForm.madetoorderRequired',
         })
       );
 
@@ -228,13 +228,13 @@ const EditListingDetailsFormComponent = props => (
           />
 
           <CustomFieldEnum
-            id="madeToOrder"
-            name="madeToOrder"
-            options={madeToOrderOptions}
-            label={madeToOrderLabel}
-            placeholder={madeToOrderPlaceholder}
-            validate={madeToOrderRequired}
-            schemaType={madeToOrderSchemaType}
+            id="madetoorder"
+            name="madetoorder"
+            options={madetoorderOptions}
+            label={madetoorderLabel}
+            placeholder={madetoorderPlaceholder}
+            validate={madetoorderRequired}
+            schemaType={madetoorderSchemaType}
           />
 
           <CustomFieldEnum

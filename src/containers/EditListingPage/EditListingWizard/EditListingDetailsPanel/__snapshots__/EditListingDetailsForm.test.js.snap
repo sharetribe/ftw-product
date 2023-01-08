@@ -180,13 +180,13 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
     className="root detailsSelect"
   >
     <label
-      htmlFor="madeToOrder"
+      htmlFor="madetoorder"
     >
-      EditListingDetailsForm.madeToOrderLabel
+      EditListingDetailsForm.madetoorderLabel
     </label>
     <select
       className="select"
-      id="madeToOrder"
+      id="madetoorder"
       name="Made to Order"
       onBlur={[Function]}
       onChange={[Function]}
@@ -197,7 +197,7 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         disabled={true}
         value=""
       >
-        EditListingDetailsForm.madeToOrderPlaceholder
+        EditListingDetailsForm.madetoorderPlaceholder
       </option>
       <option
         key="true"

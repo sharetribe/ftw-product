@@ -100,7 +100,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "schemaType": "enum",
               },
               "group": "primary",
-              "id": "madeToOrder",
+              "id": "madetoorder",
               "label": "Made to Order",
               "queryParamNames": Array [
                 "pub_madetoorder",
@@ -112,7 +112,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
           idPrefix="SearchFiltersMobile"
           initialValues={[Function]}
           isDesktop={true}
-          key="SearchFiltersMobile.madeToOrder"
+          key="SearchFiltersMobile.madetoorder"
           liveEdit={true}
           showAsPopup={false}
           urlQueryParams={Object {}}
@@ -581,7 +581,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                   "schemaType": "enum",
                 },
                 "group": "primary",
-                "id": "madeToOrder",
+                "id": "madetoorder",
                 "label": "Made to Order",
                 "queryParamNames": Array [
                   "pub_madetoorder",
@@ -593,7 +593,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
             idPrefix="SearchFiltersMobile"
             initialValues={[Function]}
             isDesktop={true}
-            key="SearchFiltersMobile.madeToOrder"
+            key="SearchFiltersMobile.madetoorder"
             liveEdit={true}
             showAsPopup={false}
             urlQueryParams={Object {}}
