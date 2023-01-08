@@ -32,7 +32,7 @@ const SectionDetailsMaybe = props => {
   function isMadeToOrder(extendedData) {
     for(let i = 0; i < extendedData.length; i++) {
       if(extendedData[i].key == "madetoorder") {
-        if(extendedData[i].value == true) {
+        if(extendedData[i].value == "True") {
           return true;
         } else {
           return false;
