@@ -7,7 +7,7 @@
  * These variables are available in global scope through ":root"
  * element (<html> tag). You can use Custom Properties to achieve
  * more dynamic theming by changing the value on the fly with JS:
- * document.documentElement.style.setProperty("--marketplaceColor", '#55AA55');
+ * document.documentElement.style.setProperty("--marketplaceColor: rebeccapurple;);
  *
  * Read more about how to use CSS Custom Properties
  * https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
@@ -16,7 +16,7 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #5d2bc0; /* hsl(260, 63%, 46%) */
+  --marketplaceColor: rebeccapurple; /* hsl(260, 63%, 46%) */
   --marketplaceColorLight: #7748d5; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
   --marketplaceColorDark: #34196c; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
 
