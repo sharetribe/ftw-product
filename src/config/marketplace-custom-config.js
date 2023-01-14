@@ -35,8 +35,8 @@
 
 export const filters = [
   {
-    id: 'category',
-    label: 'Category',
+    id: 'set',
+    label: 'Set',
     type: 'SelectSingleFilter',
     group: 'primary',
     queryParamNames: ['pub_category'],
@@ -49,15 +49,15 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'men', label: 'Men' },
-        { key: 'women', label: 'Women' },
-        { key: 'kids', label: 'Kids' },
+        { key: 'single', label: 'Single' },
+        { key: 'set_of_3', label: 'Set_of_3' },
+        { key: 'set_of_6', label: 'Set_of_6' },
       ],
     },
   },
   {
-    id: 'size',
-    label: 'Size (US)',
+    id: 'amount',
+    label: 'Amount (of sets)',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_size'],
@@ -73,21 +73,21 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
+        { key: '1', label: '1' },
+        { key: '2', label: '2' },
+        { key: '3', label: '3' },
         { key: '4', label: '4' },
         { key: '5', label: '5' },
         { key: '6', label: '6' },
         { key: '7', label: '7' },
         { key: '8', label: '8' },
         { key: '9', label: '9' },
-        { key: '10', label: '10' },
-        { key: '11', label: '11' },
-        { key: '12', label: '12' },
       ],
     },
   },
   {
-    id: 'brand',
-    label: 'Brand',
+    id: 'artifact',
+    label: 'Artifact',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_brand'],
@@ -103,15 +103,15 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'adidas', label: 'Adidas' },
-        { key: 'air_jordan', label: 'Air Jordan' },
-        { key: 'converse', label: 'Converse' },
-        { key: 'new_balance', label: 'New Balance' },
-        { key: 'nike', label: 'Nike' },
-        { key: 'puma', label: 'Puma' },
-        { key: 'ultraboost', label: 'Ultraboost' },
-        { key: 'vans', label: 'Vans' },
-        { key: 'yeezy', label: 'Yeezy' },
+        { key: 'mugs', label: 'Adidas' },
+        { key: 'plates', label: 'Air Jordan' },
+        { key: 'vases', label: 'Converse' },
+        { key: 'pots', label: 'New Balance' },
+        { key: 'jewelry', label: 'Nike' },
+        { key: 'custom', label: 'Puma' },
+        { key: 'registry', label: 'Ultraboost' },
+        { key: 'accessories', label: 'Vans' },
+        { key: 'figurines', label: 'Figurines' },
         { key: 'other', label: 'Other' },
       ],
     },
