@@ -177,7 +177,7 @@ export const filters = [
     label: 'Blah',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_condition'],
+    queryParamNames: ['pub_blah'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.

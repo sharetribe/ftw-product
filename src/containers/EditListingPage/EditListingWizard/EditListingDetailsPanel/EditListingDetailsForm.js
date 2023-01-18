@@ -9,19 +9,22 @@ import config from '../../../../config';
 import { intlShape, injectIntl, FormattedMessage } from '../../../../util/reactIntl';
 import { propTypes } from '../../../../util/types';
 import { maxLength, required, composeValidators } from '../../../../util/validators';
-import { findConfigForSelectFilter } from '../../../../util/search';
+import { findConfigForSelectFilter, findOptionsForSelectFilter } from '../../../../util/search';
 
 // Import shared components
-import { Form, Button, FieldTextInput } from '../../../../components';
+import { Form, Button, FieldTextInput, FieldCheckboxGroup } from '../../../../components';
 // Import modules from this directory
 import CustomFieldEnum from '../CustomFieldEnum';
 import css from './EditListingDetailsForm.module.css';
+
+import arrayMutators from 'final-form-arrays';
 
 const TITLE_MAX_LENGTH = 60;
 
 const EditListingDetailsFormComponent = props => (
   <FinalForm
     {...props}
+    mutators={{ ...arrayMutators }}
     render={formRenderProps => {
       const {
         autoFocus,
@@ -185,21 +188,23 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
-      const blahConfig = findConfigForSelectFilter('blah', filterConfig);
-      const blahSchemaType = blahConfig ? blahConfig.schemaType : null;
-      const blahs = blahConfig && blahConfig.options ? blahConfig.options : [];
-      const blahLabel = intl.formatMessage({
-        id: 'EditListingDetailsForm.blahLabel',
-      });
-      const blahPlaceholder = intl.formatMessage({
-        id: 'EditListingDetailsForm.blahPlaceholder',
-      });
+      // const blahConfig = findOptionsForSelectFilter('blah', filterConfig);
+      // const blahSchemaType = blahConfig ? blahConfig.schemaType : null;
+      // const blahs = blahConfig && blahConfig.options ? blahConfig.options : [];
+      // const blahLabel = intl.formatMessage({
+      //   id: 'EditListingDetailsForm.blahLabel',
+      // });
+      // const blahPlaceholder = intl.formatMessage({
+      //   id: 'EditListingDetailsForm.blahPlaceholder',
+      // });
 
-      const blahRequired = required(
-        intl.formatMessage({
-          id: 'EditListingDetailsForm.blahRequired',
-        })
-      );
+      // const blahRequired = required(
+      //   intl.formatMessage({
+      //     id: 'EditListingDetailsForm.blahRequired',
+      //   })
+      // );
+      const blahs = findOptionsForSelectFilter('blah', filterConfig);
+
 
       return (
         <Form className={classes} onSubmit={handleSubmit}>
@@ -228,16 +233,6 @@ const EditListingDetailsFormComponent = props => (
           />
 
           <CustomFieldEnum
-            id="madetoorder"
-            name="madetoorder"
-            options={madetoorderOptions}
-            label={madetoorderLabel}
-            placeholder={madetoorderPlaceholder}
-            validate={madetoorderRequired}
-            schemaType={madetoorderSchemaType}
-          />
-
-          <CustomFieldEnum
             id="category"
             name="category"
             options={categories}
@@ -245,6 +240,16 @@ const EditListingDetailsFormComponent = props => (
             placeholder={categoryPlaceholder}
             validate={categoryRequired}
             schemaType={categorySchemaType}
+          />
+
+          <CustomFieldEnum
+            id="madetoorder"
+            name="madetoorder"
+            options={madetoorderOptions}
+            label={madetoorderLabel}
+            placeholder={madetoorderPlaceholder}
+            validate={madetoorderRequired}
+            schemaType={madetoorderSchemaType}
           />
 
           <CustomFieldEnum
@@ -287,16 +292,12 @@ const EditListingDetailsFormComponent = props => (
             schemaType={sororitySchemaType}
           />
 
-
-          <CustomFieldEnum
-            id="blah"
-            name="Blah"
+          <FieldCheckboxGroup 
+            className={css.features}
+            id="blah" 
+            name="blah" 
             options={blahs}
-            label={blahLabel}
-            placeholder={blahPlaceholder}
-            validate={blahRequired}
-            schemaType={blahSchemaType}
-          />
+            />
 
           <Button
             className={css.submitButton}
