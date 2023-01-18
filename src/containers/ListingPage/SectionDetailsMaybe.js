@@ -42,7 +42,6 @@ const SectionDetailsMaybe = props => {
     return false;
   }
 
-  const options = ["Hello"];
   return existingExtendedData ? (
     <div className={css.sectionDetails}>
       <h2 className={css.detailsTitle}>

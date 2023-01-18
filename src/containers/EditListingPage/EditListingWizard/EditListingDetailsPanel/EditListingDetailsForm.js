@@ -190,13 +190,17 @@ const EditListingDetailsFormComponent = props => (
 
       const blahs = findOptionsForSelectFilter('blah', filterConfig);
 
+      function isMadeToOrder() {
+        return true;
+      }
 
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           {errorMessageCreateListingDraft}
           {errorMessageUpdateListing}
           {errorMessageShowListing}
-          <FieldTextInput
+          {isMadeToOrder() ?
+            <FieldTextInput
             id="title"
             name="title"
             className={css.title}
@@ -206,7 +210,8 @@ const EditListingDetailsFormComponent = props => (
             maxLength={TITLE_MAX_LENGTH}
             validate={composeValidators(required(titleRequiredMessage), maxLength60Message)}
             autoFocus={autoFocus}
-          />
+          /> : <div>Hello</div>}
+
           <FieldTextInput
             id="description"
             name="description"
