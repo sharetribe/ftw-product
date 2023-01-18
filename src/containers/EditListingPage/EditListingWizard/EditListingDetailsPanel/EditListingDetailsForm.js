@@ -40,6 +40,7 @@ const EditListingDetailsFormComponent = props => (
         updateInProgress,
         fetchErrors,
         filterConfig,
+        isMadeToOrder,
       } = formRenderProps;
 
       const titleMessage = intl.formatMessage({ id: 'EditListingDetailsForm.title' });
@@ -190,17 +191,13 @@ const EditListingDetailsFormComponent = props => (
 
       const blahs = findOptionsForSelectFilter('blah', filterConfig);
 
-      function isMadeToOrder() {
-        return true;
-      }
-
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           {errorMessageCreateListingDraft}
           {errorMessageUpdateListing}
           {errorMessageShowListing}
-          {isMadeToOrder() ?
-            <FieldTextInput
+
+          <FieldTextInput
             id="title"
             name="title"
             className={css.title}
@@ -210,7 +207,7 @@ const EditListingDetailsFormComponent = props => (
             maxLength={TITLE_MAX_LENGTH}
             validate={composeValidators(required(titleRequiredMessage), maxLength60Message)}
             autoFocus={autoFocus}
-          /> : <div>Hello</div>}
+          /> 
 
           <FieldTextInput
             id="description"
@@ -242,6 +239,8 @@ const EditListingDetailsFormComponent = props => (
             schemaType={madetoorderSchemaType}
           />
 
+          {!isMadeToOrder ?
+          <div>
           <CustomFieldEnum
             id="size"
             name="size"
@@ -281,7 +280,9 @@ const EditListingDetailsFormComponent = props => (
             validate={sororityRequired}
             schemaType={sororitySchemaType}
           />
-
+          </div>
+          : 
+          
           <FieldCheckboxGroup 
             className={css.features}
             id="blah" 
@@ -289,6 +290,10 @@ const EditListingDetailsFormComponent = props => (
             options={blahs}
             label="Blah"
             />
+
+          }
+
+
 
           <Button
             className={css.submitButton}
