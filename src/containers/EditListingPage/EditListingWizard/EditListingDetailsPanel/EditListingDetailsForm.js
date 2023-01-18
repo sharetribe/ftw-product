@@ -188,21 +188,6 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
-      // const blahConfig = findOptionsForSelectFilter('blah', filterConfig);
-      // const blahSchemaType = blahConfig ? blahConfig.schemaType : null;
-      // const blahs = blahConfig && blahConfig.options ? blahConfig.options : [];
-      // const blahLabel = intl.formatMessage({
-      //   id: 'EditListingDetailsForm.blahLabel',
-      // });
-      // const blahPlaceholder = intl.formatMessage({
-      //   id: 'EditListingDetailsForm.blahPlaceholder',
-      // });
-
-      // const blahRequired = required(
-      //   intl.formatMessage({
-      //     id: 'EditListingDetailsForm.blahRequired',
-      //   })
-      // );
       const blahs = findOptionsForSelectFilter('blah', filterConfig);
 
 
@@ -297,6 +282,7 @@ const EditListingDetailsFormComponent = props => (
             id="blah" 
             name="blah" 
             options={blahs}
+            label="Blah"
             />
 
           <Button
