@@ -4,10 +4,16 @@ import { FieldSelect } from '../../../components';
 // Import modules from this directory
 import css from './EditListingWizard.module.css';
 
+import { useFormState } from 'react-final-form';
+
 const CustomFieldEnum = props => {
   const { name, id, options, label, placeholder, validate, schemaType } = props;
 
+  const formState = useFormState();
+let value = formState.values['sorority'];
+
   return options && schemaType === 'enum' ? (
+    <><div>{value}</div>
     <FieldSelect
       className={css.detailsSelect}
       name={name}
@@ -24,7 +30,7 @@ const CustomFieldEnum = props => {
         </option>
       ))}
     </FieldSelect>
-  ) : null;
+  </>) : null;
 };
 
 export default CustomFieldEnum;
