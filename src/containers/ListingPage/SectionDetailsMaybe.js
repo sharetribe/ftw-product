@@ -5,6 +5,7 @@ import CustomFieldEnum from '../EditListingPage/EditListingWizard/CustomFieldEnu
 import { Form } from '../../components';
 
 import css from './ListingPage.module.css';
+import { YesNo } from '../../components/FieldBoolean/FieldBoolean.example';
 
 const SectionDetailsMaybe = props => {
   const { publicData, customConfig } = props;
@@ -42,21 +43,33 @@ const SectionDetailsMaybe = props => {
     return false;
   }
 
+  const madeToOrderFields = ['category','blah'];
+  const notMadeToOrderFields = ['category','size','sorority','color','condition'];
+
   return existingExtendedData ? (
     <div className={css.sectionDetails}>
       <h2 className={css.detailsTitle}>
         <FormattedMessage id="ListingPage.detailsTitle" />
       </h2>
       <ul className={css.details}>
-        {existingExtendedData.map(detail => (
+        {existingExtendedData.map(detail => (!isMadeToOrder(existingExtendedData) && notMadeToOrderFields.includes(detail.key) ?
           <li key={detail.key} className={css.detailsRow} id="detailsRow">
             <span className={css.detailLabel}>{detail.label}</span>
-            {isMadeToOrder(existingExtendedData) ? 
+            <span>{detail.value}</span>
+          </li> : null
+        ))}
+        {existingExtendedData.map(detail => (isMadeToOrder(existingExtendedData) && madeToOrderFields.includes(detail.key) ?
+          <li key={detail.key} className={css.detailsRow} id="detailsRow">
+            <span className={css.detailLabel}>{detail.label}</span>
+            {Array.isArray(detail.value) ? 
               <select className={css.detailsRowSelect}>
                 <option disabled selected value> Select an option! </option>
-                <option>Hello</option>
-              </select> : <span>{detail.value}</span>}
-          </li>
+                {detail.value.map(option => (
+                  <option>{option}</option>
+                ))}
+              </select> : <span>{detail.value}</span>
+            }
+          </li> : null
         ))}
       </ul>
     </div>
