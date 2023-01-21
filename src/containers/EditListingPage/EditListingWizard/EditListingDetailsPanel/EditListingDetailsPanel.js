@@ -43,14 +43,6 @@ const EditListingDetailsPanel = props => {
     <FormattedMessage id="EditListingDetailsPanel.createListingTitle" />
   );
 
-  function isMadeToOrder() {
-    if(publicData.madetoorder == "true") {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   return (
     <div className={classes}>
       <h1 className={css.title}>{panelTitle}</h1>
@@ -67,7 +59,6 @@ const EditListingDetailsPanel = props => {
           sorority: publicData.sorority,
           blah: publicData.blah,
         }}
-        isMadeToOrder={isMadeToOrder()}
         saveActionMsg={submitButtonText}
         onSubmit={values => {
           const { title, description, category, madetoorder, size, color, condition, sorority } = values;

@@ -7,13 +7,24 @@ import css from './EditListingWizard.module.css';
 import { useFormState } from 'react-final-form';
 
 const CustomFieldEnum = props => {
-  const { name, id, options, label, placeholder, validate, schemaType } = props;
+  const { name, id, options, label, placeholder, validate, schemaType, shouldHideOnMadeToOrder } = props;
 
   const formState = useFormState();
-let value = formState.values['sorority'];
+  let value = formState.values['sorority'];
 
-  return options && schemaType === 'enum' ? (
-    <><div>{value}</div>
+  function shouldHide() {
+    if(shouldHideOnMadeToOrder) {
+      if(formState.values['madetoorder'] == 'true') {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+
+  return options && schemaType === 'enum' && !shouldHide() ? (
     <FieldSelect
       className={css.detailsSelect}
       name={name}
@@ -30,7 +41,7 @@ let value = formState.values['sorority'];
         </option>
       ))}
     </FieldSelect>
-  </>) : null;
+) : null;
 };
 
 export default CustomFieldEnum;

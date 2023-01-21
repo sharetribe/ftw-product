@@ -40,7 +40,6 @@ const EditListingDetailsFormComponent = props => (
         updateInProgress,
         fetchErrors,
         filterConfig,
-        isMadeToOrder,
       } = formRenderProps;
 
       const titleMessage = intl.formatMessage({ id: 'EditListingDetailsForm.title' });
@@ -227,6 +226,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={categoryPlaceholder}
             validate={categoryRequired}
             schemaType={categorySchemaType}
+            shouldHideOnMadeToOrder={false}
           />
 
           <CustomFieldEnum
@@ -237,10 +237,9 @@ const EditListingDetailsFormComponent = props => (
             placeholder={madetoorderPlaceholder}
             validate={madetoorderRequired}
             schemaType={madetoorderSchemaType}
+            shouldHideOnMadeToOrder={false}
           />
 
-          {!isMadeToOrder ?
-          <div>
           <CustomFieldEnum
             id="size"
             name="size"
@@ -249,6 +248,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={sizePlaceholder}
             validate={sizeRequired}
             schemaType={sizeSchemaType}
+            shouldHideOnMadeToOrder={true}
           />
 
           <CustomFieldEnum
@@ -259,6 +259,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={colorPlaceholder}
             validate={colorRequired}
             schemaType={colorSchemaType}
+            shouldHideOnMadeToOrder={true}
           />
 
           <CustomFieldEnum
@@ -269,6 +270,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={conditionPlaceholder}
             validate={conditionRequired}
             schemaType={conditionSchemaType}
+            shouldHideOnMadeToOrder={true}
           />
 
           <CustomFieldEnum
@@ -279,9 +281,8 @@ const EditListingDetailsFormComponent = props => (
             placeholder={sororityPlaceholder}
             validate={sororityRequired}
             schemaType={sororitySchemaType}
+            shouldHideOnMadeToOrder={true}
           />
-          </div>
-          : 
           
           <FieldCheckboxGroup 
             className={css.features}
@@ -290,8 +291,6 @@ const EditListingDetailsFormComponent = props => (
             options={blahs}
             label="Blah"
             />
-
-          }
 
 
 
