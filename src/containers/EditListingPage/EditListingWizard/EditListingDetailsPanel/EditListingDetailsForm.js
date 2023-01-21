@@ -188,7 +188,9 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
-      const blahs = findOptionsForSelectFilter('blah', filterConfig);
+      const multisizes = findOptionsForSelectFilter('multisize', filterConfig);
+      const multicolors = findOptionsForSelectFilter('multicolor', filterConfig);
+      const multisororities = findOptionsForSelectFilter('multisorority', filterConfig)
 
       return (
         <Form className={classes} onSubmit={handleSubmit}>
@@ -286,10 +288,26 @@ const EditListingDetailsFormComponent = props => (
           
           <FieldCheckboxGroup 
             className={css.features}
-            id="blah" 
-            name="blah" 
-            options={blahs}
-            label="Blah"
+            id="multisize" 
+            name="multisize" 
+            options={multisizes}
+            label="Size"
+            />
+
+          <FieldCheckboxGroup 
+            className={css.features}
+            id="multicolor" 
+            name="multicolor" 
+            options={multicolors}
+            label="Color"
+            />
+
+          <FieldCheckboxGroup 
+            className={css.features}
+            id="multisorority" 
+            name="multisorority" 
+            options={multisororities}
+            label="Sorority"
             />
 
 

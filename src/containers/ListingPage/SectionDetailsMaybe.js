@@ -30,6 +30,22 @@ const SectionDetailsMaybe = props => {
 
   const existingExtendedData = listing?.enumFieldDetails.reduce(pickExtendedData(filters), []);
 
+  function camelToLabel(value) {
+    if(value.length !== 0 && value.length > 0) {
+      var str = '';
+      str += value.charAt(0).toUpperCase();
+      var i = 1;
+      while(i < value.length) {
+        if(value.charAt(i) == value.charAt(i).toUpperCase()) {
+          str += ' ';
+        }
+        str += value.charAt(i);
+        i++;
+      }
+    }
+    return str;
+  }
+
   function isMadeToOrder(extendedData) {
     for(let i = 0; i < extendedData.length; i++) {
       if(extendedData[i].key == "madetoorder") {
@@ -43,7 +59,7 @@ const SectionDetailsMaybe = props => {
     return false;
   }
 
-  const madeToOrderFields = ['category','blah'];
+  const madeToOrderFields = ['category','multisize','multicolor','multisorority','condition'];
   const notMadeToOrderFields = ['category','size','sorority','color','condition'];
 
   return existingExtendedData ? (
@@ -65,7 +81,7 @@ const SectionDetailsMaybe = props => {
               <select className={css.detailsRowSelect}>
                 <option disabled selected value> Select an option! </option>
                 {detail.value.map(option => (
-                  <option>{option}</option>
+                  <option>{camelToLabel(option)}</option>
                 ))}
               </select> : <span>{detail.value}</span>
             }

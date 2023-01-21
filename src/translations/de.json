@@ -176,6 +176,7 @@
   "EditListingDetailsForm.descriptionRequired": "A description is required.",
   "EditListingDetailsForm.maxLength": "Must be {maxLength} characters or less",
   "EditListingDetailsForm.showListingFailed": "Fetching listing data failed",
+
   "EditListingDetailsForm.sizeLabel": "Size",
   "EditListingDetailsForm.sizePlaceholder": "Choose…",
   "EditListingDetailsForm.sizeRequired": "You need to select a size.",
@@ -196,9 +197,17 @@
   "EditListingDetailsForm.madetoorderPlaceholder": "Choose…",
   "EditListingDetailsForm.madetoorderRequired": "Is your product made to order?",
 
-  "EditListingDetailsForm.blahLabel": "Blah",
-  "EditListingDetailsForm.blahPlaceholder": "Choose…",
-  "EditListingDetailsForm.blahRequired": "Blah?",
+  "EditListingDetailsForm.multiSizeLabel": "Size",
+  "EditListingDetailsForm.multiSizePlaceholder": "Choose…",
+  "EditListingDetailsForm.multiSizeRequired": "You need to select a size.",
+
+  "EditListingDetailsForm.multiSororityLabel": "Sorority",
+  "EditListingDetailsForm.multiSororityPlaceholder": "Choose…",
+  "EditListingDetailsForm.multiSororityRequired": "You need to select a sorority.",
+
+  "EditListingDetailsForm.multiColorLabel": "Color",
+  "EditListingDetailsForm.multiColorPlaceholder": "Choose…",
+  "EditListingDetailsForm.multiColorRequired": "You need to select a color.",
 
   "EditListingDetailsForm.title": "Title",
   "EditListingDetailsForm.titlePlaceholder": "What clothing are you selling?",
