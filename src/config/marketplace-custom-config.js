@@ -223,7 +223,7 @@ export const filters = [
   },
   {
     id: 'multisize',
-    label: 'multiSize',
+    label: 'Size',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_multisize'],
@@ -252,7 +252,7 @@ export const filters = [
   },
   {
     id: 'multicolor',
-    label: 'multiColor',
+    label: 'Color',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_multicolor'],
@@ -291,7 +291,7 @@ export const filters = [
 
   {
     id: 'multisorority',
-    label: 'multiSorority',
+    label: 'Sorority',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_multisorority'],
