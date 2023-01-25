@@ -52,7 +52,7 @@ const BlogPage = () => {
           <div className={css.contentWrapper}>
             <div>
               {body.map((paragraph, index) => (
-                <p>{paragraph}</p>
+                paragraph[0] == '*' ? <p><b>{paragraph.slice(1)}</b></p> : <p>{paragraph}</p>
                 ))}
             </div>
           </div>

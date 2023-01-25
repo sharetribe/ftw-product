@@ -1,6 +1,7 @@
 import image1 from './images/howPresidencyChangedMyLife.jpg';
 import image2 from './images/top5BestThriftStores.png';
 import image3 from './images/gammaPhiBeta.jpeg';
+import realizationsImage from './images/3Realizations.jpg';
 
 export const blogPosts = [
     {
@@ -65,4 +66,56 @@ export const blogPosts = [
       imgCredit: "Via gammaphibeta.org",
       datePublished: "December 6, 2022",
     },
+    {
+      title: "3 Realizations as a Senior in a Sorority",
+      summary: `The Sorority Swap Thoughts: No. 3`,
+      author: "Sarrah George",
+      imgUrl: realizationsImage,
+      body: [
+        "During my freshman year of college, my roommate asked me one question: Are you going through recruitment?",
+        "After asking her what it was, it sounded like something everyone did when they first came to college. So, I agreed to sign up with her.",
+        "I was terrified for the first round. I wasn’t sure what to wear and, as an already quiet person, I had no idea what to expect with conversations. The thought of talking to people for hours on end was paralyzing, but I did it. I went through recruitment and received a bid from Sigma Kappa.",
+        "Looking back from then, when I had no clue about Greek Life, to now, being my last year in Sigma Kappa, I’m absolutely amazed at what I’ve realized.",
+        "*First Things First",
+        "As it goes for anything, you get what you put out. In my first two years, I didn’t put much effort into being in a sorority. At first, I wasn’t sure why I was in the sorority, but, then again, I wasn’t sure why I would leave. I had some friends. I had fun at the events. I got a little who turned out to be the perfect match for me. But even with these factors, I wasn’t doing much.",
+        "During my junior year, something clicked. For some unknown reason, I ran for a position that allowed me to decorate the room for recruitment. In order to make our room look as well-put together and welcoming as possible, I had to put in the work. Putting in the effort for the room led me to put in effort for recruitment which in turn helped me encourage other girls and allowed me to make friends.",
+        "The effort that I put into this allowed me to gain so much love for the sorority. I made new friends, got the courage to speak up or talk to other women in the panhellenic community, and used my love for art to help paint the letters. All the work that I put into the sorority showed me what I was missing—the opportunity to be recognized.",
+        "Maybe that was what I was afraid of all along—not being seen.",
+        "After this position, I gained courage in myself to run for a higher one. My faith in my ability to lead the chapter as president was slim, but that brings me to second my realization.",
+        "*You Have to Grow",
+        "In order to achieve anything, whether it be personal, academic or professional goals, you have to grow. Each experience lived through changes you as a person and that is perfectly okay. As humans, we are unable to stay the exact same way our entire life. There is a chance that you won’t be able to see how much you grow, but others will. The women of my sorority saw how much I grew from recruitment alone and trusted me with the position of president.",
+        "Within this position, I grew to an extent I never thought possible. My confidence in myself had increased, talking to others became easy for me, and excitement filled my body when events were happening.",
+        "How was I able to change so much?",
+        "Well, I finally had the courage to...",
+        "*Stop Pretending",
+        "The most important realization that came from being in a sorority was that I stopped pretending to be someone I wasn’t.",
+        "There was a fear inside of me that I was chosen to be in Sigma Kappa because of the person I was perceived to be during recruitment. Perhaps I didn’t realize this fear my freshman and sophomore year, but I was able to see it as I grew. The person I was in my years of questioning my time in the sorority was the person I was trying to be to fit in.",
+        "Never pretend to be someone you’re not.",
+        "Do not compromise your true self out of fear.",
+        "Just as humans are unable to remain the same, a part of who we truly are will always shine through.",
+      ],
+      imgCredit: "Instagram @sarrahkg",
+      datePublished: "January 24, 2023",
+    },
   ];
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
