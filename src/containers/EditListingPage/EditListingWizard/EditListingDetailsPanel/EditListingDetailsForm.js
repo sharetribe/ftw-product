@@ -291,7 +291,7 @@ const EditListingDetailsFormComponent = props => (
             id="multisize" 
             name="multisize" 
             options={multisizes}
-            label="Size"
+            label="Size options"
             />
 
           <FieldCheckboxGroup 
@@ -299,7 +299,7 @@ const EditListingDetailsFormComponent = props => (
             id="multicolor" 
             name="multicolor" 
             options={multicolors}
-            label="Color"
+            label="Color options"
             />
 
           <FieldCheckboxGroup 
@@ -307,7 +307,7 @@ const EditListingDetailsFormComponent = props => (
             id="multisorority" 
             name="multisorority" 
             options={multisororities}
-            label="Sorority"
+            label="Sorority options"
             />
 
 

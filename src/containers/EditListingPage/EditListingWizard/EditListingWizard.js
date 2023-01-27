@@ -16,6 +16,7 @@ import {
   LISTING_PAGE_PARAM_TYPES,
 } from '../../../util/urlHelpers';
 import { ensureCurrentUser, ensureListing } from '../../../util/data';
+import { useFormState } from 'react-final-form';
 
 // Import shared components
 import {
@@ -73,7 +74,7 @@ const tabCompleted = (tab, listing) => {
 
   switch (tab) {
     case DETAILS:
-      return !!(description && title && publicData.size && publicData.sorority);
+      return !!(description && title);
     case DELIVERY:
       return !!deliveryOptionPicked;
     case PRICING:
