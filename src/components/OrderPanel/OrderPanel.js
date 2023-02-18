@@ -86,6 +86,7 @@ const OrderPanel = props => {
   const shouldHaveBooking = isNightly || isDaily;
 
   const price = listing.attributes.price;
+  const publicData = listing.attributes.publicData;
   const hasListingState = !!listing.attributes.state;
   const isClosed = hasListingState && listing.attributes.state === LISTING_STATE_CLOSED;
   const showBookingDatesForm = shouldHaveBooking && hasListingState && !isClosed;
@@ -167,6 +168,7 @@ const OrderPanel = props => {
             onSubmit={onSubmit}
             price={price}
             currentStock={currentStock}
+            publicData={publicData}
             pickupEnabled={pickupEnabled}
             shippingEnabled={shippingEnabled}
             listingId={listing.id}

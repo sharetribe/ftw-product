@@ -38,6 +38,8 @@ const renderForm = formRenderProps => {
     fetchLineItemsInProgress,
     fetchLineItemsError,
     values,
+    testSubmitDisabledProp,
+    publicData,
   } = formRenderProps;
 
   const handleOnChange = formValues => {
@@ -68,7 +70,7 @@ const renderForm = formRenderProps => {
       formApi.blur('deliveryMethod');
       formApi.focus('deliveryMethod');
     } else {
-      handleSubmit(e);
+      // handleSubmit(e);
     }
   };
 
@@ -101,6 +103,8 @@ const renderForm = formRenderProps => {
     </InlineTextButton>
   );
   const quantityRequiredMsg = intl.formatMessage({ id: 'ProductOrderForm.quantityRequired' });
+
+  const selectionRequiredMsg = intl.formatMessage({ id: 'ProductOrderForm.selectionRequired' });
 
   const hasStock = currentStock && currentStock > 0;
   const quantities = hasStock ? [...Array(currentStock).keys()].map(i => i + 1) : [];

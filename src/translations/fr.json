@@ -622,6 +622,9 @@
   "ProductOrderForm.quantityLabel": "Quantity",
   "ProductOrderForm.quantityOption": "{quantity, number} {quantity, plural, one {item} other {items}}",
   "ProductOrderForm.quantityRequired": "Please select a quantity",
+
+  "ProductOrderForm.selectionRequired": "Please make a selection",
+
   "ProductOrderForm.selectDeliveryMethodOption": "Select delivery method",
   "ProductOrderForm.selectQuantityOption": "Select quantity",
   "ProductOrderForm.shippingOption": "Shipping",

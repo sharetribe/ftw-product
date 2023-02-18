@@ -528,6 +528,7 @@
 .detailLabel {
   font-weight: var(--fontWeightSemiBold);
   letter-spacing: -0.09px;
+  padding-right: 30px;
 }
 
 .sectionFeatures {
@@ -724,5 +725,13 @@
     /* The calendar needs 312px */
     flex-basis: 312px;
     flex-shrink: 0;
+  }
+}
+
+.multiField {
+  padding: 0 24px;
+
+  @media (--viewportMedium) {
+    padding: 0;
   }
 }
