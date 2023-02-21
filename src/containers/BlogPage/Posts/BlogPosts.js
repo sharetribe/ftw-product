@@ -3,11 +3,12 @@ import image2 from './images/top5BestThriftStores.png';
 import image3 from './images/gammaPhiBeta.jpeg';
 import realizationsImage from './images/3Realizations.jpg';
 import bidDayThemesImage from './images/bidDayThemes.jpg';
+import startingOverImage from './images/startingOver.jpg';
 
 export const blogPosts = [
   {
     title: "Our Favorite Bid Day Themes for Spring 2023",
-    summary: `The Sorority Swap Thoughts: No. 3`,
+    summary: `The Sorority Swap Thoughts: No. 4`,
     author: "Sarrah George",
     imgUrl: bidDayThemesImage,
     body: [
@@ -34,6 +35,42 @@ export const blogPosts = [
     ],
     imgCredit: "Instagram @utsigmakappa",
     datePublished: "February 20, 2023"
+  },
+  {
+    title: "What Is It Like Starting Over?",
+    summary: `The Sorority Swap Thoughts: No. 3`,
+    author: "Sarrah George",
+    imgUrl: startingOverImage,
+    body: [
+      "*What Is It Like Starting Over?",
+      "Starting over in a college atmosphere can be extremely difficult, especially when you’re used to a routine. Even now, as I hope to go to graduate school, I worry about starting over. How will I make friends? How did I make friends my freshman year of college? How did I get acclimated to a new city?",
+      "The first step in starting over my freshman year of college was joining my sorority. Even when joining a sorority, I had to start over. I had to introduce myself to new people in order to make new friends. This can be a terrifying thought, but it’s necessary in life. Every step of your life will include starting over in one aspect or another.",
+      "Did I know anyone in my sorority before I joined? Absolutely not. I didn’t know a single person as I walked into the room for Bid Day, but I pushed myself to try to meet the people I would call my sisters.",
+      "Here are some tips on how you can make friends in a new environment:",
+      "*BID DAY",
+      "Usually for Bid Day, the new members are provided with a Bid Day Buddy who is an initiated member of the sorority. This is extremely helpful when figuring out what’s going on and having someone to talk to during the event.",
+      "Entering Bid Day, I thought I was going in alone, but my Bid Day Buddy helped me to feel comfortable in this new environment. Of course, already initiated women of the sorority are bound to talk to one another, but don’t be afraid to talk to them as well. It’s okay to jump out of your comfort zone and introduce yourself or ask them questions!",
+      "As a new member, I was slightly intimidated by the initiated women in my sorority. I felt as if they all knew each other and I wouldn’t be able to become friends with them. This was the fear of starting over speaking to me. Once I pushed myself to talk to the women outside of my new member class, I realized that they are just as excited to make new friends as I was.",
+      "*HANG OUT",
+      "Don’t be afraid to ask someone in the sorority to hang out with you! Whether they are in your new member class or already initiated, it truly makes a difference when they know you enjoy their company. I know it sounds terrifying and that’s okay. If you’re more comfortable asking someone from your member class to hang out, start with that! They are in the same boat as you, thrown into a new environment and unsure of what to do or how to make friends. ",
+      "A simple, “Want to grab dinner after this?” will make them, and you, feel so much better. Most of the time, other people will want to come as well which expands the people you’ll know in your sorority. ",
+      "*OFFER YOUR HELP",
+      "It’s always nice when someone lends a helping hand. If your sorority is throwing an event, ask how you can help out! The women planning the event will always be grateful to receive help, especially the day it’s happening.",
+      "You may ask yourself, “What if they say no?” (I asked myself that plenty of times and they always accepted the help.) It’s okay if they don’t need help! The fact that you asked will stay with them and they’ll most likely reach out for the next event. ",
+      "*ENJOY THE RANDOM GROUPING",
+      "During the first semester in my sorority, I signed up for a service event in which I was assigned randomly to a car. To say it was uncomfortable is an understatement, but I ended up having a lot of fun once I got passed my initial nerves. I introduced myself and took part in the conversations they had. ",
+      "As annoying as it is to be assigned groups, it pays off in the end. If you’re in a large sorority, it can truly be one of the most important ways to meet as many people as possible. It’s normal to be anxious to join a group of people you don’t know, but your sisters are there to help make you feel comfortable!",
+      "The most important part of starting over is making sure you are taking the steps to enjoy your new journey!",
+      "Shoutout to Katie, Toni, Gabby, and the rest of my MC class for being my day ones. ",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+    imgCredit: "Instagram @sarrahkg",
+    datePublished: "February 8, 2023"
   },
   {
     title: "3 Realizations as a Senior in a Sorority",
