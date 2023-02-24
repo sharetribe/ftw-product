@@ -49,15 +49,15 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'men', label: 'Men' },
-        { key: 'women', label: 'Women' },
-        { key: 'kids', label: 'Kids' },
+        { key: 'men', label: 'Home Decor' },
+        { key: 'women', label: 'Tabletop & Bar' },
+        { key: 'kids', label: 'Vintage' },
       ],
     },
   },
   {
     id: 'size',
-    label: 'Size (US)',
+    label: 'Sub-category',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_size'],
@@ -73,21 +73,21 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: '4', label: '4' },
-        { key: '5', label: '5' },
-        { key: '6', label: '6' },
-        { key: '7', label: '7' },
-        { key: '8', label: '8' },
-        { key: '9', label: '9' },
-        { key: '10', label: '10' },
-        { key: '11', label: '11' },
-        { key: '12', label: '12' },
+        { key: '4', label: 'Decorative' },
+        { key: '5', label: 'Frames' },
+        { key: '6', label: 'Lighting' },
+        { key: '7', label: 'Planters' },
+        { key: '8', label: 'Vases' },
+        { key: '9', label: 'Cutlery' },
+        { key: '10', label: 'Mugs' },
+        { key: '11', label: 'Barware' },
+        { key: '12', label: 'Plates & Bowls' },
       ],
     },
   },
   {
     id: 'brand',
-    label: 'Brand',
+    label: 'Location',
     type: 'SelectMultipleFilter',
     group: 'primary',
     queryParamNames: ['pub_brand'],
@@ -103,15 +103,11 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'adidas', label: 'Adidas' },
-        { key: 'air_jordan', label: 'Air Jordan' },
-        { key: 'converse', label: 'Converse' },
-        { key: 'new_balance', label: 'New Balance' },
-        { key: 'nike', label: 'Nike' },
-        { key: 'puma', label: 'Puma' },
-        { key: 'ultraboost', label: 'Ultraboost' },
-        { key: 'vans', label: 'Vans' },
-        { key: 'yeezy', label: 'Yeezy' },
+        { key: 'adidas', label: 'Austin, TX' },
+        { key: 'air_jordan', label: 'Charleston, SC' },
+        { key: 'converse', label: 'Los Angeles, CA' },
+        { key: 'new_balance', label: 'New York, NY' },
+        { key: 'nike', label: 'San Francisco, CA' },
         { key: 'other', label: 'Other' },
       ],
     },
