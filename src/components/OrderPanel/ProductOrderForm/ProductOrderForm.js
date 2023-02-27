@@ -40,7 +40,64 @@ const renderForm = formRenderProps => {
     values,
     testSubmitDisabledProp,
     publicData,
+    customConfig,
   } = formRenderProps;
+
+  const { listing, filters } = customConfig || {};
+
+
+  const pickExtendedData = filterConfig => (rows, key) => {
+    const publicDataValue = publicData[key];
+    if (publicDataValue) {
+      const filterIfItExists = filterConfig.find(f => f.id === key);
+      const filterOptions = filterIfItExists?.config?.options || [];
+      const value = filterOptions.find(o => o.key === publicDataValue)?.label || publicDataValue;
+      const label = filterIfItExists?.label || `${key.charAt(0).toUpperCase()}${key.slice(1)}`;
+
+      return rows.concat({ key, value, label });
+    }
+    return rows;
+  };
+
+  const existingExtendedData = listing?.enumFieldDetails.reduce(pickExtendedData(filters), []);
+
+
+  function camelToLabel(value) {
+    if(value.length !== 0 && value.length > 0) {
+      var str = '';
+      str += value.charAt(0).toUpperCase();
+      var i = 1;
+      while(i < value.length) {
+        if(value.charAt(i) == value.charAt(i).toUpperCase()) {
+          str += ' ';
+        }
+        str += value.charAt(i);
+        i++;
+      }
+    }
+    return str;
+  }
+
+  function arrayToCamelCase(value) {
+    var arr = [];
+    value.map(option => {
+      arr.push(camelToLabel(option));
+    })
+    return arr;
+  }
+
+  function isMadeToOrder(extendedData) {
+    for(let i = 0; i < extendedData.length; i++) {
+      if(extendedData[i].key == "madetoorder") {
+        if(extendedData[i].value == "True") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    }
+    return false;
+  }
 
   const handleOnChange = formValues => {
     const { quantity: quantityRaw, deliveryMethod } = formValues.values;
@@ -58,6 +115,7 @@ const renderForm = formRenderProps => {
   // In case quantity and deliveryMethod are missing focus on that select-input.
   // Otherwise continue with the default handleSubmit function.
   const handleFormSubmit = e => {
+    
     const { quantity, deliveryMethod } = values || {};
     if (!quantity || quantity < 1) {
       e.preventDefault();
@@ -70,7 +128,7 @@ const renderForm = formRenderProps => {
       formApi.blur('deliveryMethod');
       formApi.focus('deliveryMethod');
     } else {
-      // handleSubmit(e);
+      handleSubmit(e);
     }
   };
 
@@ -132,7 +190,7 @@ const renderForm = formRenderProps => {
           name="quantity"
           disabled={!hasStock}
           label={intl.formatMessage({ id: 'ProductOrderForm.quantityLabel' })}
-          validate={numberAtLeast(quantityRequiredMsg, 1)}
+          validate={numberAtLeast(selectionRequiredMsg, 1)}
         >
           <option disabled value="">
             {intl.formatMessage({ id: 'ProductOrderForm.selectQuantityOption' })}
@@ -144,7 +202,27 @@ const renderForm = formRenderProps => {
           ))}
         </FieldSelect>
       )}
-
+      {isMadeToOrder(existingExtendedData) ? 
+        existingExtendedData.map(detail => (Array.isArray(detail.value) ? 
+        <FieldSelect
+          id={`${formId}.` + detail.key}
+          className={css.quantityField}
+          name={detail.key}
+          disabled={detail.value.length == 0}
+          label={detail.label}
+          validate={required(selectionRequiredMsg)} // TODO: Not sure about this validate
+        >
+          <option disabled value="">
+            {"Select " + detail.label}
+          </option>
+          {detail.value.map(value => (
+            <option key={value} value={value}>
+              {camelToLabel(value)}
+            </option>
+          ))}
+        </FieldSelect> : null
+      ))
+      : null}
       {hasNoStockLeft ? null : hasMultipleDeliveryMethods ? (
         <FieldSelect
           id={`${formId}.deliveryMethod`}
