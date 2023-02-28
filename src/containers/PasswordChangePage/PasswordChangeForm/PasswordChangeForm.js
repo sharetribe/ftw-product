@@ -173,7 +173,7 @@ class PasswordChangeFormComponent extends Component {
                 this.submittedValues = values;
                 handleSubmit(e)
                   .then(() => {
-                    this.resetTimeoutId = window.setTimeout(form.reset, RESET_TIMEOUT);
+                    this.resetTimeoutId = window.setTimeout(form.restart, RESET_TIMEOUT);
                   })
                   .catch(() => {
                     // Error is handled in duck file already.
