@@ -449,11 +449,11 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "options": Array [
                   Object {
                     "key": "true",
-                    "label": "True",
+                    "label": "Yes",
                   },
                   Object {
                     "key": "false",
-                    "label": "False",
+                    "label": "No",
                   },
                 ],
                 "schemaType": "enum",

@@ -76,8 +76,8 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'true', label: 'True' },
-        { key: 'false', label: 'False' },
+        { key: 'true', label: 'Yes' },
+        { key: 'false', label: 'No' },
       ],
     },
   },
@@ -226,7 +226,7 @@ export const filters = [
     label: 'Size',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_multisize'],
+    queryParamNames: ['pub_size'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.
@@ -255,7 +255,7 @@ export const filters = [
     label: 'Color',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_multicolor'],
+    queryParamNames: ['pub_color'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.
@@ -294,7 +294,7 @@ export const filters = [
     label: 'Sorority',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_multisorority'],
+    queryParamNames: ['pub_sorority'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.

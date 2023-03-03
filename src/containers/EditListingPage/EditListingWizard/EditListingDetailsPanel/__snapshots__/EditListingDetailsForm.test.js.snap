@@ -201,12 +201,12 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
       </option>
       <option
         key="true"
-        value="True"
+        value="Yes"
       >
         True
       <option
         key="false"
-        value="False"
+        value="No"
       >
         False
       </option>

@@ -57,7 +57,7 @@ const SectionDetailsMaybe = props => {
   function isMadeToOrder(extendedData) {
     for(let i = 0; i < extendedData.length; i++) {
       if(extendedData[i].key == "madetoorder") {
-        if(extendedData[i].value == "True") {
+        if(extendedData[i].value == "Yes") {
           return true;
         } else {
           return false;
@@ -67,7 +67,7 @@ const SectionDetailsMaybe = props => {
     return false;
   }
 
-  const madeToOrderFields = ['category','multisize','multicolor','multisorority','condition'];
+  const madeToOrderFields = ['madetoorder','category','multisize','multicolor','multisorority'];
   const notMadeToOrderFields = ['category','size','sorority','color','condition'];
 
   return existingExtendedData ? (
@@ -82,6 +82,11 @@ const SectionDetailsMaybe = props => {
             <span>{detail.value}</span>
           </li> : null
         ))}
+        {isMadeToOrder(existingExtendedData) ? 
+          <li key="conditionRow" className={css.detailsRow} id="detailsRow">
+            <span className={css.detailLabel}>Condition</span>
+            <span>New</span>
+          </li> : null}
         {existingExtendedData.map(detail => (isMadeToOrder(existingExtendedData) && madeToOrderFields.includes(detail.key) ?
           <li key={detail.key} className={css.detailsRow} id="detailsRow">
             <span className={css.detailLabel}>{detail.label}</span>

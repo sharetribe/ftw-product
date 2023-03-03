@@ -89,7 +89,7 @@ const renderForm = formRenderProps => {
   function isMadeToOrder(extendedData) {
     for(let i = 0; i < extendedData.length; i++) {
       if(extendedData[i].key == "madetoorder") {
-        if(extendedData[i].value == "True") {
+        if(extendedData[i].value == "Yes") {
           return true;
         } else {
           return false;
@@ -120,7 +120,7 @@ const renderForm = formRenderProps => {
     if (!quantity || quantity < 1) {
       e.preventDefault();
       // Blur event will show validator message
-      formApi.blur('quantity');
+      formApi.blur('quantity'); // TODO:
       formApi.focus('quantity');
     } else if (!deliveryMethod) {
       e.preventDefault();
@@ -213,7 +213,8 @@ const renderForm = formRenderProps => {
           validate={required(selectionRequiredMsg)} // TODO: Not sure about this validate
         >
           <option disabled value="">
-            {"Select " + detail.label}
+            {detail.value.length > 0 ? "Select " + detail.label : "No " + detail.label + " options available"}
+
           </option>
           {detail.value.map(value => (
             <option key={value} value={value}>
