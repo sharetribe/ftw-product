@@ -10,9 +10,10 @@ const CustomFieldEnum = props => {
   const { name, id, options, label, placeholder, validate, schemaType, shouldHideOnMadeToOrder } = props;
 
   const formState = useFormState();
-  let value = formState.values['sorority'];
 
   function shouldHide() {
+    // formState.values["test"] = "test";
+    // alert("formState: " + JSON.stringify(formState.values));
     if(shouldHideOnMadeToOrder) {
       if(formState.values['madetoorder'] == 'true') {
         return true;
