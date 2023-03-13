@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Field } from 'react-final-form';
 import classNames from 'classnames';
 import { ValidationError } from '../../components';
+import { useFormState } from 'react-final-form';
 
 import css from './FieldSelect.module.css';
 
@@ -49,10 +50,6 @@ FieldSelectComponent.defaultProps = {
 
 const { string, object, node } = PropTypes;
 
-const handleChange = event => {
-  alert("!!!");
-};
-
 FieldSelectComponent.propTypes = {
   rootClassName: string,
   className: string,
@@ -70,6 +67,11 @@ FieldSelectComponent.propTypes = {
 };
 
 const FieldSelect = props => {
+  const formState = useFormState();
+
+const handleChange = event => {
+  alert("!!!" + JSON.stringify(formState.values));
+};
   return <Field component={FieldSelectComponent} inputOnChange={handleChange} {...props} />;
 };
 
