@@ -4,8 +4,13 @@ const Decimal = require('decimal.js');
 const log = require('../log');
 const sharetribeSdk = require('sharetribe-flex-sdk');
 
-const CLIENT_ID = process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
-const CLIENT_SECRET = process.env.SHARETRIBE_SDK_CLIENT_SECRET;
+const dev = process.env.REACT_APP_ENV === 'development';
+const CLIENT_ID = dev
+  ? process.env.REACT_APP_DEV_SHARETRIBE_SDK_CLIENT_ID
+  : process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
+const CLIENT_SECRET = dev
+  ? process.env.DEV_SHARETRIBE_SDK_CLIENT_SECRET
+  : process.env.SHARETRIBE_SDK_CLIENT_SECRET;
 const USING_SSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
 const TRANSIT_VERBOSE = process.env.REACT_APP_SHARETRIBE_SDK_TRANSIT_VERBOSE === 'true';
 

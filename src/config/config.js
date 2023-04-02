@@ -88,7 +88,9 @@ const dayCountAvailableForBooking = 90;
 // script, react-scripts (and the sharetribe-scripts fork of
 // react-scripts) require using the REACT_APP_ prefix to avoid
 // exposing server secrets to the client side.
-const sdkClientId = process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
+const sdkClientId = dev
+  ? process.env.REACT_APP_DEV_SHARETRIBE_SDK_CLIENT_ID
+  : process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
 const sdkBaseUrl = process.env.REACT_APP_SHARETRIBE_SDK_BASE_URL;
 const sdkAssetCdnBaseUrl = process.env.REACT_APP_SHARETRIBE_SDK_ASSET_CDN_BASE_URL;
 const sdkTransitVerbose = process.env.REACT_APP_SHARETRIBE_SDK_TRANSIT_VERBOSE === 'true';
