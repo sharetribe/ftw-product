@@ -12,8 +12,6 @@ const CustomFieldEnum = props => {
   const formState = useFormState();
 
   function shouldHide() {
-    // formState.values["test"] = "test";
-    // alert("formState: " + JSON.stringify(formState.values));
     if(shouldHideOnMadeToOrder) {
       if(formState.values['madetoorder'] == 'true') {
         return true;

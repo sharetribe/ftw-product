@@ -226,14 +226,14 @@ export const filters = [
     label: 'Size',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_size'],
+    queryParamNames: ['pub_msize'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.
       // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
       // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
       schemaType: 'multi-enum',
-      searchMode: 'has_all',
+      searchMode: 'has_any',
 
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
@@ -255,14 +255,14 @@ export const filters = [
     label: 'Color',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_color'],
+    queryParamNames: ['pub_mcolor'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.
       // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
       // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
       schemaType: 'multi-enum',
-      searchMode: 'has_all',
+      searchMode: 'has_any',
 
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
@@ -294,14 +294,14 @@ export const filters = [
     label: 'Sorority',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['pub_sorority'],
+    queryParamNames: ['pub_msorority'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
       // Both types can work so that user selects multiple values when filtering search results.
       // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
       // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
       schemaType: 'multi-enum',
-      searchMode: 'has_all',
+      searchMode: 'has_any',
 
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
