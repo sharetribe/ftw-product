@@ -85,7 +85,7 @@ export const filters = [
     id: 'size',
     label: 'Size',
     type: 'SelectMultipleFilter',
-    group: 'primary',
+    group: 'hidden',
     queryParamNames: ['pub_size'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
@@ -113,7 +113,7 @@ export const filters = [
     id: 'color',
     label: 'Color',
     type: 'SelectMultipleFilter',
-    group: 'primary',
+    group: 'hidden',
     queryParamNames: ['pub_color'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
@@ -176,7 +176,7 @@ export const filters = [
     id: 'sorority',
     label: 'Sorority',
     type: 'SelectSingleFilter',
-    group: 'primary',
+    group: 'hidden',
     queryParamNames: ['pub_sorority'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
@@ -352,7 +352,7 @@ export const filters = [
     // Note: unlike most prices this is not handled in subunits
     config: {
       min: 0,
-      max: 1000,
+      max: 300,
       step: 5,
     },
   },

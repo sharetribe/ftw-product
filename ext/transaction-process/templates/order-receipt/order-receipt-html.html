@@ -6,9 +6,9 @@
 <html>
   <body>
     {{#with transaction}}
-    <h1>Your receipt for {{listing.title}}</h1>
+    <h1>Your test receipt for {{listing.title}}</h1>
 
-    <p>Thank your for purchasing {{listing.title}} from {{provider.display-name}}!</p>
+    <p>Thank you for purchasing {{listing.title}} from {{provider.display-name}}!</p>
 
     <p>We have how charged {{> format-money money=payin-total}} from your credit card. Here's your receipt.</p>
 
@@ -32,7 +32,7 @@
             </tr>
             <tr>
               <td>Sorority</td>
-              <td style="text-align: right; padding-left: 20px">&times; {{transaction.protected-data.sorority}}</td>
+              <td style="text-align: right; padding-left: 20px">&times; {{number quantity}}</td>
             </tr>
             <tr>
               <th style="text-align: left;">Subtotal</th>
