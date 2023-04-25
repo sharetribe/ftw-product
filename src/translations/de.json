@@ -730,7 +730,7 @@
   "ShippingDetails.addressLine2Label": "Apt # {optionalText}",
   "ShippingDetails.addressLine2Placeholder": "A 42",
   "ShippingDetails.cityLabel": "City",
-  "ShippingDetails.cityPlaceholder": "Helsinki",
+  "ShippingDetails.cityPlaceholder": "Dallas",
   "ShippingDetails.cityRequired": "City is required",
   "ShippingDetails.countryLabel": "Country",
   "ShippingDetails.countryPlaceholder": "Select a country…",

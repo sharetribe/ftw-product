@@ -483,14 +483,20 @@ export class CheckoutPageComponent extends Component {
     // The way to pass it to checkout page is through pageData.orderData
     const tx = speculatedTransaction ? speculatedTransaction : storedTx;
 
+    function convertToTitleCase(str) {
+      var result = str.replace(/([A-Z])/g, " $1");
+      var finalResult = result.charAt(0).toUpperCase() + result.slice(1);
+      return finalResult;
+    }
+
     const deliveryMethod = pageData.orderData?.deliveryMethod;
     const quantity = pageData.orderData?.quantity;
     const quantityMaybe = quantity ? { quantity } : {};
-    const sorority = pageData.orderData?.multisorority;
+    const sorority = convertToTitleCase(pageData.orderData?.multisorority);
     const sororityMaybe = sorority ? { sorority } : {};
-    const color = pageData.orderData?.multicolor;
+    const color = convertToTitleCase(pageData.orderData?.multicolor);
     const colorMaybe = color ? { color } : {};
-    const size = pageData.orderData?.multisize;
+    const size = convertToTitleCase(pageData.orderData?.multisize);
     const sizeMaybe = size ? { size } : {};
     const protectedDataMaybe =
       deliveryMethod && shippingDetails
