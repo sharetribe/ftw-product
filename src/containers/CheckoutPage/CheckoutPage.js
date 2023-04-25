@@ -486,11 +486,17 @@ export class CheckoutPageComponent extends Component {
     const deliveryMethod = pageData.orderData?.deliveryMethod;
     const quantity = pageData.orderData?.quantity;
     const quantityMaybe = quantity ? { quantity } : {};
+    const sorority = pageData.orderData?.multisorority;
+    const sororityMaybe = sorority ? { sorority } : {};
+    const color = pageData.orderData?.multicolor;
+    const colorMaybe = color ? { color } : {};
+    const size = pageData.orderData?.multisize;
+    const sizeMaybe = size ? { size } : {};
     const protectedDataMaybe =
       deliveryMethod && shippingDetails
-        ? { protectedData: { deliveryMethod, shippingDetails } }
+        ? { protectedData: { deliveryMethod, shippingDetails, sorority, color, size } }
         : deliveryMethod
-        ? { protectedData: { deliveryMethod } }
+        ? { protectedData: { deliveryMethod, sorority, color, size } }
         : {};
     // Note: optionalPaymentParams contains Stripe paymentMethod,
     // but that can also be passed on Step 2

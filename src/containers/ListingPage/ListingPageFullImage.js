@@ -122,7 +122,6 @@ export class ListingPageComponent extends Component {
       orderData: {
         ...bookingDatesMaybe,
         quantity: Number.parseInt(quantityRaw, 10),
-        sorority: "testSorority",
         deliveryMethod,
         ...otherOrderData,
       },
