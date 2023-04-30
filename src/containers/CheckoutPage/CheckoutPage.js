@@ -484,6 +484,9 @@ export class CheckoutPageComponent extends Component {
     const tx = speculatedTransaction ? speculatedTransaction : storedTx;
 
     function convertToTitleCase(str) {
+      if(str == null) {
+        return str;
+      }
       var result = str.replace(/([A-Z])/g, " $1");
       var finalResult = result.charAt(0).toUpperCase() + result.slice(1);
       return finalResult;
