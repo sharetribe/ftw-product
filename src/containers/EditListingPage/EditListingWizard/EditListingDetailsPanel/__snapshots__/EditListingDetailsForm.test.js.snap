@@ -175,6 +175,44 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
       </option>
     </select>
   </div>
+
+  <div
+    className="root detailsSelect"
+  >
+    <label
+      htmlFor="madetoorder"
+    >
+      EditListingDetailsForm.madetoorderLabel
+    </label>
+    <select
+      className="select"
+      id="madetoorder"
+      name="Made to Order"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        value=""
+      >
+        EditListingDetailsForm.madetoorderPlaceholder
+      </option>
+      <option
+        key="true"
+        value="Yes"
+      >
+        True
+      <option
+        key="false"
+        value="No"
+      >
+        False
+      </option>
+    </select>
+  </div>
+
   <div
     className="root detailsSelect"
   >
@@ -530,6 +568,50 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
       </option>
     </select>
   </div>
+
+  <div
+    className="root detailsSelect"
+  >
+    <label
+      htmlFor="blah"
+    >
+      EditListingDetailsForm.blahLabel
+    </label>
+    <select
+      className="select"
+      id="blah"
+      name="Blah"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        value=""
+      >
+        EditListingDetailsForm.blahPlaceholder
+      </option>
+      <option
+        key="blah1"
+        value="Blah1"
+      >
+        Blah1
+      <option
+        key="blah2"
+        value="Blah2"
+      >
+        Blah2
+      </option>
+      <option
+        key="blah3"
+        value="Blah3"
+      >
+        Blah3
+      </option>
+    </select>
+  </div>
+
   <button
     className="root submitButton"
     disabled={true}

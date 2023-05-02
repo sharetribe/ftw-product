@@ -12,6 +12,7 @@ import { arrayOf, bool, node, shape, string } from 'prop-types';
 import classNames from 'classnames';
 import { FieldArray } from 'react-final-form-arrays';
 import { FieldCheckbox, ValidationError } from '../../components';
+import { useFormState } from 'react-final-form';
 
 import css from './FieldCheckboxGroup.module.css';
 
@@ -21,7 +22,7 @@ const FieldCheckboxRenderer = props => {
   const classes = classNames(rootClassName || css.root, className);
   const listClasses = twoColumns ? classNames(css.list, css.twoColumns) : css.list;
 
-  return (
+  return (useFormState().values["madetoorder"] == 'true' ?
     <fieldset className={classes}>
       {label ? <legend>{label}</legend> : null}
       <ul className={listClasses}>
@@ -40,7 +41,7 @@ const FieldCheckboxRenderer = props => {
         })}
       </ul>
       <ValidationError fieldMeta={{ ...meta }} />
-    </fieldset>
+    </fieldset> : null
   );
 };
 

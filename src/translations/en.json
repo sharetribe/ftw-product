@@ -192,6 +192,22 @@
   "EditListingDetailsForm.conditionPlaceholder": "Choose…",
   "EditListingDetailsForm.conditionRequired": "You need to select a condition.",
 
+  "EditListingDetailsForm.madetoorderLabel": "Made to Order",
+  "EditListingDetailsForm.madetoorderPlaceholder": "Choose…",
+  "EditListingDetailsForm.madetoorderRequired": "Is your product made to order?",
+
+  "EditListingDetailsForm.multiSizeLabel": "Size",
+  "EditListingDetailsForm.multiSizePlaceholder": "Choose…",
+  "EditListingDetailsForm.multiSizeRequired": "You need to select a size.",
+
+  "EditListingDetailsForm.multiSororityLabel": "Sorority",
+  "EditListingDetailsForm.multiSororityPlaceholder": "Choose…",
+  "EditListingDetailsForm.multiSororityRequired": "You need to select a sorority.",
+
+  "EditListingDetailsForm.multiColorLabel": "Color",
+  "EditListingDetailsForm.multiColorPlaceholder": "Choose…",
+  "EditListingDetailsForm.multiColorRequired": "You need to select a color.",
+
   "EditListingDetailsForm.title": "Title",
   "EditListingDetailsForm.titlePlaceholder": "What apparel are you selling?",
   "EditListingDetailsForm.titleRequired": "You need to add a name.",
@@ -606,6 +622,9 @@
   "ProductOrderForm.quantityLabel": "Quantity",
   "ProductOrderForm.quantityOption": "{quantity, number} {quantity, plural, one {item} other {items}}",
   "ProductOrderForm.quantityRequired": "Please select a quantity",
+
+  "ProductOrderForm.selectionRequired": "Please make a selection",
+
   "ProductOrderForm.selectDeliveryMethodOption": "Select delivery method",
   "ProductOrderForm.selectQuantityOption": "Select quantity",
   "ProductOrderForm.shippingOption": "Shipping",
@@ -710,7 +729,7 @@
   "ShippingDetails.addressLine2Label": "Apt # {optionalText}",
   "ShippingDetails.addressLine2Placeholder": "A 42",
   "ShippingDetails.cityLabel": "City",
-  "ShippingDetails.cityPlaceholder": "Helsinki",
+  "ShippingDetails.cityPlaceholder": "Dallas",
   "ShippingDetails.cityRequired": "City is required",
   "ShippingDetails.countryLabel": "Country",
   "ShippingDetails.countryPlaceholder": "Select a country…",
@@ -869,7 +888,7 @@
   "StripePaymentAddress.addressLine2Label": "Apt # {optionalText}",
   "StripePaymentAddress.addressLine2Placeholder": "A 42",
   "StripePaymentAddress.cityLabel": "City",
-  "StripePaymentAddress.cityPlaceholder": "Helsinki",
+  "StripePaymentAddress.cityPlaceholder": "Dallas",
   "StripePaymentAddress.cityRequired": "City is required",
   "StripePaymentAddress.countryLabel": "Country",
   "StripePaymentAddress.countryPlaceholder": "Select a country…",

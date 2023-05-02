@@ -89,6 +89,41 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
+                    "key": "true",
+                    "label": "True",
+                  },
+                  Object {
+                    "key": "false",
+                    "label": "False",
+                  },
+                ],
+                "schemaType": "enum",
+              },
+              "group": "primary",
+              "id": "madetoorder",
+              "label": "Made to Order",
+              "queryParamNames": Array [
+                "pub_madetoorder",
+              ],
+              "type": "SelectMultipleFilter",
+            }
+          }
+          getHandleChangedValueFn={[Function]}
+          idPrefix="SearchFiltersMobile"
+          initialValues={[Function]}
+          isDesktop={true}
+          key="SearchFiltersMobile.madetoorder"
+          liveEdit={true}
+          showAsPopup={false}
+          urlQueryParams={Object {}}
+        />
+        <FilterComponent
+          className="filter"
+          filterConfig={
+            Object {
+              "config": Object {
+                "options": Array [
+                  Object {
                     "key": "extraSmall",
                     "label": "XS",
                   },
@@ -411,6 +446,78 @@ exports[`SearchPageWithList matches snapshot 1`] = `
           filterConfig={
             Object {
               "config": Object {
+                "options": Array [
+                  Object {
+                    "key": "true",
+                    "label": "Yes",
+                  },
+                  Object {
+                    "key": "false",
+                    "label": "No",
+                  },
+                ],
+                "schemaType": "enum",
+              },
+              "group": "primary",
+              "id": "blah",
+              "label": "Made to Order",
+              "queryParamNames": Array [
+                "pub_blah",
+              ],
+              "type": "SelectMultipleFilter",
+            }
+          }
+          getHandleChangedValueFn={[Function]}
+          idPrefix="SearchFiltersMobile"
+          initialValues={[Function]}
+          isDesktop={true}
+          key="SearchFiltersMobile.blah"
+          liveEdit={true}
+          showAsPopup={false}
+          urlQueryParams={Object {}}
+        />
+
+        <FilterComponent
+          className="filter"
+          filterConfig={
+            Object {
+              "config": Object {
+                "options": Array [
+                  Object {
+                    "key": "true",
+                    "label": "True",
+                  },
+                  Object {
+                    "key": "false",
+                    "label": "False",
+                  },
+                ],
+                "schemaType": "enum",
+              },
+              "group": "primary",
+              "id": "blah",
+              "label": "Made to Order",
+              "queryParamNames": Array [
+                "pub_blah",
+              ],
+              "type": "SelectMultipleFilter",
+            }
+          }
+          getHandleChangedValueFn={[Function]}
+          idPrefix="SearchFiltersMobile"
+          initialValues={[Function]}
+          isDesktop={true}
+          key="SearchFiltersMobile.blah"
+          liveEdit={true}
+          showAsPopup={false}
+          urlQueryParams={Object {}}
+        />
+
+        <FilterComponent
+          className="filter"
+          filterConfig={
+            Object {
+              "config": Object {
                 "max": 1000,
                 "min": 0,
                 "step": 5,
@@ -524,6 +631,41 @@ exports[`SearchPageWithList matches snapshot 1`] = `
             idPrefix="SearchFiltersMobile"
             initialValues={[Function]}
             key="SearchFiltersMobile.category"
+            liveEdit={true}
+            showAsPopup={false}
+            urlQueryParams={Object {}}
+          />
+          <FilterComponent
+            className="filter"
+            filterConfig={
+              Object {
+                "config": Object {
+                  "options": Array [
+                    Object {
+                      "key": "true",
+                      "label": "True",
+                    },
+                    Object {
+                      "key": "false",
+                      "label": "False",
+                    },
+                  ],
+                  "schemaType": "enum",
+                },
+                "group": "primary",
+                "id": "madetoorder",
+                "label": "Made to Order",
+                "queryParamNames": Array [
+                  "pub_madetoorder",
+                ],
+                "type": "SelectMultipleFilter",
+              }
+            }
+            getHandleChangedValueFn={[Function]}
+            idPrefix="SearchFiltersMobile"
+            initialValues={[Function]}
+            isDesktop={true}
+            key="SearchFiltersMobile.madetoorder"
             liveEdit={true}
             showAsPopup={false}
             urlQueryParams={Object {}}

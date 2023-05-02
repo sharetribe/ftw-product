@@ -59,10 +59,33 @@ export const filters = [
     },
   },
   {
+    id: 'madetoorder',
+    label: 'Made to Order',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_madetoorder'],
+    config: {
+      // Schema type options: 'enum', 'multi-enum'
+      // Both types can work so that user selects multiple values when filtering search results.
+      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
+      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
+      schemaType: 'enum',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'true', label: 'Yes' },
+        { key: 'false', label: 'No' },
+      ],
+    },
+  },
+  {
     id: 'size',
     label: 'Size',
     type: 'SelectMultipleFilter',
-    group: 'primary',
+    group: 'hidden',
     queryParamNames: ['pub_size'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
@@ -90,7 +113,7 @@ export const filters = [
     id: 'color',
     label: 'Color',
     type: 'SelectMultipleFilter',
-    group: 'primary',
+    group: 'hidden',
     queryParamNames: ['pub_color'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
@@ -153,7 +176,7 @@ export const filters = [
     id: 'sorority',
     label: 'Sorority',
     type: 'SelectSingleFilter',
-    group: 'primary',
+    group: 'hidden',
     queryParamNames: ['pub_sorority'],
     config: {
       // Schema type options: 'enum', 'multi-enum'
@@ -199,6 +222,125 @@ export const filters = [
     },
   },
   {
+    id: 'multisize',
+    label: 'Size',
+    type: 'SelectMultipleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_msize'],
+    config: {
+      // Schema type options: 'enum', 'multi-enum'
+      // Both types can work so that user selects multiple values when filtering search results.
+      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
+      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
+      schemaType: 'multi-enum',
+      searchMode: 'has_any',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'extraSmall', label: 'XS' },
+        { key: 'small', label: 'S' },
+        { key: 'medium', label: 'M' },
+        { key: 'large', label: 'L' },
+        { key: 'extraLarge', label: 'XL' },
+        { key: 'doubleExtraLarge', label: 'XXL' },
+        { key: 'oneSize', label: 'One size' },
+      ],
+    },
+  },
+  {
+    id: 'multicolor',
+    label: 'Color',
+    type: 'SelectMultipleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_mcolor'],
+    config: {
+      // Schema type options: 'enum', 'multi-enum'
+      // Both types can work so that user selects multiple values when filtering search results.
+      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
+      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
+      schemaType: 'multi-enum',
+      searchMode: 'has_any',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'black', label: 'Black' },
+        { key: 'blue', label: 'Blue' },
+        { key: 'brown', label: 'Brown' },
+        { key: 'clear', label: 'Clear' },
+        { key: 'gold', label: 'Gold' },
+        { key: 'gray', label: 'Gray' },
+        { key: 'green', label: 'Green' },
+        { key: 'orange', label: 'Orange' },
+        { key: 'pink', label: 'Pink' },
+        { key: 'purple', label: 'Purple' },
+        { key: 'rainbow', label: 'Rainbow' },
+        { key: 'red', label: 'Red' },
+        { key: 'silver', label: 'Silver' },
+        { key: 'tan', label: 'Tan' },
+        { key: 'white', label: 'White' },
+        { key: 'yellow', label: 'Yellow' },
+      ],
+    },
+  },
+
+  {
+    id: 'multisorority',
+    label: 'Sorority',
+    type: 'SelectMultipleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_msorority'],
+    config: {
+      // Schema type options: 'enum', 'multi-enum'
+      // Both types can work so that user selects multiple values when filtering search results.
+      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
+      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
+      schemaType: 'multi-enum',
+      searchMode: 'has_any',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'alphaChiOmega', label: 'Alpha Chi Omega' },
+        { key: 'alphaDeltaPi', label: 'Alpha Delta Pi' },
+        { key: 'alphaEpsilonPhi', label: 'Alpha Epsilon Phi' },
+        { key: 'alphaGammaDelta', label: 'Alpha Gamma Delta' },
+        { key: 'alphaOmicronPi', label: 'Alpha Omicron Pi' },
+        { key: 'alphaPhi', label: 'Alpha Phi' },
+        { key: 'alphaSigmaAlpha', label: 'Alpha Sigma Alpha' },
+        { key: 'alphaSigmaTau', label: 'Alpha Sigma Tau' },
+        { key: 'alphaXiDelta', label: 'Alpha Xi Delta' },
+        { key: 'chiOmega', label: 'Chi Omega' },
+        { key: 'deltaDeltaDelta', label: 'Delta Delta Delta' },
+        { key: 'deltaGamma', label: 'Delta Gamma' },
+        { key: 'deltaPhiEpsilon', label: 'Delta Phi Epsilon' },
+        { key: 'deltaZeta', label: 'Delta Zeta' },
+        { key: 'gammaPhiBeta', label: 'Gamma Phi Beta' },
+        { key: 'kappaAlphaTheta', label: 'Kappa Alpha Theta' },
+        { key: 'kappaDelta', label: 'Kappa Delta' },
+        { key: 'kappaKappaGamma', label: 'Kappa Kappa Gamma' },
+        { key: 'phiMu', label: 'Phi Mu' },
+        { key: 'phiSigmaSigma', label: 'Phi Sigma Sigma' },
+        { key: 'piBetaPhi', label: 'Pi Beta Phi' },
+        { key: 'rhoGamma', label: 'Rho Gamma' },
+        { key: 'sigmaDeltaTau', label: 'Sigma Delta Tau' },
+        { key: 'sigmaKappa', label: 'Sigma Kappa' },
+        { key: 'sigmaSigmaSigma', label: 'Sigma Sigma Sigma' },
+        { key: 'thetaPhiAlpha', label: 'Theta Phi Alpha' },
+        { key: 'zetaTauAlpha', label: 'Zeta Tau Alpha' },
+        { key: 'notAssociated', label: 'Not Associated' },
+      ],
+    },
+  },
+
+  {
     id: 'price',
     label: 'Price',
     type: 'PriceFilter',
@@ -210,7 +352,7 @@ export const filters = [
     // Note: unlike most prices this is not handled in subunits
     config: {
       min: 0,
-      max: 1000,
+      max: 300,
       step: 5,
     },
   },
@@ -298,5 +440,5 @@ export const sortConfig = {
 export const listing = {
   // These should be listing details from public data with schema type: enum
   // SectionDetailsMaybe component shows these on listing page.
-  enumFieldDetails: ['size', 'sorority', 'category', 'color', 'condition'],
+  enumFieldDetails: ['size', 'sorority', 'madetoorder', 'category', 'color', 'condition', 'multisize', 'multicolor', 'multisorority'],
 };
