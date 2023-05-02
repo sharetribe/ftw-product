@@ -52,18 +52,23 @@ const EditListingDetailsPanel = props => {
           title,
           description,
           category: publicData.category,
+          madetoorder: publicData.madetoorder,
           size: publicData.size,
           color: publicData.color,
           condition: publicData.condition,
           sorority: publicData.sorority,
+          multisize: publicData.multisize,
+          multicolor: publicData.multicolor,
+          multisorority: publicData.multisorority
         }}
         saveActionMsg={submitButtonText}
         onSubmit={values => {
-          const { title, description, category, size, color, condition, sorority } = values;
+          const { title, description, category, madetoorder, size, color, condition, sorority } = values;
+          const { multisize = [], multicolor = [], multisorority = [] } = values;
           const updateValues = {
             title: title.trim(),
             description,
-            publicData: { category, size, color, condition, sorority },
+            publicData: { category, madetoorder, size, color, condition, sorority, multisize, multicolor, multisorority },
           };
 
           onSubmit(updateValues);

@@ -385,7 +385,9 @@ export class SearchPageComponent extends Component {
         <div className={css.layoutWrapperContainer}>
           <aside className={css.layoutWrapperFilterColumn}>
             <div className={css.filterColumnContent}>
-              {availableFilters.map(config => {
+              {availableFilters
+              .filter(config => config.group !== "hidden")
+              .map(config => { // TODO: MAKE CHANGE HERE
                 return (
                   <FilterComponent
                     key={`SearchFiltersMobile.${config.id}`}

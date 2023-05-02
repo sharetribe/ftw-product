@@ -3,11 +3,16 @@ import PropTypes from 'prop-types';
 import { Field } from 'react-final-form';
 import classNames from 'classnames';
 import { ValidationError } from '../../components';
+import { useFormState, useForm } from 'react-final-form';
 
 import css from './FieldSelect.module.css';
 
 const FieldSelectComponent = props => {
-  const { rootClassName, className, id, label, input, meta, children, ...rest } = props;
+  const { rootClassName, className, id, label, input, inputOnChange, meta, children, ...rest } = props;
+  const onChange = e => {
+    input.onChange(e);
+    inputOnChange && inputOnChange(e);
+  }
 
   if (label && !id) {
     throw new Error('id required when a label is given');
@@ -23,7 +28,7 @@ const FieldSelectComponent = props => {
     [css.selectSuccess]: valid,
     [css.selectError]: hasError,
   });
-  const selectProps = { className: selectClasses, id, ...input, ...rest };
+  const selectProps = { className: selectClasses, id, ...input, ...rest, onChange };
 
   const classes = classNames(rootClassName || css.root, className);
   return (
@@ -62,7 +67,15 @@ FieldSelectComponent.propTypes = {
 };
 
 const FieldSelect = props => {
-  return <Field component={FieldSelectComponent} {...props} />;
+  const formState = useFormState();
+  const form = useForm();
+  const handleChange = event => {
+    if(event.target.name == "sorority" || event.target.name == "color" || event.target.name == "size") {
+      form.change("multi"+event.target.name,[event.target.value]);
+    }
+    // alert("!!!" + JSON.stringify(formState.values));
+};
+  return <Field component={FieldSelectComponent} inputOnChange={handleChange} {...props} />;
 };
 
 export default FieldSelect;

@@ -28,6 +28,20 @@
               <td>Quantity</td>
               <td style="text-align: right; padding-left: 20px">&times; {{number quantity}}</td>
             </tr>
+            {{#if transaction.protected-data.size}}
+              <tr>
+                <td>Size</td>
+                <td style="text-align: right; padding-left: 20px">{{transaction.protected-data.size}}</td>
+              </tr>
+              <tr>
+                <td>Color</td>
+                <td style="text-align: right; padding-left: 20px">{{transaction.protected-data.color}}</td>
+              </tr>
+              <tr>
+                <td>Sorority</td>
+                <td style="text-align: right; padding-left: 20px">{{transaction.protected-data.sorority}}</td>
+              </tr>
+            {{/if}}
             <tr>
               <th style="text-align: left;">Subtotal</th>
               <th style="text-align: right; padding-left: 20px">{{> format-money money=line-total}}</th>

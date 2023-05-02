@@ -471,7 +471,7 @@ export class ListingPageComponent extends Component {
                   />
                 </div>
                 <SectionDescriptionMaybe description={description} listingTitle={richTitle} />
-                <SectionDetailsMaybe publicData={publicData} customConfig={customConfig} />
+                <SectionDetailsMaybe publicData={publicData} customConfig={customConfig} /> {/*THIS IS WHERE I CHANGE FOR CUSTOM LISTING*/}
                 <SectionFeaturesMaybe
                   extendedDataKey="amenities"
                   options={amenityOptions}
@@ -515,6 +515,7 @@ export class ListingPageComponent extends Component {
                   lineItems={lineItems}
                   fetchLineItemsInProgress={fetchLineItemsInProgress}
                   fetchLineItemsError={fetchLineItemsError}
+                  customConfig={customConfig}
                 />
               </div>
             </div>

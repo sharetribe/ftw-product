@@ -9,19 +9,22 @@ import config from '../../../../config';
 import { intlShape, injectIntl, FormattedMessage } from '../../../../util/reactIntl';
 import { propTypes } from '../../../../util/types';
 import { maxLength, required, composeValidators } from '../../../../util/validators';
-import { findConfigForSelectFilter } from '../../../../util/search';
+import { findConfigForSelectFilter, findOptionsForSelectFilter } from '../../../../util/search';
 
 // Import shared components
-import { Form, Button, FieldTextInput } from '../../../../components';
+import { Form, Button, FieldTextInput, FieldCheckboxGroup } from '../../../../components';
 // Import modules from this directory
 import CustomFieldEnum from '../CustomFieldEnum';
 import css from './EditListingDetailsForm.module.css';
+
+import arrayMutators from 'final-form-arrays';
 
 const TITLE_MAX_LENGTH = 60;
 
 const EditListingDetailsFormComponent = props => (
   <FinalForm
     {...props}
+    mutators={{ ...arrayMutators }}
     render={formRenderProps => {
       const {
         autoFocus,
@@ -105,6 +108,22 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
+      const madetoorderConfig = findConfigForSelectFilter('madetoorder', filterConfig);
+      const madetoorderSchemaType = madetoorderConfig ? madetoorderConfig.schemaType : null;
+      const madetoorderOptions = madetoorderConfig && madetoorderConfig.options ? madetoorderConfig.options : [];
+      const madetoorderLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.madetoorderLabel',
+      });
+      const madetoorderPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.madetoorderPlaceholder',
+      });
+
+      const madetoorderRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.madetoorderRequired',
+        })
+      );
+
       const sizeConfig = findConfigForSelectFilter('size', filterConfig);
       const sizeSchemaType = sizeConfig ? sizeConfig.schemaType : null;
       const sizes = sizeConfig && sizeConfig.options ? sizeConfig.options : [];
@@ -169,11 +188,16 @@ const EditListingDetailsFormComponent = props => (
         })
       );
 
+      const multisizes = findOptionsForSelectFilter('multisize', filterConfig);
+      const multicolors = findOptionsForSelectFilter('multicolor', filterConfig);
+      const multisororities = findOptionsForSelectFilter('multisorority', filterConfig)
+
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           {errorMessageCreateListingDraft}
           {errorMessageUpdateListing}
           {errorMessageShowListing}
+
           <FieldTextInput
             id="title"
             name="title"
@@ -184,7 +208,8 @@ const EditListingDetailsFormComponent = props => (
             maxLength={TITLE_MAX_LENGTH}
             validate={composeValidators(required(titleRequiredMessage), maxLength60Message)}
             autoFocus={autoFocus}
-          />
+          /> 
+
           <FieldTextInput
             id="description"
             name="description"
@@ -194,6 +219,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={descriptionPlaceholderMessage}
             validate={composeValidators(required(descriptionRequiredMessage))}
           />
+
           <CustomFieldEnum
             id="category"
             name="category"
@@ -202,6 +228,18 @@ const EditListingDetailsFormComponent = props => (
             placeholder={categoryPlaceholder}
             validate={categoryRequired}
             schemaType={categorySchemaType}
+            shouldHideOnMadeToOrder={false}
+          />
+
+          <CustomFieldEnum
+            id="madetoorder"
+            name="madetoorder"
+            options={madetoorderOptions}
+            label={madetoorderLabel}
+            placeholder={madetoorderPlaceholder}
+            validate={madetoorderRequired}
+            schemaType={madetoorderSchemaType}
+            shouldHideOnMadeToOrder={false}
           />
 
           <CustomFieldEnum
@@ -212,6 +250,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={sizePlaceholder}
             validate={sizeRequired}
             schemaType={sizeSchemaType}
+            shouldHideOnMadeToOrder={true}
           />
 
           <CustomFieldEnum
@@ -222,6 +261,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={colorPlaceholder}
             validate={colorRequired}
             schemaType={colorSchemaType}
+            shouldHideOnMadeToOrder={true}
           />
 
           <CustomFieldEnum
@@ -232,6 +272,7 @@ const EditListingDetailsFormComponent = props => (
             placeholder={conditionPlaceholder}
             validate={conditionRequired}
             schemaType={conditionSchemaType}
+            shouldHideOnMadeToOrder={true}
           />
 
           <CustomFieldEnum
@@ -242,7 +283,34 @@ const EditListingDetailsFormComponent = props => (
             placeholder={sororityPlaceholder}
             validate={sororityRequired}
             schemaType={sororitySchemaType}
+            shouldHideOnMadeToOrder={true}
           />
+          
+          <FieldCheckboxGroup 
+            className={css.features}
+            id="multisize" 
+            name="multisize" 
+            options={multisizes}
+            label="Size options"
+            />
+
+          <FieldCheckboxGroup 
+            className={css.features}
+            id="multicolor" 
+            name="multicolor" 
+            options={multicolors}
+            label="Color options"
+            />
+
+          <FieldCheckboxGroup 
+            className={css.features}
+            id="multisorority" 
+            name="multisorority" 
+            options={multisororities}
+            label="Sorority options"
+            />
+
+
 
           <Button
             className={css.submitButton}
