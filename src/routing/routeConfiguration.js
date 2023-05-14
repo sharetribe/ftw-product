@@ -14,6 +14,7 @@ import { NamedRedirect } from '../components';
 const pageDataLoadingAPI = getPageDataLoadingAPI();
 
 const AboutPage = loadable(() => import(/* webpackChunkName: "AboutPage" */ '../containers/AboutPage/AboutPage'));
+const ContactPage = loadable(() => import(/* webpackChunkName: "ContactPage" */ '../containers/ContactPage/ContactPage'));
 
 const BlogPage = loadable(() => import(/* webpackChunkName: "BlogPage" */ '../containers/BlogPage/Posts/Posts'));
 const BlogPostPage = loadable(() => import(/* webpackChunkName: "BlogPost Page" */ '../containers/BlogPage/BlogPage'));
@@ -80,6 +81,11 @@ const routeConfiguration = () => {
       path: '/about',
       name: 'AboutPage',
       component: AboutPage,
+    },
+    {
+      path: '/contact',
+      name: 'ContactPage',
+      component: ContactPage,
     },
     {
       path: '/blog',
