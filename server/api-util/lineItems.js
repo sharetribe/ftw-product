@@ -9,7 +9,7 @@ const { Money } = types;
 // This unit type needs to be one of the following:
 // line-item/night, line-item/day or line-item/units
 const lineItemUnitType = 'line-item/units';
-const PROVIDER_COMMISSION_PERCENTAGE = -10;
+const PROVIDER_COMMISSION_PERCENTAGE = -5;
 
 /** Returns collection of lineItems (max 50)
  *
