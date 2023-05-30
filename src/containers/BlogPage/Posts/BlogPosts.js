@@ -4,11 +4,35 @@ import image3 from './images/gammaPhiBeta.jpeg';
 import realizationsImage from './images/3Realizations.jpg';
 import bidDayThemesImage from './images/bidDayThemes.jpg';
 import startingOverImage from './images/startingOver.jpg';
+import thingsToKnowImage from './images/4ThingsToKnow.png';
 
 export const blogPosts = [
   {
+    title: "Four Things To Know Before Recruitment",
+    summary: `The Sorority Swap Thoughts: No. 6`,
+    author: "Sarrah George",
+    imgUrl: thingsToKnowImage,
+    body: [
+      "Recruitment is an exciting time of the year when women interested in joining a sorority get to visit each chapter on their schools campus. For those new to recruitment, it can be a daunting experience, but we’re here to tell you that it’s nothing to be worried about!",
+      "*Everything Works Out",
+      "I say this first because it is the most important thing to remember while going through recruitment. Recruitment is a hectic time with conversations, meeting new people, and running from house to house. The sorority you desire to join in the moment may not be the perfect fit for you. As potential new members, we are unable to see this, but recruiters can. If your top choice isn’t the sorority you get, don’t worry. The place that found you knows it’s your home!",
+      "*It’s Okay to Be Confused",
+      "Walking into the first sorority on day one of recruitment is nerve-wracking. Your head will turn in different directions as you hear chanting and you may feel overwhelmed with where to go. It’s important to remember that the recruiters will always be by your side and guide you with what is happening in the recruitment process.",
+      "Your Rho Gammas are there to help you as well. If you have questions or concerns, don’t be afraid to ask them. They want to help as much as they can.",
+      "*Asking Questions is Important",
+      "When speaking to someone during recruitment, don’t be afraid to ask questions! Learning about each sorority individually can be difficult, but it’s our job as recruiters to help ease the process for you.",
+      "If the person recruiting you mentions something you are unsure of, or if you’re curious about certain activities, ask them about it. Asking questions will not only help you learn more but show them you are interested in what the sorority does.",
+      "Recruiters want to get to know you as a person, but they also want to see that you are interested in the place they call home!",
+      "*Stay True to Yourself",
+      "Throughout it all, remember that it can be easy to change your personality to match the person you are talking to, but try to avoid doing this. Recruiters want to know who you are and pretending to be someone you’re not or someone similar to them will not influence the likelihood of them recommending you.",
+      "It’s important to stay true to yourself because that’s all the recruiter wants to see. Recruitment is a time for learning. Potential New Members learn about the sororities on campus and the people who represent them while recruiters take the time to learn about the Potential New Members who may be the future of their chapter."
+    ],
+    imgCredit: "Instagram @utsigmakappa",
+    datePublished: "May 29, 2023",
+  },
+  {
     title: "Our Favorite Bid Day Themes for Spring 2023",
-    summary: `The Sorority Swap Thoughts: No. 4`,
+    summary: `The Sorority Swap Thoughts: No. 5`,
     author: "Sarrah George",
     imgUrl: bidDayThemesImage,
     body: [
@@ -38,7 +62,7 @@ export const blogPosts = [
   },
   {
     title: "What Is It Like Starting Over?",
-    summary: `The Sorority Swap Thoughts: No. 3`,
+    summary: `The Sorority Swap Thoughts: No. 4`,
     author: "Sarrah George",
     imgUrl: startingOverImage,
     body: [
@@ -62,12 +86,6 @@ export const blogPosts = [
       "As annoying as it is to be assigned groups, it pays off in the end. If you’re in a large sorority, it can truly be one of the most important ways to meet as many people as possible. It’s normal to be anxious to join a group of people you don’t know, but your sisters are there to help make you feel comfortable!",
       "The most important part of starting over is making sure you are taking the steps to enjoy your new journey!",
       "Shoutout to Katie, Toni, Gabby, and the rest of my MC class for being my day ones. ",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
     ],
     imgCredit: "Instagram @sarrahkg",
     datePublished: "February 8, 2023"
