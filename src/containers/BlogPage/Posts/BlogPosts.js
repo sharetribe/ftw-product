@@ -5,8 +5,35 @@ import realizationsImage from './images/3Realizations.jpg';
 import bidDayThemesImage from './images/bidDayThemes.jpg';
 import startingOverImage from './images/startingOver.jpg';
 import thingsToKnowImage from './images/4ThingsToKnow.png';
+import eachDayOfRecruitment from './images/EachDayOfRecruitment.jpg'
 
 export const blogPosts = [
+  {
+    title: "What Happens During Each Day of Recruitment?",
+    summary: `The Sorority Swap Thoughts: No. 7`,
+    author: "Sarrah George",
+    imgUrl: eachDayOfRecruitment,
+    body: [
+      "*What Happens During Each Day of Recruitment?",
+      "Are you confused about what each day of recruitment entails? Don’t stress! We’re here to help you learn more about the rounds of recruitment!",
+      "Each college may have different names for their days or an extra day during their recruitment process, but most days remain roughly the same! So, don’t worry if your college doesn’t match our list!",
+      "*Open House",
+      "Open house is the first day of recruitment! It’s an exciting day where you can see each chapter for the first time. You’ll be greeted by chants and smiles! Though nerve-wracking, you’ll most likely be used to the routine by the third chapter you visit. The chapter takes today to get to know you more than anything else.",
+      "These rounds are short in order for you to meet as many people as possible, but conversations still happen! So, even though it’s the first day, ask questions! Let them know that you’re interested in learning more about where they call home!",
+      "*Philanthropy",
+      "With each round, the time you get to spend with the sorority will get longer. Philanthropy round allows the sorority to let you know the organization they support and service events they hold on campus. This rounds helps you connect deeper with a certain philanthropy and share your experiences or interests in helping!",
+      "You’ll be told more about their organizations and given the opportunity to ask questions about future events! This day is important for you as a potential new member to find the organization you connect to most, so don’t be afraid to ask as many questions as you want.",
+      "*Preference",
+      "This is the most important day of recruitment. Since this is the longest round, deep conversations happen and the sorority opens up part of their ritual to the potential new members. Preference day allows you to know the sorority deeper and helps you decide if you see them as your new home.",
+      "The sorority that invites you back to preference day wants you to know how special you are to them. Make sure to stay engaged in conversation so you can easily decide which sisterhood you connect to most.",
+      "*Bid Day",
+      "Congratulations! You got a bid! A bid means that a sorority has invited you to formally join their sisterhood. On bid day, you will find out which sorority is your new home.",
+      "Usually, you’ll run with your new member class to the group of girls waiting for you either at their house or in a designated spot. Here you’ll be partnered up with a member of the sorority and introduced to all your new sisters!",
+      "Take photos and enjoy the day!"
+      ],
+    imgCredit: "Graphic courtesy of Zoe Tilis",
+    datePublished: "July 5, 2023",
+  },
   {
     title: "Four Things To Know Before Recruitment",
     summary: `The Sorority Swap Thoughts: No. 6`,
