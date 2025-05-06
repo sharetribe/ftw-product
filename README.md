@@ -1,16 +1,13 @@
-# Sharetribe Flex Template for Web
+# Deprecated - Sharetribe Flex Template for Web with purchase process
 
-[![CircleCI](https://circleci.com/gh/sharetribe/ftw-product.svg?style=svg)](https://circleci.com/gh/sharetribe/ftw-product)
+**Note**: you should use Sharetribe Web Template instead when starting a new project!
+[https://github.com/sharetribe/web-template](https://github.com/sharetribe/web-template)
 
-This is a template web application for a Sharetribe Flex marketplace ready to be extended and
+
+> This is a template web application for a Sharetribe Flex marketplace ready to be extended and
 customized. It is based on an application bootstrapped with
 [create-react-app](https://github.com/facebookincubator/create-react-app) with some additions,
 namely server side rendering and a custom CSS setup.
-
-> Note: We also have [FTW-daily](https://github.com/sharetribe/ftw-daily) for day-based processes
-> and [FTW-hourly](https://github.com/sharetribe/ftw-hourly) for time-based processes. You can learn
-> more on
-> [Flex Docs](https://www.sharetribe.com/docs/ftw-introduction/how-to-customize-ftw/#choose-a-template)
 
 ## Quick start
 
